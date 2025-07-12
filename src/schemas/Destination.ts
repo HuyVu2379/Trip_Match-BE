@@ -3,7 +3,7 @@ import { UUID } from 'crypto';
 import { HydratedDocument } from 'mongoose';
 export type DestinationsDocument = HydratedDocument<Destinations>;
 import { PriceLevel, BestSeason, RelevanceLevel } from 'src/enums/destination.enum';
-@Schema()
+@Schema({ timestamps: true })
 export class Destinations {
     @Prop({ required: true })
     id: UUID;
@@ -18,7 +18,7 @@ export class Destinations {
     price_level: PriceLevel; // 1–5
     best_season: BestSeason;
     tags: string[]; // ["beach", "cultural"]
-
+    image_url: string[];
     // ✅ Gộp sở thích phù hợp
     suitable_Destinations: [
         {

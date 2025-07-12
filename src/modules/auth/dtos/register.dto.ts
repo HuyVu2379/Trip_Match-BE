@@ -25,4 +25,8 @@ export class RegisterDto {
   @IsOptional()
   @IsString()
   avatarUrl?: string;
+
+  @IsOptional()
+  @IsString()
+  role?: string; // Default to 'user' if not provided
 }

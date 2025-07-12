@@ -3,7 +3,7 @@ import { randomUUID, UUID } from 'crypto';
 import { HydratedDocument } from 'mongoose';
 import { ReviewRating, ReviewTargetType } from 'src/enums/review.enum';
 export type ReviewsDocument = HydratedDocument<Reviews>;
-@Schema()
+@Schema({ timestamps: true })
 export class Reviews {
     @Prop({ required: true, unique: true, default: () => randomUUID() })
     id: UUID;

@@ -3,8 +3,9 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { UUID } from 'crypto';
 import { HydratedDocument } from 'mongoose';
+import { Activities, ActivitiesSchema } from './Activity';
 export type ItineraryDaysDocument = HydratedDocument<ItineraryDays>;
-@Schema()
+@Schema({ timestamps: true })
 export class ItineraryDays {
     @Prop({ required: true })
     id: UUID;
@@ -16,19 +17,8 @@ export class ItineraryDays {
     estimated_budget: number;
     actual_budget: number;
     // ✅ Gộp hoạt động trong ngày
-    activities: [
-        {
-            activity_id: UUID | null, // optional, nếu là custom activity thì null
-            destination_id: UUID,
-            name: string,
-            description: string,
-            start_time: string,
-            end_time: string,
-            cost: number,
-            order: boolean,
-            notes: string
-        }
-    ];
+    @Prop({ type: [{ type: ActivitiesSchema, ref: 'Activities' }] })
+    activities: Activities[];
 
 }
 export const ItineraryDaysSchema = SchemaFactory.createForClass(ItineraryDays);

@@ -11,6 +11,10 @@ export enum PreferenceLevel {
     HIGH = 4,
     VERY_HIGH = 5
 }
+export enum Role {
+    USER = 'user',
+    ADMIN = 'admin',
+}
 
 // Utility functions
 export const getGenderDisplayName = (gender: Gender): string => {
@@ -21,6 +25,16 @@ export const getGenderDisplayName = (gender: Gender): string => {
             return 'Nữ';
         case Gender.OTHER:
             return 'Khác';
+        default:
+            return 'Không xác định';
+    }
+};
+export const getRoleDisplayName = (role: Role): string => {
+    switch (role) {
+        case Role.USER:
+            return 'Người dùng';
+        case Role.ADMIN:
+            return 'Quản trị viên';
         default:
             return 'Không xác định';
     }

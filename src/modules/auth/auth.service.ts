@@ -27,7 +27,6 @@ export class AuthService {
 
     async login(user: any): Promise<ApiResponse> {
         const payload = { email: user.email, sub: user.id };
-        log("check payload:", payload)
         const loginData = {
             access_token: this.jwtService.sign(payload),
             user: {

@@ -3,7 +3,7 @@ import { UUID } from 'crypto';
 import { HydratedDocument } from 'mongoose';
 import { ItineraryStatus, MatchedScore, GeneratedBy } from 'src/enums/itinerary.enum';
 export type ItinerariesDocument = HydratedDocument<Itineraries>;
-@Schema()
+@Schema({ timestamps: true })
 export class Itineraries {
     @Prop({ required: true })
     id: UUID;
@@ -12,7 +12,7 @@ export class Itineraries {
     description: string;
     start_date: Date;
     end_date: Date;
-    imageUrl: string[5];
+    imageUrl: string[];
     total_budget: number;
     estimated_cost: number;
     actual_cost: number;

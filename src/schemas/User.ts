@@ -2,7 +2,7 @@ import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { randomUUID, UUID } from 'crypto';
 import { HydratedDocument } from 'mongoose';
 export type UsersDocument = HydratedDocument<Users>;
-import { Gender, PreferenceLevel } from 'src/enums/user.enum';
+import { Gender, PreferenceLevel, Role } from 'src/enums/user.enum';
 import { UserInterest } from 'src/interfaces/user.interface';
 @Schema({ timestamps: true })
 export class Users {
@@ -30,6 +30,8 @@ export class Users {
     @Prop()
     phone: string;
 
+    @Prop({ required: true, enum: Role, default: Role.USER })
+    role: Role;
     @Prop({
         type: [{
             interestId: {

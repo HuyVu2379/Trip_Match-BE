@@ -23,7 +23,6 @@ import { ResponseInterceptor } from './common/interceptors/response.interceptor'
         uri: config.get('MONGODB_URI'),
       }),
     }),
-    UserModule,
     AuthModule,
     ExamplesModule,
   ],

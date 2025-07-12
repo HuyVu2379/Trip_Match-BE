@@ -3,7 +3,7 @@ import { UUID } from 'crypto';
 import { HydratedDocument } from 'mongoose';
 import { RecommendedTime } from 'src/enums/activity.enum';
 export type ActivitiesDocument = HydratedDocument<Activities>;
-@Schema()
+@Schema({ timestamps: true })
 export class Activities {
     @Prop({ required: true })
     id: UUID;
@@ -12,9 +12,9 @@ export class Activities {
     description: string;
     duration_minutes: number;
     cost: number;
+    image_url: string;
     recommended_time: RecommendedTime;
     tags: string[];
-    created_at: Date;
 }
 
 export const ActivitiesSchema = SchemaFactory.createForClass(Activities);
