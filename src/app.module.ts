@@ -9,6 +9,8 @@ import { ExamplesModule } from './examples/examples.module';
 import { APP_FILTER, APP_INTERCEPTOR } from '@nestjs/core';
 import { GlobalExceptionFilter } from './common/filters/global-exception.filter';
 import { ResponseInterceptor } from './common/interceptors/response.interceptor';
+import { InterestModule } from './modules/interest/interest.module';
+import { CloudinaryModule } from './modules/cloudinary/cloudinary.module';
 
 @Module({
   imports: [
@@ -24,7 +26,9 @@ import { ResponseInterceptor } from './common/interceptors/response.interceptor'
       }),
     }),
     AuthModule,
+    InterestModule,
     ExamplesModule,
+    CloudinaryModule,
   ],
   controllers: [AppController],
   providers: [

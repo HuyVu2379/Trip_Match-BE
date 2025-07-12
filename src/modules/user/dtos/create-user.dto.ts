@@ -1,15 +1,6 @@
 import { IsEmail, IsString, IsNotEmpty, IsDateString, IsEnum, IsOptional, IsPhoneNumber, IsArray, ValidateNested } from 'class-validator';
-import { Type } from 'class-transformer';
-import { Gender, PreferenceLevel } from 'src/enums/user.enum';
-
-export class UserInterestDto {
-    @IsString()
-    @IsNotEmpty()
-    interestId: string;
-
-    @IsEnum(PreferenceLevel)
-    preferenceLevel: PreferenceLevel;
-}
+import { Gender } from 'src/enums/user.enum';
+import { UserInterest } from 'src/interfaces/user.interface';
 
 export class CreateUserDto {
     @IsEmail()
@@ -41,6 +32,5 @@ export class CreateUserDto {
     @IsOptional()
     @IsArray()
     @ValidateNested({ each: true })
-    @Type(() => UserInterestDto)
-    interests?: UserInterestDto[];
+    interests?: UserInterest[];
 }
