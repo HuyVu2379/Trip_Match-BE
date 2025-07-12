@@ -1,4 +1,4 @@
-import { Injectable, UnauthorizedException, ConflictException } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
@@ -7,7 +7,6 @@ import * as bcrypt from 'bcrypt';
 import { ResponseUtil } from 'src/common';
 import { ApiResponse } from 'src/common';
 import { DuplicateResourceException } from 'src/common';
-import { log } from 'console';
 
 @Injectable()
 export class AuthService {
@@ -18,25 +17,34 @@ export class AuthService {
 
     async validateUser(email: string, password: string): Promise<any> {
         const user = await this.userModel.findOne({ email });
-        if (user && (await bcrypt.compare(password, user.password))) {
-            const { password, ...result } = user.toObject();
-            return result;
+        if (!user) {
+            return { error: 'email', message: 'Email does not exist' };
         }
-        return null;
+
+        if (!(await bcrypt.compare(password, user.password))) {
+            return { error: 'password', message: 'Password is incorrect' };
+        }
+
+        const { password: _, ...result } = user.toObject();
+        return result;
     }
 
     async login(user: any): Promise<ApiResponse> {
         const payload = { email: user.email, sub: user.id };
-        const loginData = {
-            access_token: this.jwtService.sign(payload),
-            user: {
-                id: user.id,
-                email: user.email,
-                fullName: user.fullName,
-            },
-        };
-
-        return ResponseUtil.success(loginData, 'Login successful', 200);
+        try {
+            const loginData = {
+                access_token: this.jwtService.sign(payload),
+                refresh_token: this.jwtService.sign(payload, { expiresIn: '7d' }),
+                user: {
+                    id: user.id,
+                    email: user.email,
+                    fullName: user.fullName,
+                },
+            };
+            return ResponseUtil.success(loginData, 'Login successful', 200);
+        } catch (error) {
+            return ResponseUtil.error('Login failed', 500);
+        }
     }
 
     async register(userData: any): Promise<ApiResponse> {
