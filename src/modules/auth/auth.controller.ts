@@ -30,4 +30,9 @@ export class AuthController {
   getProfile(@GetUser() user: any): ApiResponse {
     return ResponseUtil.success(user, 'Profile retrieved successfully', 200);
   }
+  @UseGuards(JwtAuthGuard)
+  @Post('getMe')
+  async getMe(@Body() token: any): Promise<ApiResponse> {
+    return this.authService.getMe(token);
+  }
 }

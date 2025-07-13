@@ -1,10 +1,11 @@
-import { Controller, Post, Body, HttpStatus, HttpException, Put, UseGuards } from '@nestjs/common';
+import { Controller, Post, Body, HttpStatus, HttpException, Put, UseGuards, Delete, UseInterceptors, UploadedFile, Param } from '@nestjs/common';
+import { FileInterceptor } from '@nestjs/platform-express';
 import { UserService } from './user.service';
 import { CreateUserDto } from './dtos/create-user.dto';
-import { UserResponseDto } from './dtos/user-response.dto';
-import { ApiResponse, ResponseUtil } from 'src/common';
+import { ApiResponse, ResponseUtil, FileValidationPipe } from 'src/common';
 import { JwtAuthGuard } from '../auth';
 import { UserInterest } from 'src/interfaces/user.interface';
+import { UpdateUserDto } from './dtos/updateInfor-user.dto';
 
 @Controller('users')
 @UseGuards(JwtAuthGuard)
@@ -26,26 +27,52 @@ export class UserController {
       );
     }
   }
+  // Update user information
   @Put('update')
-  async updateUser(@Body() updateUserDto: { data: CreateUserDto, id: string }): Promise<ApiResponse> {
+  async updateUser(@Body() updateUserDto: { data: UpdateUserDto, id: string }): Promise<ApiResponse> {
     return this.userService.updateUser(updateUserDto.id, updateUserDto.data);
   }
-  @Put('update-avatar')
-  async updateAvatar(@Body() updateAvatarData: { id: string, avatarUrl: string }): Promise<ApiResponse> {
-    const { id, avatarUrl } = updateAvatarData;
-    const result = await this.userService.updateAvatar(id, avatarUrl);
-    if (!result) {
-      throw new HttpException('User not found', HttpStatus.NOT_FOUND);
+  // Update user avatar
+  @Put('update-avatar/:id')
+  @UseInterceptors(FileInterceptor('image'))
+  async updateAvatar(
+    @Param('id') id: string,
+    @UploadedFile(new FileValidationPipe()) image: Express.Multer.File
+  ): Promise<ApiResponse> {
+    try {
+      const result = await this.userService.updateAvatar(id, image);
+      return ResponseUtil.success({ avatarUrl: result }, 'Avatar updated successfully', HttpStatus.OK);
+    } catch (error) {
+      if (error.message === 'User not found') {
+        throw new HttpException('User not found', HttpStatus.NOT_FOUND);
+      }
+      throw new HttpException(
+        error.message || 'Failed to update avatar',
+        HttpStatus.INTERNAL_SERVER_ERROR
+      );
     }
-    return ResponseUtil.success(result, 'Avatar updated successfully', HttpStatus.OK);
   }
-  @Put('update-interests')
-  async updateInterests(@Body() updateInterestsData: { id: string, interests: UserInterest[] }): Promise<ApiResponse> {
-    const { id, interests } = updateInterestsData;
-    const result = await this.userService.updateInterests(id, interests);
+  // Update user interests
+  @Put('update-interests/:id')
+  async updateInterests(@Param('id') id: string, @Body() body: { interests: UserInterest[] }): Promise<ApiResponse> {
+    const interestsData = body.interests.map(interest => ({
+      ...interest,
+      addedAt: new Date()
+    }));
+    const result = await this.userService.updateInterests(id, interestsData);
     if (!result) {
       throw new HttpException('User not found', HttpStatus.NOT_FOUND);
     }
     return ResponseUtil.success(result, 'Interests updated successfully', HttpStatus.OK);
+  }
+  // Delete user interests
+  @Delete('delete-interests')
+  async deleteInterests(@Body() deleteInterestsData: { id: string, interests: string[] }): Promise<ApiResponse> {
+    const { id, interests } = deleteInterestsData;
+    const result = await this.userService.deleteInterests(id, interests);
+    if (!result) {
+      throw new HttpException('User not found', HttpStatus.NOT_FOUND);
+    }
+    return ResponseUtil.success(result, 'Interests deleted successfully', HttpStatus.OK);
   }
 }

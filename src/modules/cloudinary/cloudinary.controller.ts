@@ -31,7 +31,7 @@ export class CloudinaryController {
         if (!file) {
             throw new BadRequestException('No file uploaded');
         }
-        folder = this.configService.get('CLOUDINARY_FOLDER');
+        folder = folder || this.configService.get('CLOUDINARY_FOLDER');
         const result = await this.cloudinaryService.uploadImage(file, { folder });
         return {
             message: 'Image uploaded successfully',

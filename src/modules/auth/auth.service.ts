@@ -64,4 +64,17 @@ export class AuthService {
 
         return ResponseUtil.success(result, 'User registered successfully', 201);
     }
+    async getMe(token: any): Promise<ApiResponse> {
+        try {
+            const access_token = token.token;
+            const decoded = this.jwtService.verify(access_token);
+            const user = await this.userModel.findOne({ id: decoded.sub }).select('-password');
+            if (!user) {
+                return ResponseUtil.error('User not found', 404);
+            }
+            return ResponseUtil.success(user, 'User retrieved successfully', 200);
+        } catch (error) {
+            return ResponseUtil.error('Invalid token', 401);
+        }
+    }
 }

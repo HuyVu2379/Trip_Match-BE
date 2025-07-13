@@ -42,7 +42,7 @@ export class Users {
             preferenceLevel: {
                 type: Number,
                 required: true,
-                enum: Object.values(PreferenceLevel),
+                enum: [1, 2, 3, 4, 5], // Use numeric values only
                 min: 1,
                 max: 5
             },

@@ -4,15 +4,16 @@ import { Model } from 'mongoose';
 import { Users, UsersDocument } from 'src/schemas/User';
 import { CreateUserDto } from './dtos/create-user.dto';
 import * as bcrypt from 'bcrypt';
-import { UserResponseDto } from './dtos';
 import { UpdateUserDto } from './dtos/updateInfor-user.dto';
 import { NotFoundError } from 'rxjs';
 import { UserInterest } from 'src/interfaces/user.interface';
 import { ApiResponse, ResponseUtil } from 'src/common';
+import { CloudinaryService } from '../cloudinary';
 @Injectable()
 export class UserService {
     constructor(
         @InjectModel(Users.name) private userModel: Model<UsersDocument>,
+        private readonly cloudinaryService: CloudinaryService
     ) { }
 
     async createUser(createUserDto: CreateUserDto): Promise<ApiResponse> {
@@ -53,7 +54,7 @@ export class UserService {
     async updateUser(id: string, updateData: UpdateUserDto): Promise<ApiResponse> {
         const user = await this.userModel.findByIdAndUpdate(id, updateData, { new: true });
         if (!user) {
-            throw new ConflictException('User not found');
+            throw new NotFoundError('User not found');
         }
         const result = {
             id: user.id,
@@ -70,24 +71,39 @@ export class UserService {
         return ResponseUtil.success(result, 'User updated successfully', HttpStatus.OK);
     }
 
-    async updateAvatar(id: string, avatarUrl: string) {
-        const user = await this.userModel.findById(id);
-        if (!user) {
-            throw new NotFoundError('User not found');
+    async updateAvatar(id: string, image: Express.Multer.File): Promise<string> {
+        try {
+            const user = await this.userModel.findById(id);
+            if (!user) {
+                throw new Error('User not found');
+            }
+
+            // Upload image to Cloudinary
+            const uploadResult = await this.cloudinaryService.uploadImage(image, {
+                folder: 'TripMatch/avatars'
+            });
+
+            // Update user's avatar URL
+            user.avatarUrl = uploadResult.url;
+            await user.save();
+
+            return user.avatarUrl;
+        } catch (error) {
+            if (error.message === 'User not found') {
+                throw error;
+            }
+            throw new Error(`Failed to update avatar: ${error.message}`);
         }
-        user.avatarUrl = avatarUrl;
-        await user.save();
-        return avatarUrl;
     }
 
     async updateInterests(id: string, interests: UserInterest[]) {
-        const user = await this.userModel.findById(id);
+        const user = await this.userModel.findOne({ id: id });
         if (!user) {
             throw new NotFoundError('User not found');
         }
         user.interests = [...user.interests, ...interests.map(interest => ({
             ...interest,
-            addedAt: new Date()
+            addedAt: interest.addedAt || new Date()
         }))];
         await user.save();
         return user.interests;
@@ -99,5 +115,6 @@ export class UserService {
         }
         user.interests = user.interests.filter(interest => !interestsData.includes(interest.interestId));
         await user.save();
+        return user.interests;
     }
 }
