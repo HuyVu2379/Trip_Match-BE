@@ -58,7 +58,7 @@ export class AuthService {
             ...userData,
             password: hashedPassword,
         });
-
+        user.avatarUrl = 'https://res.cloudinary.com/dxssmpeii/image/upload/v1752400699/225-default-avatar_dzvf4c.png'
         await user.save();
         const { password, ...result } = user.toObject();
 
