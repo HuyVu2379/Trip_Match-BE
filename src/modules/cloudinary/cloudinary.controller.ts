@@ -12,10 +12,12 @@ import {
 } from '@nestjs/common';
 import { FileInterceptor, FilesInterceptor } from '@nestjs/platform-express';
 import { CloudinaryService, UploadResponse } from './cloudinary.service';
+import { ConfigService } from '@nestjs/config';
 
 @Controller('cloudinary')
 export class CloudinaryController {
-    constructor(private readonly cloudinaryService: CloudinaryService) { }
+    constructor(private configService: ConfigService,
+        private readonly cloudinaryService: CloudinaryService) { }
 
     /**
      * Upload single image
@@ -26,10 +28,10 @@ export class CloudinaryController {
         @UploadedFile() file: Express.Multer.File,
         @Query('folder') folder?: string,
     ): Promise<{ message: string; data: UploadResponse }> {
-        console.log("folder name: ", folder);
         if (!file) {
             throw new BadRequestException('No file uploaded');
         }
+        folder = this.configService.get('CLOUDINARY_FOLDER');
         const result = await this.cloudinaryService.uploadImage(file, { folder });
         return {
             message: 'Image uploaded successfully',

@@ -1,4 +1,4 @@
-import { Injectable, ConflictException } from '@nestjs/common';
+import { Injectable, ConflictException, HttpStatus } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { Users, UsersDocument } from 'src/schemas/User';
@@ -8,13 +8,14 @@ import { UserResponseDto } from './dtos';
 import { UpdateUserDto } from './dtos/updateInfor-user.dto';
 import { NotFoundError } from 'rxjs';
 import { UserInterest } from 'src/interfaces/user.interface';
+import { ApiResponse, ResponseUtil } from 'src/common';
 @Injectable()
 export class UserService {
     constructor(
         @InjectModel(Users.name) private userModel: Model<UsersDocument>,
     ) { }
 
-    async createUser(createUserDto: CreateUserDto): Promise<Users> {
+    async createUser(createUserDto: CreateUserDto): Promise<ApiResponse> {
         // Check if user with email already exists
         const existingUser = await this.userModel.findOne({ email: createUserDto.email });
         if (existingUser) {
@@ -35,10 +36,10 @@ export class UserService {
                 addedAt: new Date()
             })) || []
         };
-
         // Create and save user
         const createdUser = new this.userModel(userData);
-        return createdUser.save();
+        createdUser.save();
+        return ResponseUtil.success(createdUser, 'User created successfully', 201);
     }
 
     async findByEmail(email: string): Promise<Users | null> {
@@ -49,7 +50,7 @@ export class UserService {
         return this.userModel.findOne({ id }).exec();
     }
 
-    async updateUser(id: string, updateData: UpdateUserDto): Promise<UserResponseDto> {
+    async updateUser(id: string, updateData: UpdateUserDto): Promise<ApiResponse> {
         const user = await this.userModel.findByIdAndUpdate(id, updateData, { new: true });
         if (!user) {
             throw new ConflictException('User not found');
@@ -66,7 +67,7 @@ export class UserService {
             createdAt: user.createdAt,
             updatedAt: new Date()
         };
-        return result;
+        return ResponseUtil.success(result, 'User updated successfully', HttpStatus.OK);
     }
 
     async updateAvatar(id: string, avatarUrl: string) {
@@ -76,6 +77,7 @@ export class UserService {
         }
         user.avatarUrl = avatarUrl;
         await user.save();
+        return avatarUrl;
     }
 
     async updateInterests(id: string, interests: UserInterest[]) {
@@ -83,8 +85,12 @@ export class UserService {
         if (!user) {
             throw new NotFoundError('User not found');
         }
-        user.interests = interests;
+        user.interests = [...user.interests, ...interests.map(interest => ({
+            ...interest,
+            addedAt: new Date()
+        }))];
         await user.save();
+        return user.interests;
     }
     async deleteInterests(id: string, interestsData: string[]) {
         const user = await this.userModel.findById(id);

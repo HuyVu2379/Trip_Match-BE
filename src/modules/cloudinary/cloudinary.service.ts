@@ -37,11 +37,10 @@ export class CloudinaryService {
     async uploadImage(file: Express.Multer.File, options?: UploadOptions): Promise<UploadResponse> {
         // Validate file
         this.validateImageFile(file);
-        console.log('Uploading image to Cloudinary:', file);
         return new Promise((resolve, reject) => {
             const uploadOptions = {
                 resource_type: 'image' as const,
-                folder: this.configService.get('CLOUDINARY_FOLDER') || options?.folder,
+                folder: options?.folder || this.configService.get('CLOUDINARY_FOLDER'),
                 public_id: options?.public_id,
                 transformation: options?.transformation,
                 format: options?.format,

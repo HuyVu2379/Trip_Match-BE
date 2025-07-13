@@ -18,16 +18,16 @@ export class Users {
     @Prop({ required: true })
     fullName: string;
 
-    @Prop({ required: true })
+    @Prop({ default: null })
     dob: Date;
 
-    @Prop({ required: true, enum: Gender })
+    @Prop({ enum: Gender, default: Gender.OTHER })
     gender: Gender;
 
-    @Prop()
+    @Prop({ default: null })
     avatarUrl: string;
 
-    @Prop()
+    @Prop({ default: null })
     phone: string;
 
     @Prop({ required: true, enum: Role, default: Role.USER })
