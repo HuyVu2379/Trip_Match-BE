@@ -7,22 +7,24 @@ export type ItinerariesDocument = HydratedDocument<Itineraries>;
 export class Itineraries {
     @Prop({ required: true })
     id: UUID;
-    user_id: UUID;
+    userId: UUID;
     title: string;
     description: string;
-    start_date: Date;
-    end_date: Date;
+    startDate: Date;
+    endDate: Date;
     imageUrl: string[];
-    total_budget: number;
-    estimated_cost: number;
-    actual_cost: number;
+    totalBudget: number;
+    estimatedCost: number;
+    actualCost: number;
     status: ItineraryStatus;
     // ✅ Gộp thông tin gợi ý (nếu có)
-    suggestion_metadata: {
-        generated_by: GeneratedBy;
-        base_interests: [UUID],
-        matched_score: MatchedScore
+    suggestionMetadata: {
+        generatedBy: GeneratedBy;
+        baseInterests: [UUID],
+        matchedScore: MatchedScore
     };
+    createdAt: Date;
+    updatedAt: Date;
 }
 
 export const ItinerariesSchema = SchemaFactory.createForClass(Itineraries);

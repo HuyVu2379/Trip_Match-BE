@@ -109,7 +109,7 @@ export class UserService {
         return user.interests;
     }
     async deleteInterests(id: string, interestsData: string[]) {
-        const user = await this.userModel.findById(id);
+        const user = await this.userModel.findOne({ id: id });
         if (!user) {
             throw new NotFoundError('User not found');
         }

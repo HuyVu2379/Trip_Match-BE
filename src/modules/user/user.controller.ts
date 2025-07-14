@@ -35,6 +35,7 @@ export class UserController {
   // Update user avatar
   @Put('update-avatar/:id')
   @UseInterceptors(FileInterceptor('image'))
+  @UseGuards(JwtAuthGuard)
   async updateAvatar(
     @Param('id') id: string,
     @UploadedFile(new FileValidationPipe()) image: Express.Multer.File
@@ -54,6 +55,7 @@ export class UserController {
   }
   // Update user interests
   @Put('update-interests/:id')
+  @UseGuards(JwtAuthGuard)
   async updateInterests(@Param('id') id: string, @Body() body: { interests: UserInterest[] }): Promise<ApiResponse> {
     const interestsData = body.interests.map(interest => ({
       ...interest,
@@ -67,6 +69,7 @@ export class UserController {
   }
   // Delete user interests
   @Delete('delete-interests')
+  @UseGuards(JwtAuthGuard)
   async deleteInterests(@Body() deleteInterestsData: { id: string, interests: string[] }): Promise<ApiResponse> {
     const { id, interests } = deleteInterestsData;
     const result = await this.userService.deleteInterests(id, interests);

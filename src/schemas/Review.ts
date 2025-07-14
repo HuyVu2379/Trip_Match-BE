@@ -8,14 +8,16 @@ export class Reviews {
     @Prop({ required: true, unique: true, default: () => randomUUID() })
     id: UUID;
     @Prop({ required: true })
-    user_id: UUID;
-    target_type: ReviewTargetType;
+    userId: UUID;
+    targetType: ReviewTargetType;
     @Prop({ required: true })
-    target_id: UUID;
+    targetId: UUID;
     @Prop({ required: true })
     rating: ReviewRating;
     content: string;
     photos: string[] | null;
-    visit_date: Date;
+    visitDate: Date;
+    createdAt: Date;
+    updatedAt: Date;
 }
 export const ReviewsSchema = SchemaFactory.createForClass(Reviews);

@@ -9,16 +9,17 @@ export type ItineraryDaysDocument = HydratedDocument<ItineraryDays>;
 export class ItineraryDays {
     @Prop({ required: true })
     id: UUID;
-    itinerary_id: UUID;
-    day_number: number;
+    itineraryId: UUID;
+    dayNumber: number;
     date: Date;
     title: string;
     notes: [string];
-    estimated_budget: number;
-    actual_budget: number;
+    estimatedBudget: number;
+    actualBudget: number;
     // ✅ Gộp hoạt động trong ngày
     @Prop({ type: [{ type: ActivitiesSchema, ref: 'Activities' }] })
     activities: Activities[];
-
+    createdAt: Date;
+    updatedAt: Date;
 }
 export const ItineraryDaysSchema = SchemaFactory.createForClass(ItineraryDays);

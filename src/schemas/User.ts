@@ -54,9 +54,7 @@ export class Users {
         default: []
     })
     interests: UserInterest[];
-    @Prop()
     createdAt: Date;
-    @Prop()
     updatedAt: Date;
 }
 

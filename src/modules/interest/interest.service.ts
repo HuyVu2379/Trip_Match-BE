@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { HttpStatus, Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { Interests, InterestsDocument } from 'src/schemas/Interest';
@@ -25,5 +25,9 @@ export class InterestService {
             return ResponseUtil.error('Failed to create interests', 500);
         }
         return ResponseUtil.success(createdInterests);
+    }
+    async getAllInterests(limit: number): Promise<ResponseUtil> {
+        const interests = await this.interestModel.find().limit(limit).lean();
+        return ResponseUtil.success(interests, 'Get all interests successfully', HttpStatus.OK);
     }
 }
