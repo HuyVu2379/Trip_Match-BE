@@ -1,4 +1,4 @@
-import { Module } from '@nestjs/common';
+import { Module, MiddlewareConsumer, NestModule } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { MongooseModule } from '@nestjs/mongoose';
@@ -11,7 +11,9 @@ import { GlobalExceptionFilter } from './common/filters/global-exception.filter'
 import { ResponseInterceptor } from './common/interceptors/response.interceptor';
 import { InterestModule } from './modules/interest/interest.module';
 import { CloudinaryModule } from './modules/cloudinary/cloudinary.module';
-
+import { CorsConfigService } from './common/services/cors-config.service';
+import { CorsMiddleware } from './common/middleware/cors.middleware';
+import { DestinationModule } from './modules/destination/destination.module';
 @Module({
   imports: [
     UserModule,
@@ -29,10 +31,12 @@ import { CloudinaryModule } from './modules/cloudinary/cloudinary.module';
     InterestModule,
     ExamplesModule,
     CloudinaryModule,
+    DestinationModule
   ],
   controllers: [AppController],
   providers: [
     AppService,
+    CorsConfigService,
     {
       provide: APP_FILTER,
       useClass: GlobalExceptionFilter,
@@ -43,4 +47,10 @@ import { CloudinaryModule } from './modules/cloudinary/cloudinary.module';
     },
   ],
 })
-export class AppModule { }
+export class AppModule implements NestModule {
+  configure(consumer: MiddlewareConsumer) {
+    consumer
+      .apply(CorsMiddleware)
+      .forRoutes('*'); // Apply to all routes
+  }
+}

@@ -14,7 +14,7 @@ export enum BestSeason {
     AUTUMN = 'autumn',         // Mùa thu
     WINTER = 'winter',         // Mùa đông
     YEAR_ROUND = 'year_round', // Quanh năm
-    DRY_SEASON = 'dry_season', // Mùa khô
+    DRY_SEASON = 'dry_season', // Mùa khô   
     RAINY_SEASON = 'rainy_season' // Mùa mưa
 }
 

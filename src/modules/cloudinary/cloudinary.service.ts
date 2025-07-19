@@ -1,6 +1,8 @@
 import { Injectable, BadRequestException, Inject } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { v2 as cloudinary, UploadApiResponse, UploadApiErrorResponse } from 'cloudinary';
+import * as fs from 'fs';
+import * as path from 'path';
 
 export interface UploadOptions {
     folder?: string;
@@ -19,6 +21,14 @@ export interface UploadResponse {
     format: string;
     bytes: number;
     created_at: string;
+}
+
+export interface FolderUploadResult {
+    totalFiles: number;
+    successCount: number;
+    failedCount: number;
+    uploadedFiles: UploadResponse[];
+    errors: string[];
 }
 
 @Injectable()
@@ -183,6 +193,179 @@ export class CloudinaryService {
                 { quality: 'auto:good' }
             ]
         });
+    }
+
+    /**
+     * Upload all images from a local folder to Cloudinary
+     * @param folderPath - Local folder path
+     * @param cloudinaryFolder - Cloudinary folder name
+     * @returns Promise<FolderUploadResult>
+     */
+    async uploadFolderImages(folderPath: string, cloudinaryFolder?: string): Promise<FolderUploadResult> {
+        const result: FolderUploadResult = {
+            totalFiles: 0,
+            successCount: 0,
+            failedCount: 0,
+            uploadedFiles: [],
+            errors: []
+        };
+
+        try {
+            if (!fs.existsSync(folderPath)) {
+                throw new BadRequestException(`Folder path does not exist: ${folderPath}`);
+            }
+
+            const files = await this.getAllImageFiles(folderPath);
+            result.totalFiles = files.length;
+
+            for (const filePath of files) {
+                try {
+                    const fileBuffer = fs.readFileSync(filePath);
+                    const fileName = path.basename(filePath, path.extname(filePath));
+                    const folderName = path.basename(path.dirname(filePath));
+
+                    // Create a mock Express.Multer.File object
+                    const mockFile: Express.Multer.File = {
+                        buffer: fileBuffer,
+                        originalname: path.basename(filePath),
+                        mimetype: this.getMimeType(filePath),
+                        size: fileBuffer.length,
+                        fieldname: 'file',
+                        filename: path.basename(filePath),
+                        encoding: '7bit',
+                        destination: '',
+                        path: filePath,
+                        stream: null as any
+                    };
+
+                    const uploadResponse = await this.uploadImage(mockFile, {
+                        folder: cloudinaryFolder ? `${cloudinaryFolder}/${folderName}` : folderName,
+                        public_id: fileName
+                    });
+
+                    result.uploadedFiles.push(uploadResponse);
+                    result.successCount++;
+                } catch (error) {
+                    result.failedCount++;
+                    result.errors.push(`${filePath}: ${error.message}`);
+                }
+            }
+
+            return result;
+        } catch (error) {
+            throw new BadRequestException(`Upload folder failed: ${error.message}`);
+        }
+    }
+
+    /**
+     * Upload all folders recursively from a root path
+     * @param rootPath - Root directory path
+     * @param cloudinaryRootFolder - Cloudinary root folder name
+     * @returns Promise<FolderUploadResult>
+     */
+    async uploadAllFolders(rootPath: string, cloudinaryRootFolder?: string): Promise<FolderUploadResult> {
+        const result: FolderUploadResult = {
+            totalFiles: 0,
+            successCount: 0,
+            failedCount: 0,
+            uploadedFiles: [],
+            errors: []
+        };
+
+        try {
+            if (!fs.existsSync(rootPath)) {
+                throw new BadRequestException(`Root path does not exist: ${rootPath}`);
+            }
+
+            const allFolders = await this.getAllSubFolders(rootPath);
+
+            for (const folderPath of allFolders) {
+                try {
+                    const folderResult = await this.uploadFolderImages(folderPath, cloudinaryRootFolder);
+
+                    result.totalFiles += folderResult.totalFiles;
+                    result.successCount += folderResult.successCount;
+                    result.failedCount += folderResult.failedCount;
+                    result.uploadedFiles.push(...folderResult.uploadedFiles);
+                    result.errors.push(...folderResult.errors);
+                } catch (error) {
+                    result.errors.push(`Folder ${folderPath}: ${error.message}`);
+                }
+            }
+
+            return result;
+        } catch (error) {
+            throw new BadRequestException(`Upload all folders failed: ${error.message}`);
+        }
+    }
+
+    /**
+     * Get all image files from a folder
+     * @param folderPath - Folder path
+     * @returns Promise<string[]>
+     */
+    private async getAllImageFiles(folderPath: string): Promise<string[]> {
+        const imageFiles: string[] = [];
+        const allowedExtensions = ['.jpg', '.jpeg', '.png', '.gif', '.webp'];
+
+        const files = fs.readdirSync(folderPath);
+
+        for (const file of files) {
+            const filePath = path.join(folderPath, file);
+            const stat = fs.statSync(filePath);
+
+            if (stat.isFile()) {
+                const ext = path.extname(file).toLowerCase();
+                if (allowedExtensions.includes(ext)) {
+                    imageFiles.push(filePath);
+                }
+            }
+        }
+
+        return imageFiles;
+    }
+
+    /**
+     * Get all subfolders from a root path
+     * @param rootPath - Root directory path
+     * @returns Promise<string[]>
+     */
+    private async getAllSubFolders(rootPath: string): Promise<string[]> {
+        const folders: string[] = [];
+
+        const items = fs.readdirSync(rootPath);
+
+        for (const item of items) {
+            const itemPath = path.join(rootPath, item);
+            const stat = fs.statSync(itemPath);
+
+            if (stat.isDirectory()) {
+                folders.push(itemPath);
+                // Recursively get subfolders
+                const subFolders = await this.getAllSubFolders(itemPath);
+                folders.push(...subFolders);
+            }
+        }
+
+        return folders;
+    }
+
+    /**
+     * Get MIME type based on file extension
+     * @param filePath - File path
+     * @returns string
+     */
+    private getMimeType(filePath: string): string {
+        const ext = path.extname(filePath).toLowerCase();
+        const mimeTypes = {
+            '.jpg': 'image/jpeg',
+            '.jpeg': 'image/jpeg',
+            '.png': 'image/png',
+            '.gif': 'image/gif',
+            '.webp': 'image/webp'
+        };
+
+        return mimeTypes[ext] || 'application/octet-stream';
     }
 
     /**

@@ -1,0 +1,3931 @@
+[
+    {
+        "name": "An Giang",
+        "description": "Tỉnh miền Tây nổi tiếng với rừng tràm Trà Sư, chợ nổi Long Xuyên và lễ hội Bà Chúa Xứ.",
+        "addressDetail": "Thành phố Long Xuyên, An Giang, Việt Nam",
+        "country": "Việt Nam",
+        "province": "An Giang",
+        "location": {
+            "lat": 10.3751,
+            "lng": 105.4358
+        },
+        "priceLevel": 2,
+        "bestSeason": "dry_season",
+        "tags": [
+            "thiên nhiên",
+            "văn hóa",
+            "sông nước",
+            "ẩm thực",
+            "tâm linh"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739619/provinces/AnGiang/M%E1%BB%99t_g%C3%B3c_%C4%91%C3%B4_th%E1%BB%8B_Long_Xuy%C3%AAn.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739616/provinces/AnGiang/hinh-3-16810338473161395787464.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739612/provinces/AnGiang/1752292287-w-long-xuyen-an-giang-nguyen-hue-2-4930-width1920height1280.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739610/provinces/AnGiang/1-copy-6a8701e1-f45f-4b92-a71e-fb636ebc881a.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "cbba14db-38b0-4708-9c61-1c9bf107a1cc",
+                "relevance": 5
+            },
+            {
+                "interestId": "8026c83f-b284-489c-8400-113b3faeea34",
+                "relevance": 4
+            },
+            {
+                "interestId": "7389ea3f-09b3-4e2b-b219-0d36cc6a6711",
+                "relevance": 3
+            }
+        ],
+        "priceRange": [
+            400000,
+            1800000
+        ],
+        "travelTips": [
+            "Thăm rừng tràm Trà Sư vào mùa nước nổi (tháng 9-11) để ngắm cảnh đẹp nhất",
+            "Tham gia lễ hội Bà Chúa Xứ vào ngày 23-25 tháng 4 âm lịch",
+            "Thưởng thức bún nước kèn và cá linh nướng trui đặc sản địa phương",
+            "Mang giày chống trơn trượt khi đi thuyền trong rừng tràm",
+            "Đi chợ nổi Long Xuyên vào sáng sớm (5-7h) để tránh đông đúc"
+        ],
+        "outstandingLocations": [
+            "Rừng tràm Trà Sư",
+            "Chợ nổi Long Xuyên",
+            "Núi Cấm (Thiên Cấm Sơn)",
+            "Lăng Thoại Ngọc Hầu",
+            "Chùa Bà Chúa Xứ",
+            "Khu du lịch Núi Sập"
+        ],
+        "averageRating": 4.2,
+        "totalReviews": 120,
+        "isActive": true
+    },
+    {
+        "name": "Bà Rịa - Vũng Tàu",
+        "description": "Vùng biển với bãi biển Vũng Tàu, cáp treo Núi Lớn và hải sản tươi ngon.",
+        "addressDetail": "Thành phố Vũng Tàu, Bà Rịa - Vũng Tàu, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Bà Rịa - Vũng Tàu",
+        "location": {
+            "lat": 10.346,
+            "lng": 107.0843
+        },
+        "priceLevel": 3,
+        "bestSeason": "dry_season",
+        "tags": [
+            "biển",
+            "hải sản",
+            "giải trí",
+            "tâm linh",
+            "thành phố"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739659/provinces/BaRiaVungTau/tong-quan-du-lich-vung-tau-ivivu-17030443479121842547903.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739658/provinces/BaRiaVungTau/ba-ria-vung-tau.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739656/provinces/BaRiaVungTau/ba-ria-vung-tau-0100.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739651/provinces/BaRiaVungTau/418302_vungtau.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739650/provinces/BaRiaVungTau/25113751-ba-ria-vung-tau.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "d008e7a4-8bdf-486e-a682-dff450383fc9",
+                "relevance": 5
+            },
+            {
+                "interestId": "7389ea3f-09b3-4e2b-b219-0d36cc6a6711",
+                "relevance": 4
+            },
+            {
+                "interestId": "438fc3cd-1bbb-4548-9cb2-8a97d8dc60e2",
+                "relevance": 4
+            }
+        ],
+        "priceRange": [
+            800000,
+            2500000
+        ],
+        "travelTips": [
+            "Thăm tượng Chúa Kitô vào buổi sáng sớm để tránh nắng gắt và đông đúc",
+            "Thưởng thức hải sản tươi sống tại các chợ ven biển như chợ Xóm Lưới",
+            "Đi cáp treo Núi Lớn để ngắm toàn cảnh thành phố từ trên cao",
+            "Tắm biển tại bãi Sau, tránh bãi Trước vì sóng to và dòng chảy mạnh",
+            "Mang kem chống nắng SPF cao và nón rộng vành khi đi biển"
+        ],
+        "outstandingLocations": [
+            "Bãi biển Bãi Sau",
+            "Tượng Chúa Kitô",
+            "Núi Nhỏ (Núi Tào Phùng)",
+            "Cáp treo Núi Lớn",
+            "Bãi Dứa",
+            "Hải đăng Vũng Tàu",
+            "Dinh Thần Ích Hải"
+        ],
+        "averageRating": 4.5,
+        "totalReviews": 200,
+        "isActive": true
+    },
+    {
+        "name": "Bạc Liêu",
+        "description": "Nổi bật với nhà Công Tử Bạc Liêu, chùa Xiêm Cán và cánh đồng quạt gió.",
+        "addressDetail": "Thành phố Bạc Liêu, Bạc Liêu, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Bạc Liêu",
+        "location": {
+            "lat": 9.2941,
+            "lng": 105.7218
+        },
+        "priceLevel": 2,
+        "bestSeason": "dry_season",
+        "tags": [
+            "văn hóa",
+            "lịch sử",
+            "thiên nhiên",
+            "kiến trúc",
+            "miền tây"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739640/provinces/BacLieu/du-lich-bac-lieuctv-1720412883521.webp",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739638/provinces/BacLieu/B%E1%BA%A1c_Li%C3%AAu_windpower_farm.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739635/provinces/BacLieu/Bac-Lieu-1.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739634/provinces/BacLieu/637959142228739768.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "8026c83f-b284-489c-8400-113b3faeea34",
+                "relevance": 5
+            },
+            {
+                "interestId": "438fc3cd-1bbb-4548-9cb2-8a97d8dc60e2",
+                "relevance": 4
+            },
+            {
+                "interestId": "7389ea3f-09b3-4e2b-b219-0d36cc6a6711",
+                "relevance": 3
+            }
+        ],
+        "priceRange": [
+            400000,
+            1200000
+        ],
+        "travelTips": [
+            "Thăm nhà Công Tử Bạc Liêu để tìm hiểu lịch sử và kiến trúc cổ",
+            "Khám phá cánh đồng quạt gió vào buổi chiều để chụp ảnh đẹp",
+            "Thưởng thức bánh xèo tôm nhảy và cà phê sữa đá đặc sản",
+            "Tham quan chùa Xiêm Cán với kiến trúc Khmer độc đáo",
+            "Mang mũ và nước uống khi đi thăm cánh đồng"
+        ],
+        "outstandingLocations": [
+            "Nhà Công Tử Bạc Liêu",
+            "Chùa Xiêm Cán",
+            "Cánh đồng quạt gió",
+            "Bãi biển Bạc Liêu",
+            "Khu du lịch Vườn Điều",
+            "Chợ đêm Bạc Liêu"
+        ],
+        "averageRating": 4.0,
+        "totalReviews": 80,
+        "isActive": true
+    },
+    {
+        "name": "Bắc Giang",
+        "description": "Vùng đất của vải thiều Lục Ngạn, làng nghề trống Đọi Tam và chùa Vĩnh Nghiêm.",
+        "addressDetail": "Thành phố Bắc Giang, Bắc Giang, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Bắc Giang",
+        "location": {
+            "lat": 21.2732,
+            "lng": 106.1971
+        },
+        "priceLevel": 2,
+        "bestSeason": "summer",
+        "tags": [
+            "nông nghiệp",
+            "văn hóa",
+            "lịch sử",
+            "làng nghề",
+            "trái cây"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739626/provinces/BacGiang/du-lich-bac-giang-3-1693240950.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739625/provinces/BacGiang/check-in-18-dia-diem-du-lich-bac-giang-so-huu-canh-dep-an-tuong-nhat.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739623/provinces/BacGiang/BG7-1740021544-6236-1740627222.webp",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739621/provinces/BacGiang/2-Thanh-Xuong-Giang-1656785461.webp"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "8026c83f-b284-489c-8400-113b3faeea34",
+                "relevance": 4
+            },
+            {
+                "interestId": "ac48180e-3968-4403-a06c-b817d690e09b",
+                "relevance": 4
+            },
+            {
+                "interestId": "7389ea3f-09b3-4e2b-b219-0d36cc6a6711",
+                "relevance": 3
+            }
+        ],
+        "priceRange": [
+            300000,
+            1000000
+        ],
+        "travelTips": [
+            "Thăm vùng vải thiều Lục Ngạn vào tháng 5-6 trong mùa chín",
+            "Khám phá làng nghề giấy dó Thổ Hà có lịch sử 700 năm",
+            "Thưởng thức các món chế biến từ vải thiều như chè vải, rượu vải",
+            "Tham quan chùa Vĩnh Nghiêm - ngôi chùa cổ nhất Việt Nam",
+            "Mua vải thiều tươi làm quà tặng, chọn quả căng tròn, vỏ đỏ đều"
+        ],
+        "outstandingLocations": [
+            "Vùng vải thiều Lục Ngạn",
+            "Chùa Vĩnh Nghiêm",
+            "Làng nghề giấy dó Thổ Hà",
+            "Khu du lịch Suối Mỡ",
+            "Chùa Bổ Đà",
+            "Động Am Tiên"
+        ],
+        "averageRating": 3.8,
+        "totalReviews": 60,
+        "isActive": true
+    },
+    {
+        "name": "Bắc Kạn",
+        "description": "Nơi có hồ Ba Bể thơ mộng, động Puông và văn hóa dân tộc Tày, Nùng.",
+        "addressDetail": "Thành phố Bắc Kạn, Bắc Kạn, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Bắc Kạn",
+        "location": {
+            "lat": 22.147,
+            "lng": 105.8402
+        },
+        "priceLevel": 3,
+        "bestSeason": "autumn",
+        "tags": [
+            "thiên nhiên",
+            "hồ nước",
+            "văn hóa",
+            "dân tộc",
+            "khám phá"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739632/provinces/BacKan/du-lich-bac-kan.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739631/provinces/BacKan/babe2-mobile-6961-1696403214.webp",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739628/provinces/BacKan/1-1659435219831479184619.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "cbba14db-38b0-4708-9c61-1c9bf107a1cc",
+                "relevance": 5
+            },
+            {
+                "interestId": "ac48180e-3968-4403-a06c-b817d690e09b",
+                "relevance": 4
+            },
+            {
+                "interestId": "18db1533-56cb-41a8-9e12-b8d98c3ad5f4",
+                "relevance": 4
+            }
+        ],
+        "priceRange": [
+            700000,
+            2000000
+        ],
+        "travelTips": [
+            "Đi thuyền trên hồ Ba Bể để ngắm cảnh núi non hùng vĩ",
+            "Mang áo ấm vào mùa thu vì thời tiết se lạnh",
+            "Tìm hiểu văn hóa dân tộc Tày tại các làng bản địa phương",
+            "Khám phá động Puông với nhiều nhũ đá đẹp",
+            "Thuê thuyền nan để trải nghiệm như người dân địa phương"
+        ],
+        "outstandingLocations": [
+            "Hồ Ba Bể",
+            "Động Puông",
+            "Thác Đăk Đrông",
+            "Làng Pac Ngòi",
+            "Đầm Lếch",
+            "Núi Bằng Lăng"
+        ],
+        "averageRating": 4.3,
+        "totalReviews": 90,
+        "isActive": true
+    },
+    {
+        "name": "Bắc Ninh",
+        "description": "Quê hương quan họ, chùa Phật Tích và làng gốm Phù Lãng.",
+        "addressDetail": "Thành phố Bắc Ninh, Bắc Ninh, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Bắc Ninh",
+        "location": {
+            "lat": 21.1861,
+            "lng": 106.0763
+        },
+        "priceLevel": 2,
+        "bestSeason": "spring",
+        "tags": [
+            "văn hóa",
+            "lịch sử",
+            "âm nhạc",
+            "làng nghề",
+            "tâm linh"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739648/provinces/BacNinh/Kinh-nghiem-du-lich-Bac-Ninh-1-ngay.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739646/provinces/BacNinh/du-lich-bac-ninh_1682577109.png",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739644/provinces/BacNinh/du-lich-bac-ninh-2-0937.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739642/provinces/BacNinh/dia-diem-du-lich-bac-ninh-cover.webp"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "8026c83f-b284-489c-8400-113b3faeea34",
+                "relevance": 5
+            },
+            {
+                "interestId": "ac48180e-3968-4403-a06c-b817d690e09b",
+                "relevance": 4
+            },
+            {
+                "interestId": "96d22229-d7c2-452b-8009-d8a52b92b1dc",
+                "relevance": 3
+            }
+        ],
+        "priceRange": [
+            300000,
+            1000000
+        ],
+        "travelTips": [
+            "Tham gia hội Lim vào tháng Giêng để nghe quan họ Bắc Ninh",
+            "Thăm làng gốm Phù Lãng để xem nghệ nhân làm gốm",
+            "Thưởng thức bánh phu thê và chè lam đặc sản",
+            "Tham quan chùa Phật Tích vào buổi sáng sớm",
+            "Mua đồ gốm Phù Lãng làm quà lưu niệm"
+        ],
+        "outstandingLocations": [
+            "Chùa Phật Tích",
+            "Làng gốm Phù Lãng",
+            "Đền Đô",
+            "Hội Lim",
+            "Chùa Bút Tháp",
+            "Đình Lim"
+        ],
+        "averageRating": 4.0,
+        "totalReviews": 70,
+        "isActive": true
+    },
+    {
+        "name": "Bến Tre",
+        "description": "Xứ dừa với cù lao Minh, làng nghề dừa và các món ăn từ dừa độc đáo.",
+        "addressDetail": "Thành phố Bến Tre, Bến Tre, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Bến Tre",
+        "location": {
+            "lat": 10.2431,
+            "lng": 106.3756
+        },
+        "priceLevel": 3,
+        "bestSeason": "dry_season",
+        "tags": [
+            "thiên nhiên",
+            "văn hóa",
+            "ẩm thực",
+            "sông nước",
+            "làng nghề"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739666/provinces/BenTre/du-lich-miet-vuon-1659765730849273156193.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739664/provinces/BenTre/bentre-1649218519-7880-1649218522.webp",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739663/provinces/BenTre/ben-tre6-8712.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739661/provinces/BenTre/82470-dia-diem-du-lich-ben-tre-con-phung-700x525.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "cbba14db-38b0-4708-9c61-1c9bf107a1cc",
+                "relevance": 4
+            },
+            {
+                "interestId": "7389ea3f-09b3-4e2b-b219-0d36cc6a6711",
+                "relevance": 5
+            },
+            {
+                "interestId": "ac48180e-3968-4403-a06c-b817d690e09b",
+                "relevance": 4
+            }
+        ],
+        "priceRange": [
+            500000,
+            1500000
+        ],
+        "travelTips": [
+            "Đi thuyền trên sông khám phá cù lao và vườn dừa",
+            "Thử kẹo dừa Bến Tre và rượu dừa đặc sản",
+            "Tham quan làng nghề dừa để xem quy trình chế biến",
+            "Thưởng thức cơm dừa và bánh ít lá gai",
+            "Mang kem chống nắng vì thời tiết nắng nóng"
+        ],
+        "outstandingLocations": [
+            "Cù lao Minh",
+            "Vườn chim Vàm Hồ",
+            "Làng nghề dừa",
+            "Khu du lịch Cồn Phụng",
+            "Chùa Vĩnh Tràng",
+            "Sông Tiền"
+        ],
+        "averageRating": 4.1,
+        "totalReviews": 100,
+        "isActive": true
+    },
+    {
+        "name": "Bình Dương",
+        "description": "Trung tâm công nghiệp với làng gốm Tân Phước Khánh và lễ hội chùa Bà.",
+        "addressDetail": "Thành phố Thủ Dầu Một, Bình Dương, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Bình Dương",
+        "location": {
+            "lat": 11.0227,
+            "lng": 106.6602
+        },
+        "priceLevel": 3,
+        "bestSeason": "dry_season",
+        "tags": [
+            "văn hóa",
+            "công nghiệp",
+            "tâm linh",
+            "làng nghề",
+            "giải trí"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739685/provinces/BinhDuong/VnE-BinhDuong-KDLThuyChau1-JPG-4095-1605099937.webp",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739683/provinces/BinhDuong/tour-du-lich-dai-nam-1-ngay-2265380858410.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739681/provinces/BinhDuong/top-10-dia-diem-du-lich-binh-duong-ve-dem-ban-khong-the-bo-qua-202202161054127259.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739679/provinces/BinhDuong/nhung-dia-diem-nen-den-khi-di-du-lich-tai-binh-duong.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739678/provinces/BinhDuong/lac-canh-dai-nam-van-hien.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739677/provinces/BinhDuong/dia-diem-du-lich-binh-duong-cover-1.webp"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "73f54c5b-3c29-40a9-8f96-15dd8a254237",
+                "relevance": 5
+            },
+            {
+                "interestId": "8026c83f-b284-489c-8400-113b3faeea34",
+                "relevance": 3
+            },
+            {
+                "interestId": "96d22229-d7c2-452b-8009-d8a52b92b1dc",
+                "relevance": 3
+            }
+        ],
+        "priceRange": [
+            500000,
+            1500000
+        ],
+        "travelTips": [
+            "Tham gia lễ hội chùa Bà Thiên Hậu vào tháng Giêng",
+            "Thăm làng gốm Tân Phước Khánh để xem nghệ nhân làm gốm",
+            "Thử bánh bèo bì và hủ tiếu Bình Dương",
+            "Tham quan khu du lịch Đại Nam với nhiều trò chơi",
+            "Mua sắm tại các khu công nghiệp và trung tâm thương mại"
+        ],
+        "outstandingLocations": [
+            "Chùa Bà Thiên Hậu",
+            "Làng gốm Tân Phước Khánh",
+            "Khu du lịch Đại Nam",
+            "Núi Bà Đen",
+            "Chùa Hội Khánh",
+            "Khu công nghiệp Việt Nam - Singapore"
+        ],
+        "averageRating": 4.0,
+        "totalReviews": 85,
+        "isActive": true
+    },
+    {
+        "name": "Bình Định",
+        "description": "Vùng đất võ trời văn, nổi tiếng với tháp Chăm, biển Quy Nhơn và bánh xèo tôm nhảy.",
+        "addressDetail": "Thành phố Quy Nhơn, Bình Định, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Bình Định",
+        "location": {
+            "lat": 13.782,
+            "lng": 109.2198
+        },
+        "priceLevel": 4,
+        "bestSeason": "dry_season",
+        "tags": [
+            "biển",
+            "văn hóa",
+            "lịch sử",
+            "võ thuật",
+            "ẩm thực"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739675/provinces/BinhDinh/quy_nhon_vnexpress_4396_155296_2039_6570_1617941560_230408346.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739673/provinces/BinhDinh/quynhon-binhdinh.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739671/provinces/BinhDinh/kham-pha-ngay-30-dia-diem-du-lich-binh-dinh-noi-tieng-cua-vung-dat-vo.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739669/provinces/BinhDinh/du-lich-binh-dinh-thumb_1713624876.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739668/provinces/BinhDinh/Bai-Tam-Quy-Nhon-163.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "d008e7a4-8bdf-486e-a682-dff450383fc9",
+                "relevance": 4
+            },
+            {
+                "interestId": "8026c83f-b284-489c-8400-113b3faeea34",
+                "relevance": 5
+            },
+            {
+                "interestId": "7389ea3f-09b3-4e2b-b219-0d36cc6a6711",
+                "relevance": 4
+            }
+        ],
+        "priceRange": [
+            800000,
+            2500000
+        ],
+        "travelTips": [
+            "Thăm tháp Chăm Bánh Ít vào buổi sáng để tránh nắng gắt",
+            "Thưởng thức hải sản tươi sống tại Quy Nhơn",
+            "Khám phá võ đài Bình Định và tìm hiểu võ thuật truyền thống",
+            "Tham quan Eo Gió để ngắm cảnh biển đẹp",
+            "Thử bánh xèo tôm nhảy và bánh hỏi chả cá đặc sản"
+        ],
+        "outstandingLocations": [
+            "Biển Quy Nhơn",
+            "Tháp Chăm Bánh Ít",
+            "Eo Gió",
+            "Tháp Đôi",
+            "Bãi Xép",
+            "Khu du lịch FLC Quy Nhơn"
+        ],
+        "averageRating": 4.4,
+        "totalReviews": 150,
+        "isActive": true
+    },
+    {
+        "name": "Bình Phước",
+        "description": "Tỉnh có vườn quốc gia Bù Gia Mập, hồ Thác Mơ và đặc sản hạt điều.",
+        "addressDetail": "Thành phố Đồng Xoài, Bình Phước, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Bình Phước",
+        "location": {
+            "lat": 11.5358,
+            "lng": 106.8832
+        },
+        "priceLevel": 2,
+        "bestSeason": "dry_season",
+        "tags": [
+            "thiên nhiên",
+            "nông nghiệp",
+            "khám phá",
+            "rừng núi",
+            "hồ nước"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739692/provinces/BinhPhuoc/thac-mo-binh-phuoc-nhin-tu-cao.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739690/provinces/BinhPhuoc/image-20241206091225-1.png",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739688/provinces/BinhPhuoc/H%E1%BB%93_Thu%E1%BB%B7_%C4%90i%E1%BB%87n_Th%C3%A1c_M%C6%A1.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739687/provinces/BinhPhuoc/du-lich-binh-phuoc-4.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "cbba14db-38b0-4708-9c61-1c9bf107a1cc",
+                "relevance": 5
+            },
+            {
+                "interestId": "18db1533-56cb-41a8-9e12-b8d98c3ad5f4",
+                "relevance": 4
+            },
+            {
+                "interestId": "436a9954-5672-4b84-a6c4-a538cdac3a5f",
+                "relevance": 3
+            }
+        ],
+        "priceRange": [
+            400000,
+            1200000
+        ],
+        "travelTips": [
+            "Khám phá vườn quốc gia Bù Gia Mập với động thực vật phong phú",
+            "Thử hạt điều rang muối và các sản phẩm từ điều",
+            "Mang giày leo núi và đồ dùng cần thiết cho trekking",
+            "Thăm hồ Thác Mơ để tham gia các hoạt động thể thao nước",
+            "Tìm hiểu văn hóa dân tộc Stiêng tại các làng bản"
+        ],
+        "outstandingLocations": [
+            "Vườn quốc gia Bù Gia Mập",
+            "Hồ Thác Mơ",
+            "Khu du lịch Trảng Cỏ",
+            "Thác Gió",
+            "Làng văn hóa Stiêng",
+            "Khu bảo tồn Bù Gia Mập"
+        ],
+        "averageRating": 3.9,
+        "totalReviews": 50,
+        "isActive": true
+    },
+    {
+        "name": "Bình Thuận",
+        "description": "Nổi tiếng với Mũi Né, đồi cát bay và hải sản phong phú như mực một nắng.",
+        "addressDetail": "Thành phố Phan Thiết, Bình Thuận, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Bình Thuận",
+        "location": {
+            "lat": 10.9289,
+            "lng": 108.1021
+        },
+        "priceLevel": 4,
+        "bestSeason": "dry_season",
+        "tags": [
+            "biển",
+            "thiên nhiên",
+            "hải sản",
+            "thể thao",
+            "nghỉ dưỡng"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739701/provinces/BinhThuan/taithiet-17037505718001272974194.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739699/provinces/BinhThuan/Mui-Ne-5293-1716545117.webp",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739697/provinces/BinhThuan/eb6cb3029d7b26257f6a-6956.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739695/provinces/BinhThuan/du-lich-binh-thuan-09-1695999950.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739694/provinces/BinhThuan/18072023043309_top-6-coffee-5.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "d008e7a4-8bdf-486e-a682-dff450383fc9",
+                "relevance": 5
+            },
+            {
+                "interestId": "436a9954-5672-4b84-a6c4-a538cdac3a5f",
+                "relevance": 4
+            },
+            {
+                "interestId": "438fc3cd-1bbb-4548-9cb2-8a97d8dc60e2",
+                "relevance": 5
+            }
+        ],
+        "priceRange": [
+            1000000,
+            3000000
+        ],
+        "travelTips": [
+            "Tham quan đồi cát bay Mũi Né vào buổi sáng sớm hoặc chiều tối",
+            "Thưởng thức mực một nắng và bánh căn đặc sản",
+            "Mang kem chống nắng SPF cao và kính mát",
+            "Thử các môn thể thao như lướt ván cát, kitesurfing",
+            "Ngắm bình minh tại Hòn Rơm hoặc hoàng hôn tại Bàu Trắng"
+        ],
+        "outstandingLocations": [
+            "Mũi Né",
+            "Đồi cát bay",
+            "Bàu Trắng",
+            "Hòn Rơm",
+            "Suối Tiên",
+            "Tháp Chăm Po Sah Inư"
+        ],
+        "averageRating": 4.6,
+        "totalReviews": 180,
+        "isActive": true
+    },
+    {
+        "name": "Cà Mau",
+        "description": "Điểm cực Nam với mũi Cà Mau, rừng ngập mặn U Minh Hạ và chợ nổi.",
+        "addressDetail": "Thành phố Cà Mau, Cà Mau, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Cà Mau",
+        "location": {
+            "lat": 9.1797,
+            "lng": 105.1524
+        },
+        "priceLevel": 3,
+        "bestSeason": "dry_season",
+        "tags": [
+            "thiên nhiên",
+            "sông nước",
+            "văn hóa",
+            "sinh thái",
+            "khám phá"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739720/provinces/CaMau/trai-nghiem-tour-ca-mau-2-ngay-1-dem-cung-nu-cuoi-me-kong.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739712/provinces/CaMau/m%C5%A9i-c%C3%A0-mau.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739706/provinces/CaMau/C%C3%A0_Mau_city_center.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739704/provinces/CaMau/c%C3%A0-mau1.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "cbba14db-38b0-4708-9c61-1c9bf107a1cc",
+                "relevance": 5
+            },
+            {
+                "interestId": "18db1533-56cb-41a8-9e12-b8d98c3ad5f4",
+                "relevance": 4
+            },
+            {
+                "interestId": "7389ea3f-09b3-4e2b-b219-0d36cc6a6711",
+                "relevance": 3
+            }
+        ],
+        "priceRange": [
+            600000,
+            1800000
+        ],
+        "travelTips": [
+            "Đi thuyền khám phá rừng ngập mặn U Minh Hạ",
+            "Thăm mũi Cà Mau - điểm cực Nam của Tổ quốc vào buổi sáng",
+            "Thử lẩu mắm và các món ăn từ cua biển",
+            "Mang thuốc chống muỗi và áo dài tay khi vào rừng",
+            "Tham quan trại nuôi tôm sú và cua biển"
+        ],
+        "outstandingLocations": [
+            "Mũi Cà Mau",
+            "Rừng ngập mặn U Minh Hạ",
+            "Chợ nổi Cà Mau",
+            "Khu du lịch Đất Mũi",
+            "Vườn quốc gia U Minh Hạ",
+            "Cột mốc GPS"
+        ],
+        "averageRating": 4.2,
+        "totalReviews": 110,
+        "isActive": true
+    },
+    {
+        "name": "Cao Bằng",
+        "description": "Vùng núi Đông Bắc với thác Bản Giốc, động Ngườm Ngao và văn hóa dân tộc Tày.",
+        "addressDetail": "Thành phố Cao Bằng, Cao Bằng, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Cao Bằng",
+        "location": {
+            "lat": 22.6657,
+            "lng": 106.2529
+        },
+        "priceLevel": 3,
+        "bestSeason": "autumn",
+        "tags": [
+            "thiên nhiên",
+            "thác nước",
+            "văn hóa",
+            "dân tộc",
+            "khám phá"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739739/provinces/CaoBang/Thanhphocaobang2024.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739737/provinces/CaoBang/thac-Ban-Gioc-Cao-Bang-8614-1648729935.webp",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739735/provinces/CaoBang/dia-diem-du-lich-cao-bang-1.webp",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739731/provinces/CaoBang/5-16.png"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "cbba14db-38b0-4708-9c61-1c9bf107a1cc",
+                "relevance": 5
+            },
+            {
+                "interestId": "ac48180e-3968-4403-a06c-b817d690e09b",
+                "relevance": 4
+            },
+            {
+                "interestId": "438fc3cd-1bbb-4548-9cb2-8a97d8dc60e2",
+                "relevance": 4
+            }
+        ],
+        "priceRange": [
+            700000,
+            2000000
+        ],
+        "travelTips": [
+            "Thăm thác Bản Giốc vào mùa mưa để ngắm thác đẹp nhất",
+            "Mang giày chống trượt và đèn pin khi khám phá động",
+            "Tìm hiểu văn hóa dân tộc Tày tại các làng bản",
+            "Thử các món ăn đặc sản như thịt trâu gác bếp",
+            "Mang áo ấm vì thời tiết miền núi se lạnh"
+        ],
+        "outstandingLocations": [
+            "Thác Bản Giốc",
+            "Động Ngườm Ngao",
+            "Làng đá Khuổi Ky",
+            "Hồ Thang Hen",
+            "Phia Oắc - Phia Đén",
+            "Chùa Phật Tích Trúc Lâm Bản Giốc"
+        ],
+        "averageRating": 4.4,
+        "totalReviews": 95,
+        "isActive": true
+    },
+    {
+        "name": "Cần Thơ",
+        "description": "Thủ phủ miền Tây với chợ nổi Cái Răng, bến Ninh Kiều và bánh cống đặc sản.",
+        "addressDetail": "Quận Ninh Kiều, Cần Thơ, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Cần Thơ",
+        "location": {
+            "lat": 10.0452,
+            "lng": 105.7469
+        },
+        "priceLevel": 3,
+        "bestSeason": "dry_season",
+        "tags": [
+            "sông nước",
+            "văn hóa",
+            "ẩm thực",
+            "miền tây",
+            "chợ nổi"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739729/provinces/CanTho/th05491-1688718340433-1688718343033345897273.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739728/provinces/CanTho/mien-tay.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739725/provinces/CanTho/khu-du-lich-can-tho-moi-nhat.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739724/provinces/CanTho/dia-diem-du-lich-can-tho-cover.webp",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739722/provinces/CanTho/Can-Tho-1.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "7389ea3f-09b3-4e2b-b219-0d36cc6a6711",
+                "relevance": 5
+            },
+            {
+                "interestId": "8026c83f-b284-489c-8400-113b3faeea34",
+                "relevance": 4
+            },
+            {
+                "interestId": "cbba14db-38b0-4708-9c61-1c9bf107a1cc",
+                "relevance": 4
+            }
+        ],
+        "priceRange": [
+            600000,
+            1800000
+        ],
+        "travelTips": [
+            "Đi chợ nổi Cái Răng vào sáng sớm (5-7h) để ngắm cảnh đẹp nhất",
+            "Thử bánh cống, bánh xèo và hủ tiếu Cần Thơ",
+            "Thăm nhà cổ Bình Thủy với kiến trúc Pháp - Việt",
+            "Dạo bộ bến Ninh Kiều vào buổi tối để ngắm sông Hậu",
+            "Tham quan vườn cây trái miền Tây"
+        ],
+        "outstandingLocations": [
+            "Chợ nổi Cái Răng",
+            "Bến Ninh Kiều",
+            "Nhà cổ Bình Thủy",
+            "Chùa Ông",
+            "Vườn cây trái Mỹ Khánh",
+            "Cầu Cần Thơ"
+        ],
+        "averageRating": 4.3,
+        "totalReviews": 140,
+        "isActive": true
+    },
+    {
+        "name": "Đà Nẵng",
+        "description": "Thành phố biển với cầu Rồng, Bà Nà Hills và bãi biển Mỹ Khê tuyệt đẹp.",
+        "addressDetail": "Quận Hải Châu, Đà Nẵng, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Đà Nẵng",
+        "location": {
+            "lat": 16.0471,
+            "lng": 108.2062
+        },
+        "priceLevel": 4,
+        "bestSeason": "dry_season",
+        "tags": [
+            "biển",
+            "thành phố",
+            "giải trí",
+            "du lịch",
+            "ẩm thực"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739765/provinces/DaNang/tat-tan-tat-kinh-nghiem-du-lich-tour-da-nang-ma-ban-phai-biet.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739764/provinces/DaNang/du-lich-da-nang-thang-7-1.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739763/provinces/DaNang/dia-diem-du-lich-da-nang.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739761/provinces/DaNang/dia-diem-du-lich-da-nang-avt.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739759/provinces/DaNang/da-nang-thanh-pho-dang-song1-1.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739757/provinces/DaNang/cauvang-1654247842-9403-1654247849.webp"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "d008e7a4-8bdf-486e-a682-dff450383fc9",
+                "relevance": 5
+            },
+            {
+                "interestId": "73f54c5b-3c29-40a9-8f96-15dd8a254237",
+                "relevance": 5
+            },
+            {
+                "interestId": "438fc3cd-1bbb-4548-9cb2-8a97d8dc60e2",
+                "relevance": 5
+            }
+        ],
+        "priceRange": [
+            800000,
+            3000000
+        ],
+        "travelTips": [
+            "Thăm Bà Nà Hills vào ngày không mưa để tránh sương mù",
+            "Ngắm cầu Rồng phun lửa vào tối thứ 7 và chủ nhật",
+            "Thưởng thức mì Quảng và bánh tráng cuốn thịt heo",
+            "Tắm biển Mỹ Khê được Forbes bình chọn là 1 trong 6 bãi biển đẹp nhất",
+            "Tham quan chùa Linh Ứng trên bán đảo Sơn Trà"
+        ],
+        "outstandingLocations": [
+            "Cầu Rồng",
+            "Bà Nà Hills",
+            "Bãi biển Mỹ Khê",
+            "Bán đảo Sơn Trà",
+            "Chùa Linh Ứng",
+            "Cầu Vàng (Golden Bridge)"
+        ],
+        "averageRating": 4.7,
+        "totalReviews": 250,
+        "isActive": true
+    },
+    {
+        "name": "Đắk Lắk",
+        "description": "Vùng cao nguyên với cà phê Buôn Ma Thuột, hồ Lắk và văn hóa cồng chiêng.",
+        "addressDetail": "Thành phố Buôn Ma Thuột, Đắk Lắk, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Đắk Lắk",
+        "location": {
+            "lat": 12.71,
+            "lng": 108.2378
+        },
+        "priceLevel": 3,
+        "bestSeason": "dry_season",
+        "tags": [
+            "thiên nhiên",
+            "văn hóa",
+            "cà phê",
+            "dân tộc",
+            "cao nguyên"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739747/provinces/DakLak/thac-dray-nur-7574-1650455160.webp",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739745/provinces/DakLak/Khu-du-lich-Buon-don-Dak-Lak-5-1.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739743/provinces/DakLak/hinh-anh-trung-tam-nga-6-thanh-pho-buon-ma-thuot-tinh-dak-lak-ngay-hien-tai-10513402.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739741/provinces/DakLak/dak-lak-trai-ngot-tu-nhung-quyet-sach-dung-20240425140651.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "ac48180e-3968-4403-a06c-b817d690e09b",
+                "relevance": 5
+            },
+            {
+                "interestId": "7389ea3f-09b3-4e2b-b219-0d36cc6a6711",
+                "relevance": 4
+            },
+            {
+                "interestId": "cbba14db-38b0-4708-9c61-1c9bf107a1cc",
+                "relevance": 4
+            }
+        ],
+        "priceRange": [
+            700000,
+            2000000
+        ],
+        "travelTips": [
+            "Thăm buôn Đôn và trải nghiệm cưỡi voi",
+            "Thưởng thức cà phê Buôn Ma Thuột nguyên chất",
+            "Tìm hiểu văn hóa cồng chiêng của dân tộc Ê Đê",
+            "Chèo thuyền độc mộc trên hồ Lắk",
+            "Tham quan các vườn cà phê và học cách rang xay"
+        ],
+        "outstandingLocations": [
+            "Hồ Lắk",
+            "Buôn Đôn",
+            "Bảo tàng Cà phê Thế giới",
+            "Thác Dray Nur",
+            "Vườn quốc gia Yók Đôn",
+            "Buôn Tua Srah"
+        ],
+        "averageRating": 4.3,
+        "totalReviews": 110,
+        "isActive": true
+    },
+    {
+        "name": "Đắk Nông",
+        "description": "Nơi có thác Dray Nur, vườn quốc gia Yók Đôn và văn hóa dân tộc Ê Đê.",
+        "addressDetail": "Thành phố Gia Nghĩa, Đắk Nông, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Đắk Nông",
+        "location": {
+            "lat": 12.004,
+            "lng": 107.692
+        },
+        "priceLevel": 3,
+        "bestSeason": "dry_season",
+        "tags": [
+            "thiên nhiên",
+            "thác nước",
+            "văn hóa",
+            "dân tộc",
+            "khám phá"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739755/provinces/DakNong/tadung-9314-1694257090.webp",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739754/provinces/DakNong/Ho-Tay-2.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739752/provinces/DakNong/dn-17043602208561487149330.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739750/provinces/DakNong/20-10-2023-15-42-37-457.png"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "cbba14db-38b0-4708-9c61-1c9bf107a1cc",
+                "relevance": 5
+            },
+            {
+                "interestId": "ac48180e-3968-4403-a06c-b817d690e09b",
+                "relevance": 4
+            },
+            {
+                "interestId": "18db1533-56cb-41a8-9e12-b8d98c3ad5f4",
+                "relevance": 3
+            }
+        ],
+        "priceRange": [
+            600000,
+            1800000
+        ],
+        "travelTips": [
+            "Khám phá thác Dray Nur vào mùa khô để an toàn",
+            "Mang giày chống trượt khi thăm thác nước",
+            "Tìm hiểu văn hóa dân tộc Ê Đê tại các buôn làng",
+            "Thăm vườn quốc gia Yók Đôn để ngắm động vật hoang dã",
+            "Thử cà phê chồn và các sản phẩm từ cà phê"
+        ],
+        "outstandingLocations": [
+            "Thác Dray Nur",
+            "Vườn quốc gia Yók Đôn",
+            "Thác Trinh Nữ",
+            "Núi lửa Krông Nô",
+            "Hồ Serepok",
+            "Buôn Tua Srah"
+        ],
+        "averageRating": 4.1,
+        "totalReviews": 70,
+        "isActive": true
+    },
+    {
+        "name": "Điện Biên",
+        "description": "Vùng đất lịch sử với chiến thắng Điện Biên Phủ và lễ hội hoa ban.",
+        "addressDetail": "Thành phố Điện Biên Phủ, Điện Biên, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Điện Biên",
+        "location": {
+            "lat": 21.386,
+            "lng": 103.023
+        },
+        "priceLevel": 3,
+        "bestSeason": "spring",
+        "tags": [
+            "lịch sử",
+            "văn hóa",
+            "thiên nhiên",
+            "dân tộc",
+            "chiến trường"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739773/provinces/DienBien/pha1-1765-1702890438.webp",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739770/provinces/DienBien/images32231137-1691638764030-16916387654481516391190.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739767/provinces/DienBien/5.7.Len_Dien_Bien_-_tim_ve_lich_su.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "8026c83f-b284-489c-8400-113b3faeea34",
+                "relevance": 5
+            },
+            {
+                "interestId": "ac48180e-3968-4403-a06c-b817d690e09b",
+                "relevance": 4
+            },
+            {
+                "interestId": "cbba14db-38b0-4708-9c61-1c9bf107a1cc",
+                "relevance": 3
+            }
+        ],
+        "priceRange": [
+            700000,
+            2000000
+        ],
+        "travelTips": [
+            "Thăm bảo tàng Điện Biên Phủ để tìm hiểu lịch sử",
+            "Tham gia lễ hội hoa ban vào tháng 3 hàng năm",
+            "Mang áo ấm vì thời tiết miền núi se lạnh",
+            "Tham quan các di tích lịch sử như đồi A1, C1",
+            "Thưởng thức các món ăn đặc sản như thịt trâu gác bếp"
+        ],
+        "outstandingLocations": [
+            "Đồi A1",
+            "Bảo tàng Điện Biên Phủ",
+            "Đèo Pha Đin",
+            "Hầm chỉ huy Điện Biên Phủ",
+            "Nghĩa trang liệt sĩ A1",
+            "Đồi C1"
+        ],
+        "averageRating": 4.2,
+        "totalReviews": 90,
+        "isActive": true
+    },
+    {
+        "name": "Đồng Nai",
+        "description": "Nổi tiếng với vườn quốc gia Cát Tiên, thác Giang Điền và làng bưởi Tân Triều.",
+        "addressDetail": "Thành phố Biên Hòa, Đồng Nai, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Đồng Nai",
+        "location": {
+            "lat": 10.9574,
+            "lng": 106.8427
+        },
+        "priceLevel": 3,
+        "bestSeason": "dry_season",
+        "tags": [
+            "thiên nhiên",
+            "nông nghiệp",
+            "khám phá",
+            "sinh thái",
+            "thác nước"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739782/provinces/DongNai/top-10-dia-diem-du-lich-dong-nai-hap-dan-nhat-ban-khong-the-bo-qua-202106301951273548.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739780/provinces/DongNai/top-10-dia-diem-du-lich-dong-nai-hap-dan-nhat-ban-khong-the-bo-qua-202106301950034335.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739778/provinces/DongNai/buulongdongnai220240820223520.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739776/provinces/DongNai/bien-hoa-20230320111349661.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739775/provinces/DongNai/9e7a98b6-ban-do-dong-nai-1.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "cbba14db-38b0-4708-9c61-1c9bf107a1cc",
+                "relevance": 5
+            },
+            {
+                "interestId": "18db1533-56cb-41a8-9e12-b8d98c3ad5f4",
+                "relevance": 4
+            },
+            {
+                "interestId": "7389ea3f-09b3-4e2b-b219-0d36cc6a6711",
+                "relevance": 3
+            }
+        ],
+        "priceRange": [
+            600000,
+            1800000
+        ],
+        "travelTips": [
+            "Khám phá vườn quốc gia Cát Tiên để ngắm động vật hoang dã",
+            "Thưởng thức bưởi Tân Triều ngọt mát",
+            "Mang giày leo núi và đồ chống muỗi",
+            "Tham quan thác Giang Điền vào mùa mưa",
+            "Nghỉ đêm tại các homestay trong vườn quốc gia"
+        ],
+        "outstandingLocations": [
+            "Vườn quốc gia Cát Tiên",
+            "Thác Giang Điền",
+            "Làng bưởi Tân Triều",
+            "Hồ Trị An",
+            "Đồi chè Cầu Đất",
+            "Khu du lịch Madagui"
+        ],
+        "averageRating": 4.1,
+        "totalReviews": 80,
+        "isActive": true
+    },
+    {
+        "name": "Đồng Tháp",
+        "description": "Xứ sở sen hồng với làng hoa Sa Đéc, khu du lịch Tràm Chim và bánh xèo Cao Lãnh.",
+        "addressDetail": "Thành phố Cao Lãnh, Đồng Tháp, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Đồng Tháp",
+        "location": {
+            "lat": 10.4938,
+            "lng": 105.6363
+        },
+        "priceLevel": 3,
+        "bestSeason": "dry_season",
+        "tags": [
+            "thiên nhiên",
+            "văn hóa",
+            "ẩm thực",
+            "sinh thái",
+            "hoa sen"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739790/provinces/DongThap/untitled_5_9470_469651627.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739788/provinces/DongThap/senT-jpeg-4319-1702147840.webp",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739786/provinces/DongThap/du-lich-dong-thap-1.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739785/provinces/DongThap/danh-sach-10-dia-diem-du-lich-noi-tieng-hut-khach-o-dong-thap-202106222151345813.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739783/provinces/DongThap/cd01_492_khu_di_tich_cu_pho_bang_nguyen_sinh_sac_vao_xuan_3_176752265_723136665.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "cbba14db-38b0-4708-9c61-1c9bf107a1cc",
+                "relevance": 4
+            },
+            {
+                "interestId": "438fc3cd-1bbb-4548-9cb2-8a97d8dc60e2",
+                "relevance": 5
+            },
+            {
+                "interestId": "7389ea3f-09b3-4e2b-b219-0d36cc6a6711",
+                "relevance": 4
+            }
+        ],
+        "priceRange": [
+            500000,
+            1500000
+        ],
+        "travelTips": [
+            "Thăm làng hoa Sa Đéc vào dịp Tết để ngắm hoa đẹp nhất",
+            "Đi thuyền tại vườn quốc gia Tràm Chim để ngắm chim",
+            "Thử bánh xèo Cao Lãnh với nhân tôm thịt đặc biệt",
+            "Mang kem chống nắng và mũ rộng vành",
+            "Tham quan các vườn sen và chụp ảnh"
+        ],
+        "outstandingLocations": [
+            "Làng hoa Sa Đéc",
+            "Vườn quốc gia Tràm Chim",
+            "Rừng tràm Tra Su",
+            "Khu du lịch Đồng Sen Tháp Mười",
+            "Chợ Cao Lãnh",
+            "Nhà cổ Huynh Thuy Le"
+        ],
+        "averageRating": 4.2,
+        "totalReviews": 100,
+        "isActive": true
+    },
+    {
+        "name": "Gia Lai",
+        "description": "Vùng đất Tây Nguyên với biển hồ Pleiku, núi lửa Chư Đăng Ya và cà phê đậm đà.",
+        "addressDetail": "Thành phố Pleiku, Gia Lai, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Gia Lai",
+        "location": {
+            "lat": 13.9836,
+            "lng": 108.0007
+        },
+        "priceLevel": 3,
+        "bestSeason": "dry_season",
+        "tags": [
+            "thiên nhiên",
+            "văn hóa",
+            "cà phê",
+            "dân tộc",
+            "cao nguyên"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739800/provinces/GiaLai/unnamed.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739798/provinces/GiaLai/thongT-8065-1698229160.webp",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739796/provinces/GiaLai/dia-diem-du-lich-gia-lai-1.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739792/provinces/GiaLai/2895f7fe-e57c-4e9c-ab90-4a79bd83f57a.png"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "cbba14db-38b0-4708-9c61-1c9bf107a1cc",
+                "relevance": 4
+            },
+            {
+                "interestId": "ac48180e-3968-4403-a06c-b817d690e09b",
+                "relevance": 5
+            },
+            {
+                "interestId": "7389ea3f-09b3-4e2b-b219-0d36cc6a6711",
+                "relevance": 4
+            }
+        ],
+        "priceRange": [
+            700000,
+            2000000
+        ],
+        "travelTips": [
+            "Thăm biển hồ Pleiku vào buổi sáng sớm để ngắm cảnh đẹp",
+            "Thưởng thức cà phê Gia Lai rang xay truyền thống",
+            "Tìm hiểu văn hóa dân tộc Bahnar và Jarai",
+            "Khám phá núi lửa Chư Đăng Ya và các hồ núi lửa",
+            "Tham quan các buôn làng dân tộc thiểu số"
+        ],
+        "outstandingLocations": [
+            "Biển hồ Pleiku",
+            "Núi lửa Chư Đăng Ya",
+            "Làng văn hóa Jarai",
+            "Hồ T'Nưng",
+            "Công viên Gia Lai",
+            "Buôn Plei Phun"
+        ],
+        "averageRating": 4.3,
+        "totalReviews": 90,
+        "isActive": true
+    },
+    {
+        "name": "Hà Giang",
+        "description": "Miền đất cực Bắc với cao nguyên đá Đồng Văn, đèo Mã Pí Lèng và chợ tình Khâu Vai.",
+        "addressDetail": "Thành phố Hà Giang, Hà Giang, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Hà Giang",
+        "location": {
+            "lat": 22.8233,
+            "lng": 104.9836
+        },
+        "priceLevel": 3,
+        "bestSeason": "autumn",
+        "tags": [
+            "thiên nhiên",
+            "văn hóa",
+            "khám phá",
+            "dân tộc",
+            "núi non"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739809/provinces/HaGiang/MaPiLengHaGiangVnExpress-16488-3513-7729-1648806038.webp",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739807/provinces/HaGiang/ha-giang-1.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739806/provinces/HaGiang/dulichhagiang.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739804/provinces/HaGiang/du-lich-ha-giang.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739803/provinces/HaGiang/1_song-nho-que-ha-giang-kynghidongduong-vn-09.webp",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739801/provinces/HaGiang/1_nui_doi_tuyet_tac_thien_nhien_hung_vi_giua_cao_nguyen_da_dong_van_367c4971b5.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "cbba14db-38b0-4708-9c61-1c9bf107a1cc",
+                "relevance": 5
+            },
+            {
+                "interestId": "18db1533-56cb-41a8-9e12-b8d98c3ad5f4",
+                "relevance": 5
+            },
+            {
+                "interestId": "438fc3cd-1bbb-4548-9cb2-8a97d8dc60e2",
+                "relevance": 4
+            }
+        ],
+        "priceRange": [
+            800000,
+            2500000
+        ],
+        "travelTips": [
+            "Khám phá đèo Mã Pí Lèng - một trong những đèo đẹp nhất Việt Nam",
+            "Thăm chợ tình Khâu Vai vào ngày 26-27 tháng 3 âm lịch",
+            "Mang áo ấm vì thời tiết miền núi se lạnh",
+            "Thuê xe máy hoặc tham gia tour để di chuyển",
+            "Tìm hiểu văn hóa dân tộc H'Mông và Lô Lô"
+        ],
+        "outstandingLocations": [
+            "Cao nguyên đá Đồng Văn",
+            "Đèo Mã Pí Lèng",
+            "Cột cờ Lũng Cú",
+            "Chợ tình Khâu Vai",
+            "Thung lũng Mèo Vạc",
+            "Núi đôi Cô Tiên"
+        ],
+        "averageRating": 4.6,
+        "totalReviews": 130,
+        "isActive": true
+    },
+    {
+        "name": "Hà Nam",
+        "description": "Nơi có chùa Tam Chúc, làng nghề trống Đọi Tam và ẩm thực cá kho Đại Hoàng.",
+        "addressDetail": "Thành phố Phủ Lý, Hà Nam, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Hà Nam",
+        "location": {
+            "lat": 20.5453,
+            "lng": 105.9122
+        },
+        "priceLevel": 2,
+        "bestSeason": "spring",
+        "tags": [
+            "văn hóa",
+            "tâm linh",
+            "ẩm thực",
+            "làng nghề",
+            "lịch sử"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739829/provinces/HaNam/danh-sach-25-dia-diem-du-lich-ha-nam-dac-sac-nhat-dinh-phai-den.png",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739827/provinces/HaNam/5931_Ha_Nam.png.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739825/provinces/HaNam/14-dia-diem-du-lich-ha-nam-thu-vi-ban-nhat-dinh-phai-den-202305231719431441.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739823/provinces/HaNam/1%20%2896%29.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "8026c83f-b284-489c-8400-113b3faeea34",
+                "relevance": 5
+            },
+            {
+                "interestId": "7389ea3f-09b3-4e2b-b219-0d36cc6a6711",
+                "relevance": 4
+            },
+            {
+                "interestId": "ac48180e-3968-4403-a06c-b817d690e09b",
+                "relevance": 3
+            }
+        ],
+        "priceRange": [
+            300000,
+            1000000
+        ],
+        "travelTips": [
+            "Thăm chùa Tam Chúc vào buổi sáng sớm để tránh đông đúc",
+            "Thử cá kho Đại Hoàng - đặc sản nổi tiếng",
+            "Xem nghệ nhân làm trống tại làng Đọi Tam",
+            "Tham quan các di tích lịch sử cổ",
+            "Mang giày thoải mái để đi bộ"
+        ],
+        "outstandingLocations": [
+            "Chùa Tam Chúc",
+            "Làng nghề trống Đọi Tam",
+            "Làng Đại Hoàng",
+            "Đền Trần",
+            "Chùa Bảo Lâm",
+            "Khu du lịch Tam Chúc"
+        ],
+        "averageRating": 4.0,
+        "totalReviews": 60,
+        "isActive": true
+    },
+    {
+        "name": "Hà Nội",
+        "description": "Thủ đô ngàn năm văn hiến với hồ Hoàn Kiếm, Văn Miếu và phở Hà Nội.",
+        "addressDetail": "Quận Hoàn Kiếm, Hà Nội, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Hà Nội",
+        "location": {
+            "lat": 21.0285,
+            "lng": 105.8542
+        },
+        "priceLevel": 4,
+        "bestSeason": "autumn",
+        "tags": [
+            "thành phố",
+            "văn hóa",
+            "lịch sử",
+            "ẩm thực",
+            "kiến trúc"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739837/provinces/HaNoi/tour-du-lich-ha-noi.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739835/provinces/HaNoi/nha-tho-lon-ha-noi.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739834/provinces/HaNoi/lang-chu-tich-ho-chi-minh.webp",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739832/provinces/HaNoi/dia-diem-du-lich-o-ha-noi-1.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739831/provinces/HaNoi/dia-diem-du-lich-ha-noi-6.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "8026c83f-b284-489c-8400-113b3faeea34",
+                "relevance": 5
+            },
+            {
+                "interestId": "7389ea3f-09b3-4e2b-b219-0d36cc6a6711",
+                "relevance": 5
+            },
+            {
+                "interestId": "96d22229-d7c2-452b-8009-d8a52b92b1dc",
+                "relevance": 4
+            }
+        ],
+        "priceRange": [
+            800000,
+            3000000
+        ],
+        "travelTips": [
+            "Dạo phố cổ Hà Nội vào buổi tối để cảm nhận không khí sôi động",
+            "Thưởng thức phở bò, bún chả và cà phê trứng đặc sản",
+            "Tham quan Văn Miếu - Quốc Tử Giám vào buổi sáng",
+            "Ngắm hồ Hoàn Kiếm và đền Ngọc Sơn",
+            "Xem múa rối nước tại Nhà hát Múa rối Thăng Long"
+        ],
+        "outstandingLocations": [
+            "Hồ Hoàn Kiếm",
+            "Văn Miếu - Quốc Tử Giám",
+            "Lăng Chủ tịch Hồ Chí Minh",
+            "Phố cổ Hà Nội",
+            "Chùa Một Cột",
+            "Bảo tàng Dân tộc học"
+        ],
+        "averageRating": 4.8,
+        "totalReviews": 300,
+        "isActive": true
+    },
+    {
+        "name": "Hà Tĩnh",
+        "description": "Vùng đất của ngã ba Đồng Lộc, biển Thiên Cầm và ca trù Cổ Đạm.",
+        "addressDetail": "Thành phố Hà Tĩnh, Hà Tĩnh, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Hà Tĩnh",
+        "location": {
+            "lat": 18.3428,
+            "lng": 105.9057
+        },
+        "priceLevel": 3,
+        "bestSeason": "dry_season",
+        "tags": [
+            "lịch sử",
+            "biển",
+            "văn hóa",
+            "tâm linh",
+            "ẩm thực"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739844/provinces/HaTinh/kinh-nghiem-du-lich-ha-tinh-2.webp",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739843/provinces/HaTinh/ho-ke-go-ha-tinh.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739841/provinces/HaTinh/du-lich-ha-tinh-cam-nang-du-lich-va-22-dia-diem-dep-hap-dan-du-khach-202308091618134333.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739840/provinces/HaTinh/16539635973681.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "8026c83f-b284-489c-8400-113b3faeea34",
+                "relevance": 5
+            },
+            {
+                "interestId": "d008e7a4-8bdf-486e-a682-dff450383fc9",
+                "relevance": 4
+            },
+            {
+                "interestId": "7389ea3f-09b3-4e2b-b219-0d36cc6a6711",
+                "relevance": 3
+            }
+        ],
+        "priceRange": [
+            500000,
+            1500000
+        ],
+        "travelTips": [
+            "Thăm ngã ba Đồng Lộc để tìm hiểu lịch sử chiến tranh",
+            "Thưởng thức ca trù Cổ Đạm - di sản văn hóa phi vật thể",
+            "Tắm biển Thiên Cầm với bãi cát trắng mịn",
+            "Thử nem chua và bánh ướt đặc sản Hà Tĩnh",
+            "Tham quan chùa Hương Tích - ngôi chùa cổ nhất"
+        ],
+        "outstandingLocations": [
+            "Ngã ba Đồng Lộc",
+            "Biển Thiên Cầm",
+            "Chùa Hương Tích",
+            "Khu di tích Quê Bác",
+            "Vườn quốc gia Kẻ Gỗ",
+            "Hang Én"
+        ],
+        "averageRating": 4.0,
+        "totalReviews": 70,
+        "isActive": true
+    },
+    {
+        "name": "Hải Dương",
+        "description": "Quê hương bánh đúc Tứ Kỳ, chùa Côn Sơn và lễ hội chùa Thanh Mai.",
+        "addressDetail": "Thành phố Hải Dương, Hải Dương, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Hải Dương",
+        "location": {
+            "lat": 20.9373,
+            "lng": 106.3146
+        },
+        "priceLevel": 2,
+        "bestSeason": "spring",
+        "tags": [
+            "văn hóa",
+            "ẩm thực",
+            "lịch sử",
+            "tâm linh",
+            "làng nghề"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739815/provinces/HaiDuong/tbl_news_1557976827.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739814/provinces/HaiDuong/hai-duong-dieu-chinh-chuong-trinh-phat-trien-do-thi-den-nam-2030-20250113141817.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739812/provinces/HaiDuong/du-lich-hai-duong-1-0911.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739811/provinces/HaiDuong/cau-quang-thanh-9382-1652360326.webp"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "8026c83f-b284-489c-8400-113b3faeea34",
+                "relevance": 4
+            },
+            {
+                "interestId": "7389ea3f-09b3-4e2b-b219-0d36cc6a6711",
+                "relevance": 5
+            },
+            {
+                "interestId": "96d22229-d7c2-452b-8009-d8a52b92b1dc",
+                "relevance": 3
+            }
+        ],
+        "priceRange": [
+            300000,
+            1000000
+        ],
+        "travelTips": [
+            "Thăm chùa Côn Sơn vào các dịp lễ hội lớn",
+            "Thử bánh đúc Tứ Kỳ với nước mắm pha chua ngọt",
+            "Tham gia lễ hội chùa Thanh Mai vào mùa xuân",
+            "Tham quan đền Kiếp Bạc - nơi thờ Trần Hưng Đạo",
+            "Mua đặc sản bánh đúc và bánh phu thê làm quà"
+        ],
+        "outstandingLocations": [
+            "Chùa Côn Sơn",
+            "Đền Kiếp Bạc",
+            "Làng nghề Tứ Kỳ",
+            "Chùa Thanh Mai",
+            "Làng cổ Đường Lâm",
+            "Bảo tàng Hải Dương"
+        ],
+        "averageRating": 3.9,
+        "totalReviews": 60,
+        "isActive": true
+    },
+    {
+        "name": "Hải Phòng",
+        "description": "Thành phố cảng với đảo Cát Bà, Đồ Sơn và món bánh đa cua đặc sản.",
+        "addressDetail": "Quận Hồng Bàng, Hải Phòng, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Hải Phòng",
+        "location": {
+            "lat": 20.8651,
+            "lng": 106.6838
+        },
+        "priceLevel": 3,
+        "bestSeason": "dry_season",
+        "tags": [
+            "biển",
+            "thành phố",
+            "ẩm thực",
+            "đảo",
+            "cảng"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739821/provinces/HaiPhong/kinh-nghiem-du-lich-cat-ba_1661328677.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739820/provinces/HaiPhong/du-lich-hai-phong-topbanner-min.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739818/provinces/HaiPhong/den-dat-cang-dung-bo-qua-top-18-diem-du-lich-hai-phong-tuyet-dep-phan-1--1647973565.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739817/provinces/HaiPhong/45a744df-f01c-4385-bc2e-f0202e504295-screenshot_1714304819_highres.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "cbba14db-38b0-4708-9c61-1c9bf107a1cc",
+                "relevance": 4
+            },
+            {
+                "interestId": "7389ea3f-09b3-4e2b-b219-0d36cc6a6711",
+                "relevance": 5
+            },
+            {
+                "interestId": "d008e7a4-8bdf-486e-a682-dff450383fc9",
+                "relevance": 4
+            }
+        ],
+        "priceRange": [
+            600000,
+            2000000
+        ],
+        "travelTips": [
+            "Thăm đảo Cát Bà để khám phá vườn quốc gia",
+            "Thưởng thức bánh đa cua và nem cua bể",
+            "Dạo biển Đồ Sơn vào buổi chiều mát mẻ",
+            "Tham quan nhà hát lớn Hải Phòng",
+            "Đi phà hoặc cano để ra các đảo"
+        ],
+        "outstandingLocations": [
+            "Đảo Cát Bà",
+            "Biển Đồ Sơn",
+            "Nhà hát lớn Hải Phòng",
+            "Vườn quốc gia Cát Bà",
+            "Chợ Sắt",
+            "Bãi Cháy"
+        ],
+        "averageRating": 4.3,
+        "totalReviews": 120,
+        "isActive": true
+    },
+    {
+        "name": "Hậu Giang",
+        "description": "Miền Tây sông nước với chợ nổi Ngã Bảy và văn hóa Khmer độc đáo.",
+        "addressDetail": "Thành phố Vị Thanh, Hậu Giang, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Hậu Giang",
+        "location": {
+            "lat": 9.7846,
+            "lng": 105.4701
+        },
+        "priceLevel": 2,
+        "bestSeason": "dry_season",
+        "tags": [
+            "sông nước",
+            "văn hóa",
+            "chợ nổi",
+            "dân tộc",
+            "miền tây"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739850/provinces/HauGiang/top-10-dia-diem-hap-dan-khi-di-du-lich-tai-hau-giang-202107081204320164.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739849/provinces/HauGiang/du-lich-hau-giang-2.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739847/provinces/HauGiang/2210.tpvithanh.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739846/provinces/HauGiang/20-dia-diem-du-lich-hau-giang-dep-hap-dan-khong-nen-bo-lo-202203241407148042.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "8026c83f-b284-489c-8400-113b3faeea34",
+                "relevance": 4
+            },
+            {
+                "interestId": "ac48180e-3968-4403-a06c-b817d690e09b",
+                "relevance": 5
+            },
+            {
+                "interestId": "7389ea3f-09b3-4e2b-b219-0d36cc6a6711",
+                "relevance": 3
+            }
+        ],
+        "priceRange": [
+            400000,
+            1200000
+        ],
+        "travelTips": [
+            "Đi chợ nổi Ngã Bảy vào sáng sớm để ngắm cảnh đẹp",
+            "Tìm hiểu văn hóa Khmer tại các chùa và lễ hội",
+            "Thử bánh xèo Hậu Giang và các món miền Tây",
+            "Đi thuyền khám phá sông nước miền Tây",
+            "Tham quan các vườn trái cây nhiệt đới"
+        ],
+        "outstandingLocations": [
+            "Chợ nổi Ngã Bảy",
+            "Chùa Khmer Phước An",
+            "Khu bảo tồn Lung Ngọc Hoàng",
+            "Vườn trái cây Cái Mơn",
+            "Đền Đức Thánh Trần",
+            "Chợ Vị Thanh"
+        ],
+        "averageRating": 4.0,
+        "totalReviews": 60,
+        "isActive": true
+    },
+    {
+        "name": "Hòa Bình",
+        "description": "Vùng đất của văn hóa Mường, thủy điện Hòa Bình và suối nước nóng Kim Bôi.",
+        "addressDetail": "Thành phố Hòa Bình, Hòa Bình, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Hòa Bình",
+        "location": {
+            "lat": 20.8171,
+            "lng": 105.3376
+        },
+        "priceLevel": 3,
+        "bestSeason": "dry_season",
+        "tags": [
+            "thiên nhiên",
+            "văn hóa",
+            "lịch sử",
+            "dân tộc",
+            "suối nước nóng"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739858/provinces/HoaBinh/thuydien1-2614-1636353614-1283-7895-4923-1652355362.webp",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739856/provinces/HoaBinh/maichauhideawaylakeresort12116-2557-3347-1652355363.webp",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739853/provinces/HoaBinh/du-l%E1%BB%8Bch-h%C3%B2a-b%C3%ACnh-%2810%29.png",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739852/provinces/HoaBinh/dia-diem-du-lich-hoa-binh-7.webp"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "cbba14db-38b0-4708-9c61-1c9bf107a1cc",
+                "relevance": 4
+            },
+            {
+                "interestId": "ac48180e-3968-4403-a06c-b817d690e09b",
+                "relevance": 5
+            },
+            {
+                "interestId": "d008e7a4-8bdf-486e-a682-dff450383fc9",
+                "relevance": 4
+            }
+        ],
+        "priceRange": [
+            600000,
+            1800000
+        ],
+        "travelTips": [
+            "Thăm thủy điện Hòa Bình - công trình vĩ đại",
+            "Tắm suối nước nóng Kim Bôi để thư giãn",
+            "Tìm hiểu văn hóa dân tộc Mường tại Mai Châu",
+            "Thưởng thức cơm lam và thịt nướng đặc sản",
+            "Tham quan thung lũng Mai Châu với cảnh đẹp"
+        ],
+        "outstandingLocations": [
+            "Thủy điện Hòa Bình",
+            "Suối nước nóng Kim Bôi",
+            "Thung lũng Mai Châu",
+            "Hồ Hòa Bình",
+            "Khu du lịch Thác Bơ",
+            "Làng văn hóa Mường"
+        ],
+        "averageRating": 4.1,
+        "totalReviews": 80,
+        "isActive": true
+    },
+    {
+        "name": "Hưng Yên",
+        "description": "Xứ nhãn với phố Hiến cổ kính, chùa Chuông và bánh cuốn Phố Hiến.",
+        "addressDetail": "Thành phố Hưng Yên, Hưng Yên, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Hưng Yên",
+        "location": {
+            "lat": 20.6467,
+            "lng": 106.0511
+        },
+        "priceLevel": 2,
+        "bestSeason": "summer",
+        "tags": [
+            "văn hóa",
+            "ẩm thực",
+            "lịch sử",
+            "trái cây",
+            "làng nghề"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739871/provinces/HungYen/pho-hien-hung-yen-6294.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739870/provinces/HungYen/du-lich-hung-yen-1-ngay-banner.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739868/provinces/HungYen/dia-diem-du-lich-hung-yen-1.webp",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739867/provinces/HungYen/dia-diem-du-lich-hung-yen-1%20%281%29.webp"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "8026c83f-b284-489c-8400-113b3faeea34",
+                "relevance": 4
+            },
+            {
+                "interestId": "7389ea3f-09b3-4e2b-b219-0d36cc6a6711",
+                "relevance": 5
+            },
+            {
+                "interestId": "96d22229-d7c2-452b-8009-d8a52b92b1dc",
+                "relevance": 3
+            }
+        ],
+        "priceRange": [
+            300000,
+            1000000
+        ],
+        "travelTips": [
+            "Thăm phố Hiến cổ để ngắm kiến trúc truyền thống",
+            "Thưởng thức bánh cuốn Phố Hiến nổi tiếng",
+            "Mua nhãn lồng Hưng Yên vào mùa chín (tháng 7-8)",
+            "Tham quan chùa Chuông với kiến trúc cổ kính",
+            "Thử các món đặc sản từ nhãn lồng"
+        ],
+        "outstandingLocations": [
+            "Phố Hiến",
+            "Chùa Chuông",
+            "Làng nhãn Đại Đồng",
+            "Đền Độc Cước",
+            "Chợ Hưng Yên",
+            "Làng nghề bánh cuốn"
+        ],
+        "averageRating": 3.9,
+        "totalReviews": 50,
+        "isActive": true
+    },
+    {
+        "name": "Khánh Hòa",
+        "description": "Vùng biển Nha Trang với vịnh Vân Phong, tháp Bà Ponagar và yến sào nổi tiếng.",
+        "addressDetail": "Thành phố Nha Trang, Khánh Hòa, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Khánh Hòa",
+        "location": {
+            "lat": 12.2388,
+            "lng": 109.1967
+        },
+        "priceLevel": 4,
+        "bestSeason": "dry_season",
+        "tags": [
+            "biển",
+            "văn hóa",
+            "hải sản",
+            "nghỉ dưỡng",
+            "lặn biển"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739883/provinces/KhanhHoa/top-nhung-dia-diem-du-lich-khanh-hoa-khong-the-bo-qua-trong-nam-2023.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739882/provinces/KhanhHoa/nha-trang-914.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739880/provinces/KhanhHoa/khoa-16800931581011197214967.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739877/provinces/KhanhHoa/khanh-hoa.png",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739874/provinces/KhanhHoa/khanh-hoa-dat-muc-tieu-don-118-trieu-luot-khach-nam-2025-1-1427.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739872/provinces/KhanhHoa/dgtranphu.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "d008e7a4-8bdf-486e-a682-dff450383fc9",
+                "relevance": 5
+            },
+            {
+                "interestId": "436a9954-5672-4b84-a6c4-a538cdac3a5f",
+                "relevance": 4
+            },
+            {
+                "interestId": "73f54c5b-3c29-40a9-8f96-15dd8a254237",
+                "relevance": 5
+            }
+        ],
+        "priceRange": [
+            1000000,
+            3500000
+        ],
+        "travelTips": [
+            "Lặn biển ở vịnh Nha Trang để ngắm san hô",
+            "Thăm tháp Bà Ponagar - di tích Chăm cổ",
+            "Thưởng thức yến sào và hải sản tươi ngon",
+            "Tắm bùn khoáng nóng I-Resort",
+            "Đi cáp treo Vinpearl để vui chơi giải trí"
+        ],
+        "outstandingLocations": [
+            "Vịnh Nha Trang",
+            "Tháp Bà Ponagar",
+            "Vịnh Vân Phong",
+            "Đảo Hòn Tre",
+            "Vinpearl Land",
+            "Bãi Dài Cam Ranh"
+        ],
+        "averageRating": 4.7,
+        "totalReviews": 220,
+        "isActive": true
+    },
+    {
+        "name": "Kiên Giang",
+        "description": "Nơi có đảo ngọc Phú Quốc, Hà Tiên và đặc sản nước mắm trứ danh.",
+        "addressDetail": "Thành phố Rạch Giá, Kiên Giang, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Kiên Giang",
+        "location": {
+            "lat": 10.0159,
+            "lng": 105.0809
+        },
+        "priceLevel": 4,
+        "bestSeason": "dry_season",
+        "tags": [
+            "biển",
+            "đảo",
+            "ẩm thực",
+            "nghỉ dưỡng",
+            "lặn biển"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739889/provinces/KienGiang/phuquoc.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739888/provinces/KienGiang/kien-giang-mien-nao-thumbnail.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739886/provinces/KienGiang/cam-nang-du-lich-kien-giang-ivivu1.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739884/provinces/KienGiang/02.03._Kien_Giang_Nhi%E1%BB%81u_gi%E1%BA%A3i_ph%C3%A1p_k%C3%ADch_c%E1%BA%A7u_ph%E1%BB%A5c_h%E1%BB%93i_du_l%E1%BB%8Bch.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "d008e7a4-8bdf-486e-a682-dff450383fc9",
+                "relevance": 5
+            },
+            {
+                "interestId": "7389ea3f-09b3-4e2b-b219-0d36cc6a6711",
+                "relevance": 4
+            },
+            {
+                "interestId": "436a9954-5672-4b84-a6c4-a538cdac3a5f",
+                "relevance": 4
+            }
+        ],
+        "priceRange": [
+            1200000,
+            4000000
+        ],
+        "travelTips": [
+            "Thăm Phú Quốc vào mùa khô để thời tiết đẹp nhất",
+            "Thử nước mắm Kiên Giang nguyên chất",
+            "Khám phá Hà Tiên với núi non và biển đẹp",
+            "Lặn ngắm san hô tại các đảo",
+            "Thưởng thức hải sản tươi sống tại chợ đêm"
+        ],
+        "outstandingLocations": [
+            "Đảo Phú Quốc",
+            "Hà Tiên",
+            "Chợ Rạch Giá",
+            "Núi Cấm",
+            "Đảo Hòn Sơn",
+            "Cáp treo Hòn Thơm"
+        ],
+        "averageRating": 4.8,
+        "totalReviews": 230,
+        "isActive": true
+    },
+    {
+        "name": "Kon Tum",
+        "description": "Vùng Tây Nguyên với nhà rông, cầu treo Kon Klor và cà phê đậm chất.",
+        "addressDetail": "Thành phố Kon Tum, Kon Tum, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Kon Tum",
+        "location": {
+            "lat": 14.3497,
+            "lng": 108.0
+        },
+        "priceLevel": 3,
+        "bestSeason": "dry_season",
+        "tags": [
+            "văn hóa",
+            "thiên nhiên",
+            "cà phê",
+            "dân tộc",
+            "kiến trúc"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739897/provinces/KonTum/Kontum_wooden_catholic_church.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739895/provinces/KonTum/khu-du-lich-mang-den-dia-diem-du-lich-o-kon-tum-noi-tieng-1.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739894/provinces/KonTum/dia-diem-du-lich-kon-tum-1.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739891/provinces/KonTum/20201217153749img4360-1--16082649800161128926969.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "ac48180e-3968-4403-a06c-b817d690e09b",
+                "relevance": 5
+            },
+            {
+                "interestId": "8026c83f-b284-489c-8400-113b3faeea34",
+                "relevance": 4
+            },
+            {
+                "interestId": "7389ea3f-09b3-4e2b-b219-0d36cc6a6711",
+                "relevance": 4
+            }
+        ],
+        "priceRange": [
+            600000,
+            1800000
+        ],
+        "travelTips": [
+            "Thăm nhà rông của dân tộc Bahnar để tìm hiểu văn hóa",
+            "Thưởng thức cà phê Kon Tum rang xay truyền thống",
+            "Khám phá cầu treo Kon Klor bằng tre",
+            "Tham quan các làng dân tộc thiểu số",
+            "Thử cơm lam và thịt nướng đặc sản"
+        ],
+        "outstandingLocations": [
+            "Nhà rông Kon Tum",
+            "Cầu treo Kon Klor",
+            "Thác Yaly",
+            "Làng Kon Ktu",
+            "Chùa Ghositaram",
+            "Cầu tre Kon Tum"
+        ],
+        "averageRating": 4.2,
+        "totalReviews": 80,
+        "isActive": true
+    },
+    {
+        "name": "Lai Châu",
+        "description": "Vùng núi Tây Bắc với đỉnh Pu Si Lung, chợ đêm Sin Chéng và văn hóa dân tộc Hà Nhì.",
+        "addressDetail": "Thành phố Lai Châu, Lai Châu, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Lai Châu",
+        "location": {
+            "lat": 22.3967,
+            "lng": 103.4368
+        },
+        "priceLevel": 3,
+        "bestSeason": "spring",
+        "tags": [
+            "thiên nhiên",
+            "văn hóa",
+            "khám phá",
+            "dân tộc",
+            "núi non"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739907/provinces/LaiChau/toancanh1.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739903/provinces/LaiChau/Lai_Ch%C3%A2u_City_Lake.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739901/provinces/LaiChau/khu-du-lich-tam-linh-chua-linh-ung-o-lai-chau.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739900/provinces/LaiChau/cam-nang-du-lich-lai-chau-tu-a-den-z-kham-pha-ve-dep-hoang-so-va-hung-vi-cua-tay-bac-164052.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "cbba14db-38b0-4708-9c61-1c9bf107a1cc",
+                "relevance": 5
+            },
+            {
+                "interestId": "18db1533-56cb-41a8-9e12-b8d98c3ad5f4",
+                "relevance": 4
+            },
+            {
+                "interestId": "ac48180e-3968-4403-a06c-b817d690e09b",
+                "relevance": 4
+            }
+        ],
+        "priceRange": [
+            700000,
+            2000000
+        ],
+        "travelTips": [
+            "Thăm chợ đêm Sin Chéng để mua đặc sản vùng cao",
+            "Mang giày leo núi chắc chắn cho đỉnh Pu Si Lung",
+            "Tìm hiểu văn hóa dân tộc Hà Nhì độc đáo",
+            "Thưởng thức các món ăn dân tộc như thịt trâu gác bếp",
+            "Mang áo ấm vì thời tiết miền núi se lạnh"
+        ],
+        "outstandingLocations": [
+            "Đỉnh Pu Si Lung",
+            "Chợ đêm Sin Chéng",
+            "Thác Tác Tình",
+            "Làng Hà Nhì",
+            "Đèo Ô Quy Hồ",
+            "Hồ Lai Châu"
+        ],
+        "averageRating": 4.1,
+        "totalReviews": 70,
+        "isActive": true
+    },
+    {
+        "name": "Lạng Sơn",
+        "description": "Cửa khẩu Tân Thanh, núi Tô Thị và chợ Đông Kinh sầm uất.",
+        "addressDetail": "Thành phố Lạng Sơn, Lạng Sơn, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Lạng Sơn",
+        "location": {
+            "lat": 21.8527,
+            "lng": 106.761
+        },
+        "priceLevel": 3,
+        "bestSeason": "autumn",
+        "tags": [
+            "văn hóa",
+            "chợ",
+            "thiên nhiên",
+            "biên giới",
+            "thương mại"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739924/provinces/LangSon/anh-3.2.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739923/provinces/LangSon/69-Lang-Son-Khai-thac-tiem-nang-xay-dung-va-phat-trien-cong-vien-dia-chat-1.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739921/provinces/LangSon/2024_01_22_04_29_521.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "96d22229-d7c2-452b-8009-d8a52b92b1dc",
+                "relevance": 5
+            },
+            {
+                "interestId": "8026c83f-b284-489c-8400-113b3faeea34",
+                "relevance": 3
+            },
+            {
+                "interestId": "cbba14db-38b0-4708-9c61-1c9bf107a1cc",
+                "relevance": 3
+            }
+        ],
+        "priceRange": [
+            500000,
+            1500000
+        ],
+        "travelTips": [
+            "Thăm chợ Đông Kinh để mua hàng Trung Quốc",
+            "Khám phá núi Tô Thị với hang động đẹp",
+            "Mua đặc sản vịt quay và bánh coóc mô",
+            "Tham quan cửa khẩu Tân Thanh",
+            "Thưởng thức ẩm thực biên giới độc đáo"
+        ],
+        "outstandingLocations": [
+            "Cửa khẩu Tân Thanh",
+            "Núi Tô Thị",
+            "Chợ Đông Kinh",
+            "Động Tam Thanh",
+            "Đền Kỳ Cùng",
+            "Động Nhị Thanh"
+        ],
+        "averageRating": 4.0,
+        "totalReviews": 70,
+        "isActive": true
+    },
+    {
+        "name": "Lào Cai",
+        "description": "Nơi có Sa Pa mù sương, đỉnh Fansipan và chợ đêm dân tộc thiểu số.",
+        "addressDetail": "Thành phố Lào Cai, Lào Cai, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Lào Cai",
+        "location": {
+            "lat": 22.4857,
+            "lng": 103.975
+        },
+        "priceLevel": 4,
+        "bestSeason": "dry_season",
+        "tags": [
+            "thiên nhiên",
+            "văn hóa",
+            "núi non",
+            "dân tộc",
+            "trekking"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752742948/1728902007_wpkvwf.webp",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752742948/1728902007_wpkvwf.webp",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739928/provinces/LaoCai/laocai%281%29.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739926/provinces/LaoCai/14-du_lich_lao_cai_4_trdb.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "cbba14db-38b0-4708-9c61-1c9bf107a1cc",
+                "relevance": 5
+            },
+            {
+                "interestId": "18db1533-56cb-41a8-9e12-b8d98c3ad5f4",
+                "relevance": 5
+            },
+            {
+                "interestId": "438fc3cd-1bbb-4548-9cb2-8a97d8dc60e2",
+                "relevance": 4
+            }
+        ],
+        "priceRange": [
+            1000000,
+            3000000
+        ],
+        "travelTips": [
+            "Thăm Sa Pa vào mùa khô để thời tiết đẹp",
+            "Đi cáp treo Fansipan để chinh phục nóc nhà Đông Dương",
+            "Tìm hiểu văn hóa dân tộc H'Mông và Dao",
+            "Trekking qua các thung lũng và ruộng bậc thang",
+            "Mang áo ấm vì thời tiết miền núi lạnh"
+        ],
+        "outstandingLocations": [
+            "Sa Pa",
+            "Đỉnh Fansipan",
+            "Chợ đêm Lào Cai",
+            "Ruộng bậc thang Mù Cang Chải",
+            "Thác Bạc",
+            "Đền Trần Quốc Nghiễn"
+        ],
+        "averageRating": 4.7,
+        "totalReviews": 200,
+        "isActive": true
+    },
+    {
+        "name": "Lâm Đồng",
+        "description": "Thành phố Đà Lạt mộng mơ với hồ Xuân Hương, thác Datanla và cà phê nguyên chất.",
+        "addressDetail": "Thành phố Đà Lạt, Lâm Đồng, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Lâm Đồng",
+        "location": {
+            "lat": 11.9404,
+            "lng": 108.458
+        },
+        "priceLevel": 4,
+        "bestSeason": "year_round",
+        "tags": [
+            "thiên nhiên",
+            "lãng mạn",
+            "cà phê",
+            "khí hậu",
+            "nghỉ dưỡng"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739919/provinces/LamDong/tour_s18.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739918/provinces/LamDong/tour-du-lich-ben-tre-da-lat.webp",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739916/provinces/LamDong/dc2c5d0d-fe20-45eb-8fe3-07fb187d041c.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739915/provinces/LamDong/da-lat-hoang-hon-e1647443958364.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739913/provinces/LamDong/chi-phi-di-da-lat-1.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739911/provinces/LamDong/A455359cfda30bfd52b2.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739909/provinces/LamDong/11BuoisangbinhyenDoicohonghoDa-8476-1276-1650882782.webp"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "d008e7a4-8bdf-486e-a682-dff450383fc9",
+                "relevance": 5
+            },
+            {
+                "interestId": "438fc3cd-1bbb-4548-9cb2-8a97d8dc60e2",
+                "relevance": 5
+            },
+            {
+                "interestId": "7389ea3f-09b3-4e2b-b219-0d36cc6a6711",
+                "relevance": 4
+            }
+        ],
+        "priceRange": [
+            1000000,
+            3500000
+        ],
+        "travelTips": [
+            "Thăm hồ Xuân Hương vào buổi sáng sớm hoặc chiều tối",
+            "Thưởng thức cà phê Đà Lạt với khí hậu mát mẻ",
+            "Khám phá thác Datanla với trò chơi mạo hiểm",
+            "Tham quan các vườn hoa và làng hoa",
+            "Mang áo ấm vì thời tiết se lạnh quanh năm"
+        ],
+        "outstandingLocations": [
+            "Hồ Xuân Hương",
+            "Thác Datanla",
+            "Thung lũng Tình Yêu",
+            "Cầu Vàng",
+            "Ga Đà Lạt",
+            "Chùa Linh Phước"
+        ],
+        "averageRating": 4.8,
+        "totalReviews": 240,
+        "isActive": true
+    },
+    {
+        "name": "Long An",
+        "description": "Miền Tây với làng nổi Tân Lập, khu bảo tồn đất ngập nước Láng Sen và chè Long An.",
+        "addressDetail": "Thành phố Tân An, Long An, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Long An",
+        "location": {
+            "lat": 10.5336,
+            "lng": 106.4053
+        },
+        "priceLevel": 2,
+        "bestSeason": "dry_season",
+        "tags": [
+            "thiên nhiên",
+            "sông nước",
+            "văn hóa",
+            "sinh thái",
+            "miền tây"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739940/provinces/LongAn/z3728340295856_fc3f5d8536f7853cfebe714c84eb2de6.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739937/provinces/LongAn/Thanh-pho-tan-an.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739933/provinces/LongAn/long_an_thuoc_mien_nao_2_82284aa073.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739932/provinces/LongAn/long-an.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "cbba14db-38b0-4708-9c61-1c9bf107a1cc",
+                "relevance": 4
+            },
+            {
+                "interestId": "ac48180e-3968-4403-a06c-b817d690e09b",
+                "relevance": 4
+            },
+            {
+                "interestId": "7389ea3f-09b3-4e2b-b219-0d36cc6a6711",
+                "relevance": 3
+            }
+        ],
+        "priceRange": [
+            400000,
+            1200000
+        ],
+        "travelTips": [
+            "Đi thuyền tại làng nổi Tân Lập để trải nghiệm cuộc sống sông nước",
+            "Thăm Láng Sen vào mùa nước nổi để ngắm cảnh đẹp",
+            "Thử chè Long An và các món ăn miền Tây",
+            "Tham quan nhà trăm cột với kiến trúc độc đáo",
+            "Mang kem chống nắng và mũ rộng vành"
+        ],
+        "outstandingLocations": [
+            "Làng nổi Tân Lập",
+            "Khu bảo tồn Láng Sen",
+            "Nhà trăm cột",
+            "Chùa Phật Học",
+            "Vườn trái cây Mỹ Tho",
+            "Khu du lịch sinh thái Cồn Phụng"
+        ],
+        "averageRating": 4.0,
+        "totalReviews": 60,
+        "isActive": true
+    },
+    {
+        "name": "Nam Định",
+        "description": "Quê hương của Phủ Dầy, chùa Cổ Lễ và món phở bò Nam Định.",
+        "addressDetail": "Thành phố Nam Định, Nam Định, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Nam Định",
+        "location": {
+            "lat": 20.4339,
+            "lng": 106.1771
+        },
+        "priceLevel": 2,
+        "bestSeason": "spring",
+        "tags": [
+            "văn hóa",
+            "ẩm thực",
+            "tâm linh",
+            "lịch sử",
+            "làng nghề"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739947/provinces/NamDinh/hai-hau-nam-dinh-1119.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739945/provinces/NamDinh/c0c0885d-du-lich-tam-linh-nam-dinh-2094679.png",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739943/provinces/NamDinh/63-1719308456-dia10-94.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739942/provinces/NamDinh/2_20231214083839.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "8026c83f-b284-489c-8400-113b3faeea34",
+                "relevance": 5
+            },
+            {
+                "interestId": "7389ea3f-09b3-4e2b-b219-0d36cc6a6711",
+                "relevance": 4
+            },
+            {
+                "interestId": "ac48180e-3968-4403-a06c-b817d690e09b",
+                "relevance": 3
+            }
+        ],
+        "priceRange": [
+            300000,
+            1000000
+        ],
+        "travelTips": [
+            "Thăm Phủ Dầy vào các dịp lễ hội lớn",
+            "Thưởng thức phở bò Nam Định với nước dùng đậm đà",
+            "Khám phá chùa Cổ Lễ với kiến trúc cổ kính",
+            "Tham quan cầu ngói Thương - công trình cổ",
+            "Mua đặc sản bánh gai và bánh ít"
+        ],
+        "outstandingLocations": [
+            "Phủ Dầy",
+            "Chùa Cổ Lễ",
+            "Cầu ngói Thương",
+            "Đền Trần",
+            "Chùa Phúc Lộc",
+            "Làng nghề dệt chiếu"
+        ],
+        "averageRating": 4.0,
+        "totalReviews": 70,
+        "isActive": true
+    },
+    {
+        "name": "Nghệ An",
+        "description": "Vùng đất của quê Bác, biển Cửa Lò và dân ca ví giặm Nghệ Tĩnh.",
+        "addressDetail": "Thành phố Vinh, Nghệ An, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Nghệ An",
+        "location": {
+            "lat": 18.6796,
+            "lng": 105.6813
+        },
+        "priceLevel": 3,
+        "bestSeason": "dry_season",
+        "tags": [
+            "lịch sử",
+            "biển",
+            "văn hóa",
+            "tâm linh",
+            "âm nhạc"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739958/provinces/NgheAn/%E1%BA%A3nh%201%20-%20th%C3%A0nh%20ph%E1%BB%91%20Vinh.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739956/provinces/NgheAn/s453a3-3925-169408887567115269907.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739953/provinces/NgheAn/pasted_image_0_1_645255894.png",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739950/provinces/NgheAn/nghe-an-diem-du-lich-phai-den-mot-lan-trong-doi-141535.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739949/provinces/NgheAn/dia-diem-du-lich-nghe-an-1.webp"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "8026c83f-b284-489c-8400-113b3faeea34",
+                "relevance": 5
+            },
+            {
+                "interestId": "d008e7a4-8bdf-486e-a682-dff450383fc9",
+                "relevance": 4
+            },
+            {
+                "interestId": "7389ea3f-09b3-4e2b-b219-0d36cc6a6711",
+                "relevance": 3
+            }
+        ],
+        "priceRange": [
+            600000,
+            1800000
+        ],
+        "travelTips": [
+            "Thăm quê Bác ở Kim Liên để tìm hiểu lịch sử",
+            "Tắm biển Cửa Lò với bãi cát trắng mịn",
+            "Nghe ví giặm Nghệ Tĩnh - dân ca truyền thống",
+            "Tham quan đền Ông Hoàng Mười",
+            "Thưởng thức bánh mướt và nem chua"
+        ],
+        "outstandingLocations": [
+            "Quê Bác Kim Liên",
+            "Biển Cửa Lò",
+            "Đền Ông Hoàng Mười",
+            "Núi Cửa",
+            "Vườn quốc gia Pù Mát",
+            "Thác Bạc"
+        ],
+        "averageRating": 4.2,
+        "totalReviews": 90,
+        "isActive": true
+    },
+    {
+        "name": "Ninh Bình",
+        "description": "Cố đô Hoa Lư, Tam Cốc - Bích Động và đặc sản thịt dê núi.",
+        "addressDetail": "Thành phố Ninh Bình, Ninh Bình, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Ninh Bình",
+        "location": {
+            "lat": 20.2516,
+            "lng": 105.9747
+        },
+        "priceLevel": 3,
+        "bestSeason": "dry_season",
+        "tags": [
+            "thiên nhiên",
+            "lịch sử",
+            "ẩm thực",
+            "đi thuyền",
+            "hang động"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739966/provinces/NinhBinh/trang-an-bd_1737078235160%20%281%29.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739964/provinces/NinhBinh/trang-an-5882.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739963/provinces/NinhBinh/khu-du-lich-trang-an-2.webp",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739961/provinces/NinhBinh/du-lich-ninh-binh-1.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739959/provinces/NinhBinh/83-1720411287-ninhbinh2-17521336949821154388151.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "cbba14db-38b0-4708-9c61-1c9bf107a1cc",
+                "relevance": 5
+            },
+            {
+                "interestId": "8026c83f-b284-489c-8400-113b3faeea34",
+                "relevance": 4
+            },
+            {
+                "interestId": "438fc3cd-1bbb-4548-9cb2-8a97d8dc60e2",
+                "relevance": 5
+            }
+        ],
+        "priceRange": [
+            700000,
+            2000000
+        ],
+        "travelTips": [
+            "Đi thuyền ở Tam Cốc để ngắm cảnh núi non hùng vĩ",
+            "Thưởng thức thịt dê núi nướng đặc sản",
+            "Thăm cố đô Hoa Lư để tìm hiểu lịch sử",
+            "Tham quan chùa Bái Đính - ngôi chùa lớn nhất Việt Nam",
+            "Mang nón và kem chống nắng khi đi thuyền"
+        ],
+        "outstandingLocations": [
+            "Tam Cốc - Bích Động",
+            "Cố đô Hoa Lư",
+            "Chùa Bái Đính",
+            "Tràng An",
+            "Hang Múa",
+            "Động Thiên Hà"
+        ],
+        "averageRating": 4.6,
+        "totalReviews": 150,
+        "isActive": true
+    },
+    {
+        "name": "Ninh Thuận",
+        "description": "Vùng đất nắng gió với tháp Chăm Po Klong Garai, vịnh Vĩnh Hy và nho Phan Rang.",
+        "addressDetail": "Thành phố Phan Rang - Tháp Chàm, Ninh Thuận, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Ninh Thuận",
+        "location": {
+            "lat": 11.5643,
+            "lng": 108.9937
+        },
+        "priceLevel": 3,
+        "bestSeason": "dry_season",
+        "tags": [
+            "biển",
+            "văn hóa",
+            "nông nghiệp",
+            "tháp chăm",
+            "nho"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739974/provinces/NinhThuan/VinhHY-4711-1651120272.webp",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739972/provinces/NinhThuan/tour-ninh-thuan-4-ngay-3-dem-1-2057.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739971/provinces/NinhThuan/du-lich-ninh-thuan.webp",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739969/provinces/NinhThuan/du-lich-ninh-thuan-ivivu18.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739967/provinces/NinhThuan/Bien-Dong-Hai-Phan-Rang.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "8026c83f-b284-489c-8400-113b3faeea34",
+                "relevance": 4
+            },
+            {
+                "interestId": "d008e7a4-8bdf-486e-a682-dff450383fc9",
+                "relevance": 4
+            },
+            {
+                "interestId": "7389ea3f-09b3-4e2b-b219-0d36cc6a6711",
+                "relevance": 3
+            }
+        ],
+        "priceRange": [
+            700000,
+            2000000
+        ],
+        "travelTips": [
+            "Thăm tháp Chăm Po Klong Garai để tìm hiểu văn hóa Chăm",
+            "Lặn biển ở vịnh Vĩnh Hy với san hô đẹp",
+            "Mua nho Phan Rang ngọt thanh vào mùa chín",
+            "Thưởng thức bánh căn và bánh xèo Chăm",
+            "Mang kem chống nắng vì thời tiết nắng nóng"
+        ],
+        "outstandingLocations": [
+            "Tháp Chăm Po Klong Garai",
+            "Vịnh Vĩnh Hy",
+            "Vườn nho Phan Rang",
+            "Bãi biển Ninh Chữ",
+            "Đồi cừu Suối Nghệ",
+            "Tháp Po Rome"
+        ],
+        "averageRating": 4.3,
+        "totalReviews": 100,
+        "isActive": true
+    },
+    {
+        "name": "Phú Thọ",
+        "description": "Đất tổ Hùng Vương với đền Hùng, làng nghề mộc Chàng Sơn và trà xanh.",
+        "addressDetail": "Thành phố Việt Trì, Phú Thọ, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Phú Thọ",
+        "location": {
+            "lat": 21.3126,
+            "lng": 105.4019
+        },
+        "priceLevel": 2,
+        "bestSeason": "spring",
+        "tags": [
+            "lịch sử",
+            "văn hóa",
+            "nông nghiệp",
+            "làng nghề",
+            "tâm linh"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739980/provinces/PhuTho/du-lich-phu-tho-1.png",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739978/provinces/PhuTho/du-lich-phu-tho-1-ngay-1505.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739977/provinces/PhuTho/du-lich-phu-tho-1-1696782435.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739975/provinces/PhuTho/dam-ao-chau-phu-tho.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "8026c83f-b284-489c-8400-113b3faeea34",
+                "relevance": 5
+            },
+            {
+                "interestId": "ac48180e-3968-4403-a06c-b817d690e09b",
+                "relevance": 4
+            },
+            {
+                "interestId": "7389ea3f-09b3-4e2b-b219-0d36cc6a6711",
+                "relevance": 3
+            }
+        ],
+        "priceRange": [
+            400000,
+            1200000
+        ],
+        "travelTips": [
+            "Thăm đền Hùng dịp Giỗ Tổ Hùng Vương (10/3 âm lịch)",
+            "Thưởng thức trà xanh Phú Thọ thơm ngon",
+            "Xem nghệ nhân làm đồ mộc tại làng Chàng Sơn",
+            "Tham quan các di tích lịch sử cổ",
+            "Mua đặc sản trà và đồ thủ công mỹ nghệ"
+        ],
+        "outstandingLocations": [
+            "Đền Hùng",
+            "Làng nghề mộc Chàng Sơn",
+            "Ao Giời - Suối Tiên",
+            "Núi Nghĩa Lĩnh",
+            "Chùa Tây Thiên",
+            "Bảo tàng Hùng Vương"
+        ],
+        "averageRating": 4.1,
+        "totalReviews": 80,
+        "isActive": true
+    },
+    {
+        "name": "Phú Yên",
+        "description": "Xứ hoa vàng cỏ xanh với ghềnh Đá Đĩa, vịnh Vũng Rô và hải sản tươi ngon.",
+        "addressDetail": "Thành phố Tuy Hòa, Phú Yên, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Phú Yên",
+        "location": {
+            "lat": 13.0882,
+            "lng": 109.3076
+        },
+        "priceLevel": 3,
+        "bestSeason": "dry_season",
+        "tags": [
+            "biển",
+            "thiên nhiên",
+            "hải sản",
+            "địa chất",
+            "phong cảnh"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739989/provinces/PhuYen/Phu-Yen-Bld-1.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739987/provinces/PhuYen/goi-y-lich-trinh-du-lich-phu-yen-3-ngay-2-dem-5e846d1189357.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739986/provinces/PhuYen/canh-dep-phu-yen.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739984/provinces/PhuYen/ban-do-du-lich-phu-yen-2%281%29.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739982/provinces/PhuYen/4b10d3f9-du-lich-phu-yen-tu-tuc-23.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "cbba14db-38b0-4708-9c61-1c9bf107a1cc",
+                "relevance": 5
+            },
+            {
+                "interestId": "438fc3cd-1bbb-4548-9cb2-8a97d8dc60e2",
+                "relevance": 4
+            },
+            {
+                "interestId": "7389ea3f-09b3-4e2b-b219-0d36cc6a6711",
+                "relevance": 4
+            }
+        ],
+        "priceRange": [
+            700000,
+            2000000
+        ],
+        "travelTips": [
+            "Thăm ghềnh Đá Đĩa vào buổi sáng để chụp ảnh đẹp",
+            "Thưởng thức hải sản tươi sống tại vịnh Vũng Rô",
+            "Khám phá đầm Ô Loan với cảnh quan thiên nhiên",
+            "Ngắm hoa vàng cỏ xanh vào mùa khô",
+            "Tham quan bãi biển Bãi Xép hoang sơ"
+        ],
+        "outstandingLocations": [
+            "Ghềnh Đá Đĩa",
+            "Vịnh Vũng Rô",
+            "Đầm Ô Loan",
+            "Bãi Xép",
+            "Hòn Nưa",
+            "Mũi Điện"
+        ],
+        "averageRating": 4.4,
+        "totalReviews": 110,
+        "isActive": true
+    },
+    {
+        "name": "Quảng Bình",
+        "description": "Vùng đất của hang Sơn Đoòng, động Phong Nha và bánh bột lọc trứ danh.",
+        "addressDetail": "Thành phố Đồng Hới, Quảng Bình, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Quảng Bình",
+        "location": {
+            "lat": 17.4686,
+            "lng": 106.6222
+        },
+        "priceLevel": 4,
+        "bestSeason": "dry_season",
+        "tags": [
+            "thiên nhiên",
+            "khám phá",
+            "ẩm thực",
+            "hang động",
+            "di sản"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739995/provinces/QuangBinh/vinpearlquangbinh.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739994/provinces/QuangBinh/hang-kieu-1024x683.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739992/provinces/QuangBinh/du-lich-hang-son-doong-1.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739990/provinces/QuangBinh/du-lich-dong-phong-nha-quang-binh-1.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "cbba14db-38b0-4708-9c61-1c9bf107a1cc",
+                "relevance": 5
+            },
+            {
+                "interestId": "18db1533-56cb-41a8-9e12-b8d98c3ad5f4",
+                "relevance": 5
+            },
+            {
+                "interestId": "7389ea3f-09b3-4e2b-b219-0d36cc6a6711",
+                "relevance": 3
+            }
+        ],
+        "priceRange": [
+            1000000,
+            3000000
+        ],
+        "travelTips": [
+            "Đặt tour động Phong Nha trước vì số lượng khách có hạn",
+            "Thử bánh bột lọc Quảng Bình với nhân tôm thịt",
+            "Mang giày chống trượt và đèn pin khi khám phá hang",
+            "Tham quan biển Nhật Lệ với cát trắng mịn",
+            "Chuẩn bị thể lực tốt cho các tour khám phá hang động"
+        ],
+        "outstandingLocations": [
+            "Động Phong Nha",
+            "Hang Sơn Đoòng",
+            "Biển Nhật Lệ",
+            "Động Thiên Đường",
+            "Vườn quốc gia Phong Nha - Kẻ Bàng",
+            "Suối Nước Moọc"
+        ],
+        "averageRating": 4.7,
+        "totalReviews": 180,
+        "isActive": true
+    },
+    {
+        "name": "Quảng Nam",
+        "description": "Nơi có Hội An cổ kính, thánh địa Mỹ Sơn và món mì Quảng đặc sắc.",
+        "addressDetail": "Thành phố Tam Kỳ, Quảng Nam, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Quảng Nam",
+        "location": {
+            "lat": 15.5736,
+            "lng": 108.474
+        },
+        "priceLevel": 4,
+        "bestSeason": "dry_season",
+        "tags": [
+            "văn hóa",
+            "lịch sử",
+            "ẩm thực",
+            "di sản",
+            "phố cổ"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740004/provinces/QuangNam/vietgoing_kwj2404273613.webp",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740002/provinces/QuangNam/hon_2_nam_chiu_anh_huong_boi_dich_benh_da_hoi_an_co_nhieu_kinh_nghiem_de_thich_ung_an_toan_som_phuc_hoi_cac_hoat_dong_du_lich_trong_trang_thai_moi.webp",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740001/provinces/QuangNam/hoi-an-quang-nam-vntrip.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739999/provinces/QuangNam/du-lich-hoi-an-1-1542.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "8026c83f-b284-489c-8400-113b3faeea34",
+                "relevance": 5
+            },
+            {
+                "interestId": "7389ea3f-09b3-4e2b-b219-0d36cc6a6711",
+                "relevance": 5
+            },
+            {
+                "interestId": "438fc3cd-1bbb-4548-9cb2-8a97d8dc60e2",
+                "relevance": 4
+            }
+        ],
+        "priceRange": [
+            1000000,
+            3000000
+        ],
+        "travelTips": [
+            "Dạo phố cổ Hội An vào buổi tối để ngắm đèn lồng",
+            "Thưởng thức mì Quảng và cao lầu đặc sản",
+            "Thăm thánh địa Mỹ Sơn để tìm hiểu văn hóa Chăm",
+            "Tham gia lớp học nấu ăn truyền thống",
+            "Thuê xe đạp để khám phá phố cổ"
+        ],
+        "outstandingLocations": [
+            "Phố cổ Hội An",
+            "Thánh địa Mỹ Sơn",
+            "Biển Cửa Đại",
+            "Làng rau Trà Quế",
+            "Cầu Nhật Bản",
+            "Rừng dừa Bảy Mẫu"
+        ],
+        "averageRating": 4.8,
+        "totalReviews": 220,
+        "isActive": true
+    },
+    {
+        "name": "Quảng Ngãi",
+        "description": "Quê hương đảo Lý Sơn, núi Ấn - sông Trà và kẹo gương Thu Xà.",
+        "addressDetail": "Thành phố Quảng Ngãi, Quảng Ngãi, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Quảng Ngãi",
+        "location": {
+            "lat": 15.1214,
+            "lng": 108.8044
+        },
+        "priceLevel": 3,
+        "bestSeason": "dry_season",
+        "tags": [
+            "đảo",
+            "văn hóa",
+            "ẩm thực",
+            "tỏi",
+            "biển"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740010/provinces/QuangNgai/tron-bo-cam-nang-du-lich-quang-ngai-cac-dia-diem-checkin-202202221122242264.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740008/provinces/QuangNgai/quangngai-1750639599525151410625.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740007/provinces/QuangNgai/ly-son-1-e1509706803776.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740005/provinces/QuangNgai/Anh-2-12.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "cbba14db-38b0-4708-9c61-1c9bf107a1cc",
+                "relevance": 4
+            },
+            {
+                "interestId": "7389ea3f-09b3-4e2b-b219-0d36cc6a6711",
+                "relevance": 4
+            },
+            {
+                "interestId": "8026c83f-b284-489c-8400-113b3faeea34",
+                "relevance": 3
+            }
+        ],
+        "priceRange": [
+            700000,
+            2000000
+        ],
+        "travelTips": [
+            "Thăm đảo Lý Sơn vào mùa thu hoạch tỏi (tháng 4-5)",
+            "Thưởng thức kẹo gương Thu Xà và tỏi Lý Sơn",
+            "Khám phá núi Ấn với cảnh quan thiên nhiên",
+            "Tham quan các di tích lịch sử trên đảo",
+            "Mua tỏi Lý Sơn làm quà đặc sản"
+        ],
+        "outstandingLocations": [
+            "Đảo Lý Sơn",
+            "Núi Ấn - Sông Trà",
+            "Bãi biển Mỹ Khê",
+            "Chùa Hang",
+            "Vườn tỏi Lý Sơn",
+            "Cửa Đại"
+        ],
+        "averageRating": 4.3,
+        "totalReviews": 100,
+        "isActive": true
+    },
+    {
+        "name": "Quảng Ninh",
+        "description": "Vùng đất của vịnh Hạ Long, đảo Cô Tô và hải sản phong phú.",
+        "addressDetail": "Thành phố Hạ Long, Quảng Ninh, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Quảng Ninh",
+        "location": {
+            "lat": 20.9511,
+            "lng": 107.08
+        },
+        "priceLevel": 4,
+        "bestSeason": "dry_season",
+        "tags": [
+            "biển",
+            "thiên nhiên",
+            "hải sản",
+            "di sản thế giới",
+            "du thuyền"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740018/provinces/QuangNinh/quang-ninh-thuoc-vung-nao_5.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740017/provinces/QuangNinh/nhungdiemdenkhongtheboqua.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740015/provinces/QuangNinh/hlong-16760849817131824004114-17506400042501860267104.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740013/provinces/QuangNinh/1.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740011/provinces/QuangNinh/1-1607009060-29-1568x1045.webp"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "cbba14db-38b0-4708-9c61-1c9bf107a1cc",
+                "relevance": 5
+            },
+            {
+                "interestId": "d008e7a4-8bdf-486e-a682-dff450383fc9",
+                "relevance": 5
+            },
+            {
+                "interestId": "438fc3cd-1bbb-4548-9cb2-8a97d8dc60e2",
+                "relevance": 5
+            }
+        ],
+        "priceRange": [
+            1000000,
+            3500000
+        ],
+        "travelTips": [
+            "Đi du thuyền khám phá vịnh Hạ Long - Di sản thế giới thiên nhiên",
+            "Thưởng thức hải sản tươi sống tại đảo Cô Tô",
+            "Tham quan chùa Yên Tử - cái nôi Phật giáo Trúc Lâm",
+            "Khám phá động Thiên Cung và hang Đầu Gỗ",
+            "Ngắm bình minh trên vịnh từ boong du thuyền"
+        ],
+        "outstandingLocations": [
+            "Vịnh Hạ Long",
+            "Đảo Cô Tô",
+            "Chùa Yên Tử",
+            "Động Thiên Cung",
+            "Hang Đầu Gỗ",
+            "Đảo Tuần Châu"
+        ],
+        "averageRating": 4.9,
+        "totalReviews": 250,
+        "isActive": true
+    },
+    {
+        "name": "Quảng Trị",
+        "description": "Miền đất lịch sử với Thành cổ Quảng Trị, cầu Hiền Lương và đặc sản bún hến.",
+        "addressDetail": "Thành phố Đông Hà, Quảng Trị, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Quảng Trị",
+        "location": {
+            "lat": 16.7943,
+            "lng": 107.1003
+        },
+        "priceLevel": 2,
+        "bestSeason": "dry_season",
+        "tags": [
+            "lịch sử",
+            "văn hóa",
+            "ẩm thực",
+            "chiến tranh",
+            "di tích"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740023/provinces/QuangTri/x3-1715917159029.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740021/provinces/QuangTri/du-lich-quang-tri.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740020/provinces/QuangTri/du-lich-quang-tri-1-1024x628.webp"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "8026c83f-b284-489c-8400-113b3faeea34",
+                "relevance": 5
+            },
+            {
+                "interestId": "7389ea3f-09b3-4e2b-b219-0d36cc6a6711",
+                "relevance": 3
+            },
+            {
+                "interestId": "ac48180e-3968-4403-a06c-b817d690e09b",
+                "relevance": 3
+            }
+        ],
+        "priceRange": [
+            400000,
+            1200000
+        ],
+        "travelTips": [
+            "Thăm Thành cổ Quảng Trị để tìm hiểu lịch sử chiến tranh",
+            "Thưởng thức bún hến và bánh bèo đặc sản",
+            "Khám phá cầu Hiền Lương - biểu tượng chia cắt",
+            "Tham quan địa đạo Vĩnh Mốc",
+            "Mang nón và kem chống nắng"
+        ],
+        "outstandingLocations": [
+            "Thành cổ Quảng Trị",
+            "Cầu Hiền Lương",
+            "Địa đạo Vĩnh Mốc",
+            "Nghĩa trang quốc gia Trường Sơn",
+            "Cửa Tùng",
+            "Khe Sanh"
+        ],
+        "averageRating": 4.0,
+        "totalReviews": 70,
+        "isActive": true
+    },
+    {
+        "name": "Sóc Trăng",
+        "description": "Vùng đất của chùa Dơi, lễ hội Oóc Om Bóc và văn hóa Khmer.",
+        "addressDetail": "Thành phố Sóc Trăng, Sóc Trăng, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Sóc Trăng",
+        "location": {
+            "lat": 9.5995,
+            "lng": 105.9719
+        },
+        "priceLevel": 2,
+        "bestSeason": "dry_season",
+        "tags": [
+            "văn hóa",
+            "tâm linh",
+            "lễ hội",
+            "dân tộc",
+            "khmer"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740031/provinces/SocTrang/du-lich-soc-trang-dat-ve-xe-ve-tau-online-saomaifly.png",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740027/provinces/SocTrang/du-lich-soc-trang-1-1628.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740026/provinces/SocTrang/dia-diem-du-lich-soc-trang-9.webp",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740024/provinces/SocTrang/dia-diem-du-lich-soc-trang-1.webp"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "8026c83f-b284-489c-8400-113b3faeea34",
+                "relevance": 5
+            },
+            {
+                "interestId": "ac48180e-3968-4403-a06c-b817d690e09b",
+                "relevance": 4
+            },
+            {
+                "interestId": "438fc3cd-1bbb-4548-9cb2-8a97d8dc60e2",
+                "relevance": 3
+            }
+        ],
+        "priceRange": [
+            400000,
+            1200000
+        ],
+        "travelTips": [
+            "Thăm chùa Dơi vào buổi sáng sớm để ngắm dơi về tổ",
+            "Tham gia lễ hội Oóc Om Bóc của người Khmer vào tháng 10 âm lịch",
+            "Thử bánh pía Sóc Trăng và các món ăn Khmer",
+            "Tìm hiểu văn hóa Khmer tại các chùa và bảo tàng",
+            "Mang máy ảnh để chụp kiến trúc chùa độc đáo"
+        ],
+        "outstandingLocations": [
+            "Chùa Dơi",
+            "Chùa Chén Kiểu",
+            "Vườn cò Tân Long",
+            "Chùa Sêc Kết",
+            "Bảo tàng Khmer",
+            "Chùa Mahatup"
+        ],
+        "averageRating": 4.0,
+        "totalReviews": 60,
+        "isActive": true
+    },
+    {
+        "name": "Sơn La",
+        "description": "Tây Bắc hùng vĩ với cao nguyên Mộc Châu, thủy điện Sơn La và mận hậu.",
+        "addressDetail": "Thành phố Sơn La, Sơn La, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Sơn La",
+        "location": {
+            "lat": 21.3256,
+            "lng": 103.9141
+        },
+        "priceLevel": 3,
+        "bestSeason": "spring",
+        "tags": [
+            "thiên nhiên",
+            "văn hóa",
+            "nông nghiệp",
+            "cao nguyên",
+            "dân tộc"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740042/provinces/SonLa/sonla.png",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740040/provinces/SonLa/Ho-thuy-dien-Son-La-7283-1710313174.webp",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740038/provinces/SonLa/du-lich-son-la-10-1200.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740036/provinces/SonLa/d50f7d51-du-lich-son-la-2.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "cbba14db-38b0-4708-9c61-1c9bf107a1cc",
+                "relevance": 5
+            },
+            {
+                "interestId": "ac48180e-3968-4403-a06c-b817d690e09b",
+                "relevance": 4
+            },
+            {
+                "interestId": "7389ea3f-09b3-4e2b-b219-0d36cc6a6711",
+                "relevance": 4
+            }
+        ],
+        "priceRange": [
+            700000,
+            2000000
+        ],
+        "travelTips": [
+            "Thăm Mộc Châu vào mùa hoa mận (tháng 1-2) để ngắm cảnh đẹp nhất",
+            "Khám phá thủy điện Sơn La - công trình thủy điện lớn nhất Đông Nam Á",
+            "Mua mận hậu Sơn La ngọt thơm vào mùa chín",
+            "Tìm hiểu văn hóa dân tộc Thái, Mông tại các bản làng",
+            "Thưởng thức sữa bò tươi và bánh flan Mộc Châu"
+        ],
+        "outstandingLocations": [
+            "Cao nguyên Mộc Châu",
+            "Thủy điện Sơn La",
+            "Hang Thẩm Tết Tòng",
+            "Đỉnh Pha Luông",
+            "Suối Khoáng nóng",
+            "Vườn hoa Mộc Châu"
+        ],
+        "averageRating": 4.3,
+        "totalReviews": 90,
+        "isActive": true
+    },
+    {
+        "name": "Tây Ninh",
+        "description": "Nơi có núi Bà Đen, Tòa thánh Cao Đài và bánh tráng phơi sương.",
+        "addressDetail": "Thành phố Tây Ninh, Tây Ninh, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Tây Ninh",
+        "location": {
+            "lat": 11.3146,
+            "lng": 106.0947
+        },
+        "priceLevel": 3,
+        "bestSeason": "dry_season",
+        "tags": [
+            "tâm linh",
+            "thiên nhiên",
+            "ẩm thực",
+            "cao đài",
+            "núi non"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740051/provinces/TayNinh/saigontouristnui-bd-17236334801551352657748.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740049/provinces/TayNinh/kham-pha-10-dia-diem-du-lich-tay-ninh-hap-dan-nhat-202111011430579897.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740047/provinces/TayNinh/du-lich-tay-ninh.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740046/provinces/TayNinh/1-tong-hop-du-lich-tay-ninh.png",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740044/provinces/TayNinh/1-copy-2bcad4ed-c620-481f-ba96-7e49f9698a43.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "8026c83f-b284-489c-8400-113b3faeea34",
+                "relevance": 4
+            },
+            {
+                "interestId": "cbba14db-38b0-4708-9c61-1c9bf107a1cc",
+                "relevance": 4
+            },
+            {
+                "interestId": "7389ea3f-09b3-4e2b-b219-0d36cc6a6711",
+                "relevance": 3
+            }
+        ],
+        "priceRange": [
+            600000,
+            1800000
+        ],
+        "travelTips": [
+            "Đi cáp treo núi Bà Đen để ngắm toàn cảnh từ trên cao",
+            "Thăm Tòa thánh Cao Đài để tìm hiểu tôn giáo độc đáo",
+            "Thưởng thức bánh tráng phơi sương Tây Ninh nổi tiếng",
+            "Tham quan các địa đạo Củ Chi gần đó",
+            "Mang nước uống và kem chống nắng khi leo núi"
+        ],
+        "outstandingLocations": [
+            "Núi Bà Đen",
+            "Tòa thánh Cao Đài",
+            "Hồ Dầu Tiếng",
+            "Địa đạo Củ Chi",
+            "Khu du lịch Bà Đen Mountain",
+            "Chùa Bà Đen"
+        ],
+        "averageRating": 4.2,
+        "totalReviews": 100,
+        "isActive": true
+    },
+    {
+        "name": "Thái Bình",
+        "description": "Vùng đất của chùa Keo, làng nghề chiếu cói và món bánh cáy đặc sản.",
+        "addressDetail": "Thành phố Thái Bình, Thái Bình, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Thái Bình",
+        "location": {
+            "lat": 20.4463,
+            "lng": 106.34
+        },
+        "priceLevel": 2,
+        "bestSeason": "spring",
+        "tags": [
+            "văn hóa",
+            "ẩm thực",
+            "lịch sử",
+            "làng nghề",
+            "tâm linh"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740059/provinces/ThaiBinh/du-lich-thai-binh-ivivu-1.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740058/provinces/ThaiBinh/du-lich-kien-xuong-thai-binh-5-dia-diem-du-lich-noi-tieng-202306080024297589.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740056/provinces/ThaiBinh/dia-diem-du-lich-thai-binh.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740054/provinces/ThaiBinh/287325724_2301090040.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740052/provinces/ThaiBinh/14-diem-du-lich-thai-binh-hut-khach-ma-ban-khong-the-bo-qua-202306101344195113.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "8026c83f-b284-489c-8400-113b3faeea34",
+                "relevance": 4
+            },
+            {
+                "interestId": "ac48180e-3968-4403-a06c-b817d690e09b",
+                "relevance": 4
+            },
+            {
+                "interestId": "7389ea3f-09b3-4e2b-b219-0d36cc6a6711",
+                "relevance": 3
+            }
+        ],
+        "priceRange": [
+            300000,
+            1000000
+        ],
+        "travelTips": [
+            "Thăm chùa Keo vào các dịp lễ hội lớn để ngắm kiến trúc cổ",
+            "Mua bánh cáy và chiếu cói Thái Bình làm quà đặc sản",
+            "Khám phá làng nghề chiếu cói truyền thống",
+            "Tham quan đền Trần để tìm hiểu lịch sử",
+            "Thưởng thức các món ăn dân dã miền quê"
+        ],
+        "outstandingLocations": [
+            "Chùa Keo",
+            "Làng nghề chiếu cói",
+            "Đền Trần",
+            "Chùa Bồ Đề",
+            "Khu du lịch Đồng Châu",
+            "Bảo tàng Thái Bình"
+        ],
+        "averageRating": 3.9,
+        "totalReviews": 60,
+        "isActive": true
+    },
+    {
+        "name": "Thái Nguyên",
+        "description": "Quê hương của trà Tân Cương, hồ Núi Cốc và văn hóa dân tộc Tày.",
+        "addressDetail": "Thành phố Thái Nguyên, Thái Nguyên, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Thái Nguyên",
+        "location": {
+            "lat": 21.5923,
+            "lng": 105.8442
+        },
+        "priceLevel": 3,
+        "bestSeason": "autumn",
+        "tags": [
+            "thiên nhiên",
+            "văn hóa",
+            "nông nghiệp",
+            "trà",
+            "dân tộc"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740064/provinces/ThaiNguy%C3%AAn/review-kinh-nghiem-du-lich-thai-nguyen-moi-nhat-e1647919426730.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740063/provinces/ThaiNguy%C3%AAn/du-lich-thai-nguyen-2.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740061/provinces/ThaiNguy%C3%AAn/dia-diem-du-lich-thai-nguyen-11.webp"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "cbba14db-38b0-4708-9c61-1c9bf107a1cc",
+                "relevance": 4
+            },
+            {
+                "interestId": "ac48180e-3968-4403-a06c-b817d690e09b",
+                "relevance": 4
+            },
+            {
+                "interestId": "7389ea3f-09b3-4e2b-b219-0d36cc6a6711",
+                "relevance": 4
+            }
+        ],
+        "priceRange": [
+            500000,
+            1500000
+        ],
+        "travelTips": [
+            "Thưởng thức trà Tân Cương xanh thơm ngon nổi tiếng",
+            "Thăm hồ Núi Cốc để nghỉ dưỡng và câu cá",
+            "Tìm hiểu văn hóa dân tộc Tày tại các bản làng",
+            "Tham quan bảo tàng văn hóa các dân tộc",
+            "Mua trà Tân Cương làm quà đặc sản"
+        ],
+        "outstandingLocations": [
+            "Hồ Núi Cốc",
+            "Làng trà Tân Cương",
+            "Bảo tàng Văn hóa các Dân tộc",
+            "Đền Thượng",
+            "Khu du lịch Núi Cốc",
+            "Chùa Hang"
+        ],
+        "averageRating": 4.1,
+        "totalReviews": 80,
+        "isActive": true
+    },
+    {
+        "name": "Thanh Hóa",
+        "description": "Vùng đất của thành nhà Hồ, biển Sầm Sơn và nem chua Thanh Hóa.",
+        "addressDetail": "Thành phố Thanh Hóa, Thanh Hóa, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Thanh Hóa",
+        "location": {
+            "lat": 19.8075,
+            "lng": 105.7764
+        },
+        "priceLevel": 3,
+        "bestSeason": "dry_season",
+        "tags": [
+            "lịch sử",
+            "biển",
+            "ẩm thực",
+            "di sản",
+            "nghỉ dưỡng"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740075/provinces/ThanhHoa/thanhphothanhhoa-16774897649251166490864.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740073/provinces/ThanhHoa/thanh-nha-ho--2_1629195660.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740071/provinces/ThanhHoa/PuLuongThanhHoa-1650946350-6138-1650947117.webp",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740069/provinces/ThanhHoa/bai-bien-sam-son-o-dau.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "8026c83f-b284-489c-8400-113b3faeea34",
+                "relevance": 4
+            },
+            {
+                "interestId": "d008e7a4-8bdf-486e-a682-dff450383fc9",
+                "relevance": 4
+            },
+            {
+                "interestId": "7389ea3f-09b3-4e2b-b219-0d36cc6a6711",
+                "relevance": 4
+            }
+        ],
+        "priceRange": [
+            600000,
+            1800000
+        ],
+        "travelTips": [
+            "Thăm thành nhà Hồ - di sản văn hóa thế giới",
+            "Tắm biển Sầm Sơn với bãi cát trắng mịn",
+            "Thưởng thức nem chua Thanh Hóa đặc sản",
+            "Khám phá khu du lịch Pù Luông với cảnh đẹp",
+            "Tham quan các di tích lịch sử cổ"
+        ],
+        "outstandingLocations": [
+            "Thành nhà Hồ",
+            "Biển Sầm Sơn",
+            "Khu du lịch Pù Luông",
+            "Đền Bà Triệu",
+            "Hang Múa",
+            "Bãi biển Hải Tiến"
+        ],
+        "averageRating": 4.2,
+        "totalReviews": 100,
+        "isActive": true
+    },
+    {
+        "name": "Thừa Thiên Huế",
+        "description": "Cố đô với kinh thành Huế, sông Hương và ẩm thực cung đình tinh tế.",
+        "addressDetail": "Thành phố Huế, Thừa Thiên Huế, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Thừa Thiên Huế",
+        "location": {
+            "lat": 16.4637,
+            "lng": 107.5848
+        },
+        "priceLevel": 4,
+        "bestSeason": "dry_season",
+        "tags": [
+            "lịch sử",
+            "văn hóa",
+            "ẩm thực",
+            "di sản",
+            "cung đình"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739865/provinces/Hue/z-a-9231.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739864/provinces/Hue/songhuong2.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739862/provinces/Hue/du-lich-thua-thien-hue-cam-nang-du-lich-va-18-dia-diem-dep-hap-dan-202308231353288788.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752739860/provinces/Hue/du-lich-Hue-9604-1650366420.webp"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "8026c83f-b284-489c-8400-113b3faeea34",
+                "relevance": 5
+            },
+            {
+                "interestId": "7389ea3f-09b3-4e2b-b219-0d36cc6a6711",
+                "relevance": 5
+            },
+            {
+                "interestId": "438fc3cd-1bbb-4548-9cb2-8a97d8dc60e2",
+                "relevance": 4
+            }
+        ],
+        "priceRange": [
+            1000000,
+            3000000
+        ],
+        "travelTips": [
+            "Thăm kinh thành Huế để tìm hiểu lịch sử triều Nguyễn",
+            "Thưởng thức bún bò Huế và cơm hến đặc sản",
+            "Đi thuyền trên sông Hương để ngắm cảnh",
+            "Tham quan các lăng tẩm hoàng gia",
+            "Nghe nhạc cung đình Huế truyền thống"
+        ],
+        "outstandingLocations": [
+            "Kinh thành Huế",
+            "Sông Hương",
+            "Chùa Thiên Mụ",
+            "Lăng Khải Định",
+            "Lăng Tự Đức",
+            "Đại Nội"
+        ],
+        "averageRating": 4.7,
+        "totalReviews": 200,
+        "isActive": true
+    },
+    {
+        "name": "Tiền Giang",
+        "description": "Xứ sở chợ nổi Cái Bè, lò gốm Tân Phước và hủ tiếu Mỹ Tho.",
+        "addressDetail": "Thành phố Mỹ Tho, Tiền Giang, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Tiền Giang",
+        "location": {
+            "lat": 10.36,
+            "lng": 106.36
+        },
+        "priceLevel": 3,
+        "bestSeason": "dry_season",
+        "tags": [
+            "sông nước",
+            "văn hóa",
+            "ẩm thực",
+            "chợ nổi",
+            "miền tây"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740082/provinces/TienGiang/tien-giang-ky-vong-don-song-dau-tu-moi-tu-asean-20231206104459.webp",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740080/provinces/TienGiang/tien-giang-1.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740078/provinces/TienGiang/kinh-nghiem-du-lich-tien-giang-1.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740076/provinces/TienGiang/du-lich-go-cong-bai-bien-tan-thanh.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "cbba14db-38b0-4708-9c61-1c9bf107a1cc",
+                "relevance": 4
+            },
+            {
+                "interestId": "7389ea3f-09b3-4e2b-b219-0d36cc6a6711",
+                "relevance": 5
+            },
+            {
+                "interestId": "ac48180e-3968-4403-a06c-b817d690e09b",
+                "relevance": 4
+            }
+        ],
+        "priceRange": [
+            500000,
+            1500000
+        ],
+        "travelTips": [
+            "Đi chợ nổi Cái Bè vào sáng sớm để ngắm cảnh sông nước",
+            "Thưởng thức hủ tiếu Mỹ Tho với nước dùng trong",
+            "Thăm lò gốm Tân Phước để xem nghệ nhân làm gốm",
+            "Tham quan chùa Vĩnh Tràng với kiến trúc đẹp",
+            "Đi thuyền khám phá các cù lao"
+        ],
+        "outstandingLocations": [
+            "Chợ nổi Cái Bè",
+            "Lò gốm Tân Phước",
+            "Chùa Vĩnh Tràng",
+            "Cù lao Thới Sơn",
+            "Vườn trái cây Mỹ Tho",
+            "Khu du lịch Đồng Tâm"
+        ],
+        "averageRating": 4.1,
+        "totalReviews": 90,
+        "isActive": true
+    },
+    {
+        "name": "TP. Hồ Chí Minh",
+        "description": "Thành phố sôi động với Dinh Độc Lập, chợ Bến Thành và ẩm thực đa dạng.",
+        "addressDetail": "Quận 1, TP. Hồ Chí Minh, Việt Nam",
+        "country": "Việt Nam",
+        "province": "TP. Hồ Chí Minh",
+        "location": {
+            "lat": 10.7769,
+            "lng": 106.7009
+        },
+        "priceLevel": 4,
+        "bestSeason": "dry_season",
+        "tags": [
+            "thành phố",
+            "văn hóa",
+            "ẩm thực",
+            "mua sắm",
+            "giải trí"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740094/provinces/TPHCM/tp-65-1723817004792851519414.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740091/provinces/TPHCM/thanh_pho_ho_chi_minh_sovaba_8a95b0519e.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740089/provinces/TPHCM/du-lich-ho-chi-minh-ivivu-2.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740088/provinces/TPHCM/dinh-doc-lap.webp",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740086/provinces/TPHCM/403-tphcm-nguyenphung783540gmail-1715333653537-1715333654928192519270.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740084/provinces/TPHCM/12518f2a-ban-do-thanh-pho-ho-chi-minh-1.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "7389ea3f-09b3-4e2b-b219-0d36cc6a6711",
+                "relevance": 5
+            },
+            {
+                "interestId": "96d22229-d7c2-452b-8009-d8a52b92b1dc",
+                "relevance": 5
+            },
+            {
+                "interestId": "73f54c5b-3c29-40a9-8f96-15dd8a254237",
+                "relevance": 5
+            }
+        ],
+        "priceRange": [
+            1000000,
+            4000000
+        ],
+        "travelTips": [
+            "Tham quan Dinh Độc Lập để tìm hiểu lịch sử",
+            "Mua sắm đặc sản tại chợ Bến Thành",
+            "Thưởng thức phở Sài Gòn, bánh mì và cà phê sữa đá",
+            "Khám phá phố đi bộ Nguyễn Huệ về buổi tối",
+            "Tham quan bưu điện thành phố và nhà thờ Đức Bà"
+        ],
+        "outstandingLocations": [
+            "Dinh Độc Lập",
+            "Chợ Bến Thành",
+            "Nhà thờ Đức Bà",
+            "Bưu điện thành phố",
+            "Phố đi bộ Nguyễn Huệ",
+            "Chùa Ngọc Hoàng"
+        ],
+        "averageRating": 4.9,
+        "totalReviews": 300,
+        "isActive": true
+    },
+    {
+        "name": "Trà Vinh",
+        "description": "Vùng đất của chùa Ông, ao Bà Om và bánh tét Trà Cuôn.",
+        "addressDetail": "Thành phố Trà Vinh, Trà Vinh, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Trà Vinh",
+        "location": {
+            "lat": 9.9472,
+            "lng": 106.3423
+        },
+        "priceLevel": 2,
+        "bestSeason": "dry_season",
+        "tags": [
+            "văn hóa",
+            "tâm linh",
+            "ẩm thực",
+            "khmer",
+            "miền tây"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740103/provinces/TraVinh/du-lich-tra-vinh-10-1693239175.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740101/provinces/TraVinh/dia-diem-du-lich-tra-vinh-cover.webp",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740100/provinces/TraVinh/960px-C%E1%BB%95ng_ch%C3%A0o_Tr%C3%A0_Vinh.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740098/provinces/TraVinh/06.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "8026c83f-b284-489c-8400-113b3faeea34",
+                "relevance": 5
+            },
+            {
+                "interestId": "ac48180e-3968-4403-a06c-b817d690e09b",
+                "relevance": 4
+            },
+            {
+                "interestId": "7389ea3f-09b3-4e2b-b219-0d36cc6a6711",
+                "relevance": 3
+            }
+        ],
+        "priceRange": [
+            400000,
+            1200000
+        ],
+        "travelTips": [
+            "Thăm chùa Ông để tìm hiểu văn hóa Khmer",
+            "Dạo chơi ao Bà Om vào buổi chiều mát mẻ",
+            "Thưởng thức bánh tét Trà Cuôn đặc sản",
+            "Tham quan các chùa Khmer với kiến trúc độc đáo",
+            "Tìm hiểu lễ hội Oóc Om Bóc của người Khmer"
+        ],
+        "outstandingLocations": [
+            "Chùa Ông",
+            "Ao Bà Om",
+            "Chùa Âng",
+            "Bảo tàng Khmer",
+            "Chùa Hang",
+            "Vườn cò Bằng Lăng"
+        ],
+        "averageRating": 4.0,
+        "totalReviews": 70,
+        "isActive": true
+    },
+    {
+        "name": "Tuyên Quang",
+        "description": "Nơi có thác Bản Ba, lễ hội Thành Tuyên và văn hóa dân tộc Tày.",
+        "addressDetail": "Thành phố Tuyên Quang, Tuyên Quang, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Tuyên Quang",
+        "location": {
+            "lat": 21.8235,
+            "lng": 105.2212
+        },
+        "priceLevel": 2,
+        "bestSeason": "autumn",
+        "tags": [
+            "thiên nhiên",
+            "văn hóa",
+            "lễ hội",
+            "dân tộc",
+            "thác nước"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740109/provinces/TuyenQuang/top-10-dia-diem-du-lich-dep-noi-tieng-tai-tuyen-quang-202203221007426311.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740108/provinces/TuyenQuang/Size-anh-bia-SEO-2.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740106/provinces/TuyenQuang/hon-150-nghin-du-khach-chon-tuyen-quang-la-diem-den-dip-nghi-le-183610_427.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740104/provinces/TuyenQuang/du-lich-tuyen-quang-1-1696736087.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "cbba14db-38b0-4708-9c61-1c9bf107a1cc",
+                "relevance": 4
+            },
+            {
+                "interestId": "ac48180e-3968-4403-a06c-b817d690e09b",
+                "relevance": 5
+            },
+            {
+                "interestId": "8026c83f-b284-489c-8400-113b3faeea34",
+                "relevance": 3
+            }
+        ],
+        "priceRange": [
+            400000,
+            1200000
+        ],
+        "travelTips": [
+            "Thăm thác Bản Ba để ngắm cảnh thiên nhiên hùng vĩ",
+            "Tham gia lễ hội Thành Tuyên vào tháng 3 âm lịch",
+            "Tìm hiểu văn hóa dân tộc Tày tại các bản làng",
+            "Thưởng thức các món ăn đặc sản vùng cao",
+            "Mang áo ấm vì thời tiết miền núi se lạnh"
+        ],
+        "outstandingLocations": [
+            "Thác Bản Ba",
+            "Hồ Na Hang",
+            "Đền Tân Trào",
+            "Bảo tàng Tuyên Quang",
+            "Làng văn hóa Tày",
+            "Khu du lịch Na Hang"
+        ],
+        "averageRating": 4.0,
+        "totalReviews": 60,
+        "isActive": true
+    },
+    {
+        "name": "Vĩnh Long",
+        "description": "Miền Tây sông nước với cù lao An Bình, chợ nổi Trà Ôn và gốm đỏ Vĩnh Long.",
+        "addressDetail": "Thành phố Vĩnh Long, Vĩnh Long, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Vĩnh Long",
+        "location": {
+            "lat": 10.2537,
+            "lng": 105.9722
+        },
+        "priceLevel": 2,
+        "bestSeason": "dry_season",
+        "tags": [
+            "sông nước",
+            "văn hóa",
+            "làng nghề",
+            "miền tây",
+            "gốm"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740119/provinces/VinhLong/vinh-long-co-gi-choi-khu-du-lich-vinh-sang-1712934216.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740117/provinces/VinhLong/tra-on-1773-1704708435.webp",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740113/provinces/VinhLong/doc-vinh-long-2-93447-114978-1-17524687916871187441551.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740111/provinces/VinhLong/23-dia-diem-du-lich-vinh-long-hap-dan-khach-du-lich-202201071810564126.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "cbba14db-38b0-4708-9c61-1c9bf107a1cc",
+                "relevance": 4
+            },
+            {
+                "interestId": "ac48180e-3968-4403-a06c-b817d690e09b",
+                "relevance": 4
+            },
+            {
+                "interestId": "96d22229-d7c2-452b-8009-d8a52b92b1dc",
+                "relevance": 3
+            }
+        ],
+        "priceRange": [
+            400000,
+            1200000
+        ],
+        "travelTips": [
+            "Đi thuyền khám phá cù lao An Bình với vườn trái cây",
+            "Thăm chợ nổi Trà Ôn vào sáng sớm",
+            "Mua gốm đỏ Vĩnh Long làm quà lưu niệm",
+            "Thưởng thức các món ăn miền Tây đặc sản",
+            "Tham quan các làng nghề truyền thống"
+        ],
+        "outstandingLocations": [
+            "Cù lao An Bình",
+            "Chợ nổi Trà Ôn",
+            "Làng gốm Vĩnh Long",
+            "Chùa Tiên Châu",
+            "Vườn trái cây Mỹ Khánh",
+            "Khu du lịch sinh thái Cồn Sơn"
+        ],
+        "averageRating": 4.0,
+        "totalReviews": 70,
+        "isActive": true
+    },
+    {
+        "name": "Vĩnh Phúc",
+        "description": "Vùng đất của Tam Đảo, hồ Đại Lải và làng nghề rèn Lý Nhân.",
+        "addressDetail": "Thành phố Vĩnh Yên, Vĩnh Phúc, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Vĩnh Phúc",
+        "location": {
+            "lat": 21.3089,
+            "lng": 105.5967
+        },
+        "priceLevel": 3,
+        "bestSeason": "dry_season",
+        "tags": [
+            "thiên nhiên",
+            "văn hóa",
+            "làng nghề",
+            "nghỉ dưỡng",
+            "núi non"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740126/provinces/VinhPhuc/top-15-dia-diem-du-lich-vinh-phuc-dep-nuc-tieng-gan-xa.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740124/provinces/VinhPhuc/du-lich-vinh-phuc-1-1459.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740122/provinces/VinhPhuc/dia-diem-du-lich-vinh-phuc-acc-1.webp",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740121/provinces/VinhPhuc/20230408-092543-9f2rvYfq.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "d008e7a4-8bdf-486e-a682-dff450383fc9",
+                "relevance": 5
+            },
+            {
+                "interestId": "cbba14db-38b0-4708-9c61-1c9bf107a1cc",
+                "relevance": 4
+            },
+            {
+                "interestId": "ac48180e-3968-4403-a06c-b817d690e09b",
+                "relevance": 4
+            }
+        ],
+        "priceRange": [
+            600000,
+            1800000
+        ],
+        "travelTips": [
+            "Thăm Tam Đảo vào mùa khô để thời tiết dễ chịu",
+            "Thư giãn tại hồ Đại Lải với không khí trong lành",
+            "Xem nghệ nhân rèn dao kéo tại làng Lý Nhân",
+            "Tham quan các resort và khu nghỉ dưỡng",
+            "Mang áo ấm vì thời tiết miền núi mát mẻ"
+        ],
+        "outstandingLocations": [
+            "Tam Đảo",
+            "Hồ Đại Lải",
+            "Làng nghề rèn Lý Nhân",
+            "Chùa Tây Thiên",
+            "Khu du lịch Tam Đảo",
+            "Đền Mẫu Âu Cơ"
+        ],
+        "averageRating": 4.2,
+        "totalReviews": 90,
+        "isActive": true
+    },
+    {
+        "name": "Yên Bái",
+        "description": "Vùng núi Tây Bắc với Mù Cang Chải, ruộng bậc thang và văn hóa dân tộc Mông.",
+        "addressDetail": "Thành phố Yên Bái, Yên Bái, Việt Nam",
+        "country": "Việt Nam",
+        "province": "Yên Bái",
+        "location": {
+            "lat": 21.7229,
+            "lng": 104.9113
+        },
+        "priceLevel": 3,
+        "bestSeason": "autumn",
+        "tags": [
+            "thiên nhiên",
+            "văn hóa",
+            "nông nghiệp",
+            "ruộng bậc thang",
+            "dân tộc"
+        ],
+        "image_url": [
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740132/provinces/YenBai/mu-cang-chai.webp",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740130/provinces/YenBai/dia-diem-du-lich-yen-bai-cover.webp",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740129/provinces/YenBai/3311102-1694508091768808652599.jpg",
+            "https://res.cloudinary.com/dxssmpeii/image/upload/v1752740128/provinces/YenBai/2-4.jpg"
+        ],
+        "suitableDestinations": [
+            {
+                "interestId": "cbba14db-38b0-4708-9c61-1c9bf107a1cc",
+                "relevance": 5
+            },
+            {
+                "interestId": "438fc3cd-1bbb-4548-9cb2-8a97d8dc60e2",
+                "relevance": 5
+            },
+            {
+                "interestId": "ac48180e-3968-4403-a06c-b817d690e09b",
+                "relevance": 4
+            }
+        ],
+        "priceRange": [
+            700000,
+            2000000
+        ],
+        "travelTips": [
+            "Thăm Mù Cang Chải vào mùa lúa chín (tháng 9-10) để ngắm ruộng bậc thang vàng óng",
+            "Tìm hiểu văn hóa dân tộc Mông tại các bản làng",
+            "Mang giày leo núi và áo ấm cho thời tiết miền núi",
+            "Tham gia các hoạt động trekking và khám phá thiên nhiên",
+            "Thưởng thức các món ăn đặc sản như thịt trâu gác bếp"
+        ],
+        "outstandingLocations": [
+            "Mù Cang Chải",
+            "Ruộng bậc thang Tú Lệ",
+            "Suối khoáng nóng Trạm Tấu",
+            "Thác Bạc Yên Bái",
+            "Làng văn hóa Mông",
+            "Đồi chè Suối Giàng"
+        ],
+        "averageRating": 4.4,
+        "totalReviews": 100,
+        "isActive": true
+    }
+]

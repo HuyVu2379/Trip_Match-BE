@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloudinary Folder Upload</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 90%;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+        }
+
+        .upload-section {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            border: 2px dashed #ddd;
+            border-radius: 10px;
+            background: #f9f9f9;
+        }
+
+        .upload-section h2 {
+            color: #555;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #666;
+            font-weight: 500;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            width: 100%;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .quick-actions {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .quick-action {
+            background: #f0f0f0;
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .quick-action h3 {
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .quick-action p {
+            color: #666;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .result {
+            margin-top: 2rem;
+            padding: 1rem;
+            border-radius: 8px;
+            display: none;
+        }
+
+        .result.success {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+        }
+
+        .result.error {
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .stat-item {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .error-list {
+            max-height: 200px;
+            overflow-y: auto;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+
+        .error-item {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+            font-size: 0.9rem;
+        }
+
+        .error-item:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🌟 Cloudinary Folder Upload</h1>
+
+        <!-- Custom Folder Upload -->
+        <div class="upload-section">
+            <h2>📁 Upload Custom Folder</h2>
+            <form id="customFolderForm">
+                <div class="form-group">
+                    <label for="folderPath">Local Folder Path:</label>
+                    <input type="text" id="folderPath" placeholder="e.g., D:\SideProject\CrawData\ImageProvice"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="cloudinaryFolder">Cloudinary Folder Name (optional):</label>
+                    <input type="text" id="cloudinaryFolder" placeholder="e.g., provinces">
+                </div>
+                <button type="submit" class="btn">Upload Folder</button>
+            </form>
+        </div>
+
+        <!-- Recursive Upload -->
+        <div class="upload-section">
+            <h2>🔄 Upload All Folders Recursively</h2>
+            <form id="recursiveFolderForm">
+                <div class="form-group">
+                    <label for="rootPath">Root Directory Path:</label>
+                    <input type="text" id="rootPath" placeholder="e.g., D:\SideProject\CrawData\ImageProvice" required>
+                </div>
+                <div class="form-group">
+                    <label for="cloudinaryRootFolder">Cloudinary Root Folder (optional):</label>
+                    <input type="text" id="cloudinaryRootFolder" placeholder="e.g., provinces">
+                </div>
+                <button type="submit" class="btn">Upload All Folders</button>
+            </form>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="quick-actions">
+            <div class="quick-action">
+                <h3>🏞️ Upload Image Province</h3>
+                <p>Upload all images from the ImageProvice folder with pre-configured settings</p>
+                <button class="btn" onclick="uploadImageProvince()">Quick Upload</button>
+            </div>
+        </div>
+
+        <!-- Loading Indicator -->
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Uploading files... Please wait</p>
+        </div>
+
+        <!-- Results -->
+        <div class="result" id="result">
+            <h3 id="resultTitle"></h3>
+            <p id="resultMessage"></p>
+            <div class="stats" id="stats" style="display: none;"></div>
+            <div class="error-list" id="errorList" style="display: none;"></div>
+        </div>
+    </div>
+
+    <script>    
+        const API_BASE_URL = 'http://localhost:8080/cloudinary';
+
+        // Custom folder upload
+        document.getElementById('customFolderForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const folderPath = document.getElementById('folderPath').value;
+            const cloudinaryFolder = document.getElementById('cloudinaryFolder').value;
+
+            await uploadFolder(folderPath, cloudinaryFolder);
+        });
+
+        // Recursive folder upload
+        document.getElementById('recursiveFolderForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const rootPath = document.getElementById('rootPath').value;
+            const cloudinaryRootFolder = document.getElementById('cloudinaryRootFolder').value;
+
+            await uploadAllFolders(rootPath, cloudinaryRootFolder);
+        });
+
+        // Upload single folder
+        async function uploadFolder(folderPath, cloudinaryFolder) {
+            showLoading();
+
+            try {
+                const response = await fetch(`${API_BASE_URL}/upload/folder`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        folderPath,
+                        cloudinaryFolder: cloudinaryFolder || undefined
+                    })
+                });
+
+                const result = await response.json();
+
+                if (response.ok) {
+                    showResult('success', 'Folder Upload Completed!', result.message, result.data);
+                } else {
+                    showResult('error', 'Upload Failed', result.message || 'Unknown error occurred');
+                }
+            } catch (error) {
+                showResult('error', 'Upload Failed', `Error: ${error.message}`);
+            } finally {
+                hideLoading();
+            }
+        }
+
+        // Upload all folders recursively
+        async function uploadAllFolders(rootPath, cloudinaryRootFolder) {
+            showLoading();
+
+            try {
+                const response = await fetch(`${API_BASE_URL}/upload/all-folders`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        rootPath,
+                        cloudinaryRootFolder: cloudinaryRootFolder || undefined
+                    })
+                });
+
+                const result = await response.json();
+
+                if (response.ok) {
+                    showResult('success', 'All Folders Upload Completed!', result.message, result.data);
+                } else {
+                    showResult('error', 'Upload Failed', result.message || 'Unknown error occurred');
+                }
+            } catch (error) {
+                showResult('error', 'Upload Failed', `Error: ${error.message}`);
+            } finally {
+                hideLoading();
+            }
+        }
+
+        // Quick upload Image Province
+        async function uploadImageProvince() {
+            showLoading();
+
+            try {
+                const response = await fetch(`${API_BASE_URL}/upload/image-province`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    }
+                });
+
+                const result = await response.json();
+
+                if (response.ok) {
+                    showResult('success', 'Image Province Upload Completed!', result.message, result.data);
+                } else {
+                    showResult('error', 'Upload Failed', result.message || 'Unknown error occurred');
+                }
+            } catch (error) {
+                showResult('error', 'Upload Failed', `Error: ${error.message}`);
+            } finally {
+                hideLoading();
+            }
+        }
+
+        // Show loading indicator
+        function showLoading() {
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('result').style.display = 'none';
+
+            // Disable all buttons
+            const buttons = document.querySelectorAll('.btn');
+            buttons.forEach(btn => btn.disabled = true);
+        }
+
+        // Hide loading indicator
+        function hideLoading() {
+            document.getElementById('loading').style.display = 'none';
+
+            // Enable all buttons
+            const buttons = document.querySelectorAll('.btn');
+            buttons.forEach(btn => btn.disabled = false);
+        }
+
+        // Show result
+        function showResult(type, title, message, data = null) {
+            const resultDiv = document.getElementById('result');
+            const resultTitle = document.getElementById('resultTitle');
+            const resultMessage = document.getElementById('resultMessage');
+            const statsDiv = document.getElementById('stats');
+            const errorList = document.getElementById('errorList');
+
+            resultDiv.className = `result ${type}`;
+            resultDiv.style.display = 'block';
+            resultTitle.textContent = title;
+            resultMessage.textContent = message;
+
+            if (data) {
+                // Show statistics
+                statsDiv.style.display = 'grid';
+                statsDiv.innerHTML = `
+                    <div class="stat-item">
+                        <div class="stat-number">${data.totalFiles}</div>
+                        <div class="stat-label">Total Files</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">${data.successCount}</div>
+                        <div class="stat-label">Successful</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">${data.failedCount}</div>
+                        <div class="stat-label">Failed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">${data.uploadedFiles.length}</div>
+                        <div class="stat-label">Uploaded</div>
+                    </div>
+                `;
+
+                // Show errors if any
+                if (data.errors && data.errors.length > 0) {
+                    errorList.style.display = 'block';
+                    errorList.innerHTML = '<h4>Errors:</h4>' +
+                        data.errors.map(error => `<div class="error-item">${error}</div>`).join('');
+                } else {
+                    errorList.style.display = 'none';
+                }
+            } else {
+                statsDiv.style.display = 'none';
+                errorList.style.display = 'none';
+            }
+        }
+
+        // Set default values
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('folderPath').value = 'D:\\SideProject\\CrawData\\ImageProvice';
+            document.getElementById('rootPath').value = 'D:\\SideProject\\CrawData\\ImageProvice';
+            document.getElementById('cloudinaryFolder').value = 'provinces';
+            document.getElementById('cloudinaryRootFolder').value = 'provinces';
+        });
+    </script>
+</body>
+
+</html>

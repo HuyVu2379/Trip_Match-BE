@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Cloudinary Upload Manager</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+
+        .tabs {
+            display: flex;
+            background: #f8f9fa;
+            border-bottom: 2px solid #e9ecef;
+        }
+
+        .tab {
+            flex: 1;
+            padding: 1rem;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            background: none;
+            font-size: 1rem;
+            color: #6c757d;
+        }
+
+        .tab.active {
+            background: white;
+            color: #667eea;
+            border-bottom: 2px solid #667eea;
+        }
+
+        .tab:hover {
+            background: #e9ecef;
+        }
+
+        .tab-content {
+            display: none;
+            padding: 2rem;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #495057;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .btn:disabled {
+            background: #6c757d;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .btn-secondary {
+            background: #6c757d;
+        }
+
+        .btn-success {
+            background: #28a745;
+        }
+
+        .btn-danger {
+            background: #dc3545;
+        }
+
+        .btn-info {
+            background: #17a2b8;
+        }
+
+        .province-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .province-card {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 8px;
+            border: 2px solid #e9ecef;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .province-card:hover {
+            border-color: #667eea;
+            transform: translateY(-2px);
+        }
+
+        .province-card.selected {
+            border-color: #667eea;
+            background: #e3f2fd;
+        }
+
+        .province-card h4 {
+            margin-bottom: 0.5rem;
+            color: #495057;
+        }
+
+        .province-card p {
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .stat-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+
+        .progress-bar {
+            background: #e9ecef;
+            height: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 1rem 0;
+        }
+
+        .progress-fill {
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            height: 100%;
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        .progress-text {
+            text-align: center;
+            margin-top: 0.5rem;
+            color: #6c757d;
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .result {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            border-radius: 8px;
+            display: none;
+        }
+
+        .result.success {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+        }
+
+        .result.error {
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+        }
+
+        .error-list {
+            max-height: 300px;
+            overflow-y: auto;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+
+        .error-item {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+            font-size: 0.9rem;
+        }
+
+        .error-item:last-child {
+            border-bottom: none;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            margin-right: 0.5rem;
+        }
+
+        .select-actions {
+            margin-bottom: 1rem;
+        }
+
+        .folder-structure {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .folder-item {
+            padding: 0.5rem 0;
+            border-left: 3px solid #667eea;
+            padding-left: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .folder-name {
+            font-weight: bold;
+            color: #495057;
+        }
+
+        .folder-count {
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌟 Advanced Cloudinary Upload Manager</h1>
+            <p>Manage and upload your image collections with ease</p>
+        </div>
+
+        <div class="tabs">
+            <button class="tab active" onclick="switchTab('overview')">📊 Overview</button>
+            <button class="tab" onclick="switchTab('provinces')">🏞️ Provinces</button>
+            <button class="tab" onclick="switchTab('custom')">📁 Custom Upload</button>
+            <button class="tab" onclick="switchTab('batch')">🔄 Batch Upload</button>
+        </div>
+
+        <!-- Overview Tab -->
+        <div id="overview" class="tab-content active">
+            <div class="stats-grid" id="statsGrid">
+                <div class="stat-card">
+                    <div class="stat-number" id="totalImages">Loading...</div>
+                    <div class="stat-label">Total Images</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="totalProvinces">Loading...</div>
+                    <div class="stat-label">Total Provinces</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="uploadedToday">0</div>
+                    <div class="stat-label">Uploaded Today</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="successRate">0%</div>
+                    <div class="stat-label">Success Rate</div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <button class="btn btn-success" onclick="uploadAllProvinces()">
+                    🚀 Upload All Provinces
+                </button>
+                <button class="btn btn-info" onclick="refreshStats()">
+                    🔄 Refresh Stats
+                </button>
+            </div>
+        </div>
+
+        <!-- Provinces Tab -->
+        <div id="provinces" class="tab-content">
+            <div class="select-actions">
+                <button class="btn btn-secondary" onclick="selectAllProvinces()">Select All</button>
+                <button class="btn btn-secondary" onclick="deselectAllProvinces()">Deselect All</button>
+                <button class="btn btn-success" onclick="uploadSelectedProvinces()">Upload Selected</button>
+            </div>
+
+            <div class="province-grid" id="provinceGrid">
+                <!-- Provinces will be loaded here -->
+            </div>
+        </div>
+
+        <!-- Custom Upload Tab -->
+        <div id="custom" class="tab-content">
+            <form id="customUploadForm">
+                <div class="form-group">
+                    <label for="customPath">Custom Folder Path:</label>
+                    <input type="text" id="customPath" placeholder="e.g., D:\YourFolder\Images">
+                </div>
+                <div class="form-group">
+                    <label for="customCloudinaryFolder">Cloudinary Folder Name:</label>
+                    <input type="text" id="customCloudinaryFolder" placeholder="e.g., custom-images">
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="recursive" checked>
+                    <label for="recursive">Upload recursively (include subfolders)</label>
+                </div>
+                <button type="submit" class="btn">📁 Upload Custom Folder</button>
+            </form>
+
+            <div class="folder-structure" id="folderStructure" style="display: none;">
+                <h4>Folder Structure Preview:</h4>
+                <div id="structureContent"></div>
+            </div>
+        </div>
+
+        <!-- Batch Upload Tab -->
+        <div id="batch" class="tab-content">
+            <div class="form-group">
+                <label for="batchSize">Batch Size (files per batch):</label>
+                <select id="batchSize">
+                    <option value="10">10 files</option>
+                    <option value="50" selected>50 files</option>
+                    <option value="100">100 files</option>
+                    <option value="500">500 files</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="delayBetweenBatches">Delay Between Batches (seconds):</label>
+                <select id="delayBetweenBatches">
+                    <option value="1">1 second</option>
+                    <option value="5" selected>5 seconds</option>
+                    <option value="10">10 seconds</option>
+                    <option value="30">30 seconds</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-success" onclick="startBatchUpload()">
+                    🔄 Start Batch Upload
+                </button>
+                <button class="btn btn-danger" onclick="stopBatchUpload()">
+                    ⏹️ Stop Upload
+                </button>
+            </div>
+
+            <div class="progress-bar" id="batchProgress" style="display: none;">
+                <div class="progress-fill" id="batchProgressFill"></div>
+            </div>
+            <div class="progress-text" id="batchProgressText"></div>
+        </div>
+
+        <!-- Loading Indicator -->
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p id="loadingText">Processing... Please wait</p>
+        </div>
+
+        <!-- Results -->
+        <div class="result" id="result">
+            <h3 id="resultTitle"></h3>
+            <p id="resultMessage"></p>
+            <div class="stats-grid" id="resultStats" style="display: none;"></div>
+            <div class="error-list" id="errorList" style="display: none;"></div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE_URL = 'http://localhost:8080/cloudinary';
+        let provinces = [];
+        let selectedProvinces = [];
+        let batchUploadActive = false;
+
+        // Initialize the application
+        document.addEventListener('DOMContentLoaded', function () {
+            loadProvinces();
+            refreshStats();
+        });
+
+        // Tab switching
+        function switchTab(tabName) {
+            // Hide all tab contents
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
+
+            // Remove active class from all tabs
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            // Show selected tab content
+            document.getElementById(tabName).classList.add('active');
+
+            // Add active class to clicked tab
+            event.target.classList.add('active');
+        }
+
+        // Load provinces
+        async function loadProvinces() {
+            try {
+                const response = await fetch(`${API_BASE_URL}/provinces`);
+                const result = await response.json();
+                provinces = result.data;
+                renderProvinces();
+            } catch (error) {
+                console.error('Error loading provinces:', error);
+            }
+        }
+
+        // Render provinces
+        function renderProvinces() {
+            const provinceGrid = document.getElementById('provinceGrid');
+            provinceGrid.innerHTML = '';
+
+            provinces.forEach(province => {
+                const provinceCard = document.createElement('div');
+                provinceCard.className = 'province-card';
+                provinceCard.innerHTML = `
+                    <h4>${province}</h4>
+                    <p>Click to select</p>
+                `;
+                provinceCard.onclick = () => toggleProvinceSelection(province, provinceCard);
+                provinceGrid.appendChild(provinceCard);
+            });
+        }
+
+        // Toggle province selection
+        function toggleProvinceSelection(province, element) {
+            const index = selectedProvinces.indexOf(province);
+            if (index > -1) {
+                selectedProvinces.splice(index, 1);
+                element.classList.remove('selected');
+            } else {
+                selectedProvinces.push(province);
+                element.classList.add('selected');
+            }
+        }
+
+        // Select all provinces
+        function selectAllProvinces() {
+            selectedProvinces = [...provinces];
+            document.querySelectorAll('.province-card').forEach(card => {
+                card.classList.add('selected');
+            });
+        }
+
+        // Deselect all provinces
+        function deselectAllProvinces() {
+            selectedProvinces = [];
+            document.querySelectorAll('.province-card').forEach(card => {
+                card.classList.remove('selected');
+            });
+        }
+
+        // Upload selected provinces
+        async function uploadSelectedProvinces() {
+            if (selectedProvinces.length === 0) {
+                alert('Please select at least one province');
+                return;
+            }
+
+            showLoading('Uploading selected provinces...');
+
+            try {
+                const response = await fetch(`${API_BASE_URL}/upload/provinces`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ provinces: selectedProvinces })
+                });
+
+                const result = await response.json();
+
+                if (response.ok) {
+                    showResult('success', 'Selected Provinces Upload Completed!', result.message, result.data);
+                    refreshStats();
+                } else {
+                    showResult('error', 'Upload Failed', result.message || 'Unknown error occurred');
+                }
+            } catch (error) {
+                showResult('error', 'Upload Failed', `Error: ${error.message}`);
+            } finally {
+                hideLoading();
+            }
+        }
+
+        // Upload all provinces
+        async function uploadAllProvinces() {
+            showLoading('Uploading all provinces...');
+
+            try {
+                const response = await fetch(`${API_BASE_URL}/upload/image-province-progress`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    }
+                });
+
+                const result = await response.json();
+
+                if (response.ok) {
+                    showResult('success', 'All Provinces Upload Completed!', result.message, result.data);
+                    refreshStats();
+                } else {
+                    showResult('error', 'Upload Failed', result.message || 'Unknown error occurred');
+                }
+            } catch (error) {
+                showResult('error', 'Upload Failed', `Error: ${error.message}`);
+            } finally {
+                hideLoading();
+            }
+        }
+
+        // Refresh stats
+        async function refreshStats() {
+            try {
+                const [imageCountResponse, provinceResponse] = await Promise.all([
+                    fetch(`${API_BASE_URL}/image-count`),
+                    fetch(`${API_BASE_URL}/provinces`)
+                ]);
+
+                const imageCountResult = await imageCountResponse.json();
+                const provinceResult = await provinceResponse.json();
+
+                document.getElementById('totalImages').textContent = imageCountResult.data.count;
+                document.getElementById('totalProvinces').textContent = provinceResult.data.length;
+            } catch (error) {
+                console.error('Error refreshing stats:', error);
+            }
+        }
+
+        // Custom upload form
+        document.getElementById('customUploadForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const customPath = document.getElementById('customPath').value;
+            const customCloudinaryFolder = document.getElementById('customCloudinaryFolder').value;
+            const recursive = document.getElementById('recursive').checked;
+
+            if (!customPath) {
+                alert('Please enter a folder path');
+                return;
+            }
+
+            showLoading('Uploading custom folder...');
+
+            try {
+                const endpoint = recursive ? 'upload/all-folders' : 'upload/folder';
+                const body = recursive ?
+                    { rootPath: customPath, cloudinaryRootFolder: customCloudinaryFolder } :
+                    { folderPath: customPath, cloudinaryFolder: customCloudinaryFolder };
+
+                const response = await fetch(`${API_BASE_URL}/${endpoint}`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(body)
+                });
+
+                const result = await response.json();
+
+                if (response.ok) {
+                    showResult('success', 'Custom Folder Upload Completed!', result.message, result.data);
+                } else {
+                    showResult('error', 'Upload Failed', result.message || 'Unknown error occurred');
+                }
+            } catch (error) {
+                showResult('error', 'Upload Failed', `Error: ${error.message}`);
+            } finally {
+                hideLoading();
+            }
+        });
+
+        // Batch upload functions
+        function startBatchUpload() {
+            if (batchUploadActive) return;
+
+            batchUploadActive = true;
+            document.getElementById('batchProgress').style.display = 'block';
+            // Implementation would go here
+        }
+
+        function stopBatchUpload() {
+            batchUploadActive = false;
+            document.getElementById('batchProgress').style.display = 'none';
+        }
+
+        // Show loading indicator
+        function showLoading(message = 'Processing... Please wait') {
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('loadingText').textContent = message;
+            document.getElementById('result').style.display = 'none';
+
+            // Disable all buttons
+            document.querySelectorAll('.btn').forEach(btn => btn.disabled = true);
+        }
+
+        // Hide loading indicator
+        function hideLoading() {
+            document.getElementById('loading').style.display = 'none';
+
+            // Enable all buttons
+            document.querySelectorAll('.btn').forEach(btn => btn.disabled = false);
+        }
+
+        // Show result
+        function showResult(type, title, message, data = null) {
+            const resultDiv = document.getElementById('result');
+            const resultTitle = document.getElementById('resultTitle');
+            const resultMessage = document.getElementById('resultMessage');
+            const resultStats = document.getElementById('resultStats');
+            const errorList = document.getElementById('errorList');
+
+            resultDiv.className = `result ${type}`;
+            resultDiv.style.display = 'block';
+            resultTitle.textContent = title;
+            resultMessage.textContent = message;
+
+            if (data) {
+                // Show statistics
+                resultStats.style.display = 'grid';
+                resultStats.innerHTML = `
+                    <div class="stat-card">
+                        <div class="stat-number">${data.totalFiles}</div>
+                        <div class="stat-label">Total Files</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">${data.successCount}</div>
+                        <div class="stat-label">Successful</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">${data.failedCount}</div>
+                        <div class="stat-label">Failed</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">${Math.round((data.successCount / data.totalFiles) * 100)}%</div>
+                        <div class="stat-label">Success Rate</div>
+                    </div>
+                `;
+
+                // Show errors if any
+                if (data.errors && data.errors.length > 0) {
+                    errorList.style.display = 'block';
+                    errorList.innerHTML = '<h4>Errors:</h4>' +
+                        data.errors.map(error => `<div class="error-item">${error}</div>`).join('');
+                } else {
+                    errorList.style.display = 'none';
+                }
+            } else {
+                resultStats.style.display = 'none';
+                errorList.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+
+</html>

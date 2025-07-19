@@ -5,6 +5,10 @@ export enum RecommendedTime {
     EVENING = 'evening',       // Buổi tối
     ANYTIME = 'anytime'        // Bất kỳ lúc nào
 }
+export enum TypeUserCost {
+    PERSON = 'person',       // Người
+    GROUP = 'group',         // Nhóm
+}
 export enum TypeActivity {
     SIGHTSEEING = 'sightseeing',
     FOOD = 'food',
