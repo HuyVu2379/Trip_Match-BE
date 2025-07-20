@@ -3,6 +3,7 @@ import { AuthService } from './auth.service';
 import { LocalAuthGuard } from './guards/local-auth.guard';
 import { JwtAuthGuard } from './guards/jwt-auth.guard';
 import { RegisterDto } from './dtos/register.dto';
+import { RefreshTokenDto } from './dtos/refresh-token.dto';
 import { GetUser } from './decoraters/get-user.decorator';
 import { ResponseUtil } from 'src/common';
 import { ApiResponse } from 'src/common';
@@ -34,5 +35,10 @@ export class AuthController {
   @Post('getMe')
   async getMe(@Body() token: any): Promise<ApiResponse> {
     return this.authService.getMe(token);
+  }
+
+  @Post('refresh')
+  async refreshToken(@Body() refreshTokenDto: RefreshTokenDto): Promise<ApiResponse> {
+    return this.authService.refreshToken(refreshTokenDto.refresh_token);
   }
 }

@@ -40,30 +40,30 @@ export const getRecommendedTimeDisplayName = (time: RecommendedTime): string => 
     }
 };
 export const getTypeActivityDisplayName = (type: TypeActivity): string => {
-    switch (type) {
-        case TypeActivity.SIGHTSEEING:
-            return 'Tham quan';
-        case TypeActivity.FOOD:
-            return 'Ẩm thực';
-        case TypeActivity.ADVENTURE:
-            return 'Phiêu lưu';
-        case TypeActivity.RELAXATION:
-            return 'Thư giãn';
-        case TypeActivity.ENTERTAINMENT:
-            return 'Giải trí';
-        case TypeActivity.NATURE:
-            return 'Thiên nhiên';
-        case TypeActivity.PHOTOSPOT:
-            return 'Điểm chụp ảnh';
-        case TypeActivity.NIGHTLIFE:
-            return 'Đời sống về đêm';
-        case TypeActivity.WORKSHOP:
-            return 'Hội thảo';
-        case TypeActivity.FESTIVAL:
-            return 'Lễ hội';
-        default:
-            return 'Không xác định';
-    }
+        switch (type) {
+            case TypeActivity.SIGHTSEEING:
+                return 'Tham quan';
+            case TypeActivity.FOOD:
+                return 'Ẩm thực';
+            case TypeActivity.ADVENTURE:
+                return 'Phiêu lưu';
+            case TypeActivity.RELAXATION:
+                return 'Thư giãn';
+            case TypeActivity.ENTERTAINMENT:
+                return 'Giải trí';
+            case TypeActivity.NATURE:
+                return 'Thiên nhiên';
+            case TypeActivity.PHOTOSPOT:
+                return 'Điểm chụp ảnh';
+            case TypeActivity.NIGHTLIFE:
+                return 'Đời sống về đêm';
+            case TypeActivity.WORKSHOP:
+                return 'Hội thảo';
+            case TypeActivity.FESTIVAL:
+                return 'Lễ hội';
+            default:
+                return 'Không xác định';
+        }
 };
 
 // Parse functions

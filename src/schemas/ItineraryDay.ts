@@ -9,12 +9,19 @@ export type ItineraryDaysDocument = HydratedDocument<ItineraryDays>;
 export class ItineraryDays {
     @Prop({ required: true })
     id: UUID;
+    @Prop({ required: true })
     itineraryId: UUID;
+    @Prop({ required: true })
     dayNumber: number;
+    @Prop({ required: true })
     date: Date;
+    @Prop({ required: true })
     title: string;
-    notes: [string];
+    @Prop({ required: true })
+    notes: string[];
+    @Prop({ required: true, type: Number, default: 0 })
     estimatedBudget: number;
+    @Prop({ required: true, type: Number, default: 0 })
     actualBudget: number;
     // ✅ Gộp hoạt động trong ngày
     @Prop({ type: [{ type: ActivitiesSchema, ref: 'Activities' }] })

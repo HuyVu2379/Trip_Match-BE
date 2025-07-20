@@ -9,13 +9,17 @@ export class Reviews {
     id: UUID;
     @Prop({ required: true })
     userId: UUID;
+    @Prop({ required: true, type: String, enum: ReviewTargetType })
     targetType: ReviewTargetType;
     @Prop({ required: true })
     targetId: UUID;
     @Prop({ required: true })
     rating: ReviewRating;
+    @Prop({ required: true, minlength: 10, maxlength: 1000 })
     content: string;
+    @Prop({ type: [String], default: null })
     photos: string[] | null;
+    @Prop({ default: null })
     visitDate: Date;
     createdAt: Date;
     updatedAt: Date;

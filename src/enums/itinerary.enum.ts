@@ -2,7 +2,8 @@
 export enum ItineraryStatus {
     DRAFT = 'draft',           // Nháp
     CONFIRMED = 'confirmed',   // Đã xác nhận
-    COMPLETED = 'completed'    // Hoàn thành
+    COMPLETED = 'completed',    // Hoàn thành
+    CANCELLED = 'cancelled'     // Đã hủy
 }
 
 // Enum cho Matched Score (1-10 hoặc 1-100)
@@ -31,6 +32,8 @@ export const getItineraryStatusDisplayName = (status: ItineraryStatus): string =
             return 'Đã xác nhận';
         case ItineraryStatus.COMPLETED:
             return 'Hoàn thành';
+        case ItineraryStatus.CANCELLED:
+            return 'Đã hủy';
         default:
             return 'Không xác định';
     }

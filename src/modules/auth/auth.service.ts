@@ -77,4 +77,38 @@ export class AuthService {
             return ResponseUtil.error('Invalid token', 401);
         }
     }
+
+    async refreshToken(refreshToken: string): Promise<ApiResponse> {
+        try {
+            // Verify refresh token
+            const decoded = this.jwtService.verify(refreshToken);
+
+            // Find user by ID from token
+            const user = await this.userModel.findById(decoded.sub).select('-password');
+            if (!user) {
+                return ResponseUtil.error('User not found', 404);
+            }
+
+            // Generate new access token and refresh token
+            const payload = { email: user.email, sub: user._id };
+            const newTokens = {
+                access_token: this.jwtService.sign(payload),
+                refresh_token: this.jwtService.sign(payload, { expiresIn: '7d' }),
+                user: {
+                    id: user._id,
+                    email: user.email,
+                    fullName: user.fullName,
+                },
+            };
+
+            return ResponseUtil.success(newTokens, 'Token refreshed successfully', 200);
+        } catch (error) {
+            if (error.name === 'TokenExpiredError') {
+                return ResponseUtil.error('Refresh token expired', 401);
+            } else if (error.name === 'JsonWebTokenError') {
+                return ResponseUtil.error('Invalid refresh token', 401);
+            }
+            return ResponseUtil.error('Token refresh failed', 500);
+        }
+    }
 }
