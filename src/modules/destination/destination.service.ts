@@ -3,7 +3,6 @@ import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { Destinations, DestinationsDocument } from 'src/schemas/Destination';
 import * as fs from 'fs';
-import * as path from 'path';
 import { ResponseUtil } from 'src/common';
 
 @Injectable()
