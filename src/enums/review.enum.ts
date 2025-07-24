@@ -1,7 +1,8 @@
 // Enum cho Target Type
 export enum ReviewTargetType {
     DESTINATION = 'destination',   // Đánh giá điểm đến
-    ITINERARY = 'itinerary'       // Đánh giá lịch trình
+    ITINERARY = 'itinerary',       // Đánh giá lịch trình
+    ACTIVITY = 'activity',         // Đánh giá hoạt động
 }
 
 // Enum cho Rating (1-5)

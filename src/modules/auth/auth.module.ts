@@ -8,8 +8,8 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { Users, UsersSchema } from 'src/schemas/User';
 import { LocalStrategy } from './strategies/local.strategy';
 import { JwtStrategy } from './strategies/jwt.strategy';
-import { JwtAuthGuard } from './guards/jwt-auth.guard';
-import { LocalAuthGuard } from './guards/local-auth.guard';
+import { JwtAuthGuard } from 'src/common/guards/jwt-auth.guard';
+import { LocalAuthGuard } from 'src/common/guards/local-auth.guard';
 
 @Module({
   imports: [

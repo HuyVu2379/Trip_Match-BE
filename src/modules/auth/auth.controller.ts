@@ -1,10 +1,10 @@
 import { Controller, Post, Body, UseGuards, Request, Get, UseFilters } from '@nestjs/common';
 import { AuthService } from './auth.service';
-import { LocalAuthGuard } from './guards/local-auth.guard';
-import { JwtAuthGuard } from './guards/jwt-auth.guard';
+import { LocalAuthGuard } from 'src/common/guards/local-auth.guard';
+import { JwtAuthGuard } from 'src/common/guards/jwt-auth.guard';
 import { RegisterDto } from './dtos/register.dto';
 import { RefreshTokenDto } from './dtos/refresh-token.dto';
-import { GetUser } from './decoraters/get-user.decorator';
+import { GetUser } from '../../common/decorators/get-user.decorator';
 import { ResponseUtil } from 'src/common';
 import { ApiResponse } from 'src/common';
 import { LoginDto } from './dtos/login.dto';

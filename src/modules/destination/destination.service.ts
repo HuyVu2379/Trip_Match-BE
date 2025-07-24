@@ -14,7 +14,7 @@ export class DestinationService {
         private destinationModel: Model<DestinationsDocument>
     ) { }
 
-    async importDestinationsFromJSON(filePath: string): Promise<ResponseUtil> {
+    async importDestinationsFromJSON(filePath: string) {
         try {
             // Kiểm tra file có tồn tại không
             if (!fs.existsSync(filePath)) {
@@ -113,7 +113,7 @@ export class DestinationService {
 
             this.logger.log(`🎉 Hoàn thành import: ${importResults.success}/${importResults.total} thành công`);
 
-            return ResponseUtil.success(importResults, "Import destinations thành công", HttpStatus.OK);
+            return importResults;
 
         } catch (error) {
             this.logger.error('Lỗi khi import destinations từ JSON:', error.message);

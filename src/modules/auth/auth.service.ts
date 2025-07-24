@@ -30,7 +30,7 @@ export class AuthService {
     }
 
     async login(user: any): Promise<ApiResponse> {
-        const payload = { email: user.email, sub: user.id };
+        const payload = { email: user.email, sub: user.id, roles: user.role };
         try {
             const loginData = {
                 access_token: this.jwtService.sign(payload),
@@ -39,6 +39,7 @@ export class AuthService {
                     id: user.id,
                     email: user.email,
                     fullName: user.fullName,
+                    roles: user.role
                 },
             };
             return ResponseUtil.success(loginData, 'Login successful', 200);
@@ -90,7 +91,7 @@ export class AuthService {
             }
 
             // Generate new access token and refresh token
-            const payload = { email: user.email, sub: user._id };
+            const payload = { email: user.email, sub: user._id, roles: user.role };
             const newTokens = {
                 access_token: this.jwtService.sign(payload),
                 refresh_token: this.jwtService.sign(payload, { expiresIn: '7d' }),
@@ -98,6 +99,7 @@ export class AuthService {
                     id: user._id,
                     email: user.email,
                     fullName: user.fullName,
+                    roles: user.role
                 },
             };
 

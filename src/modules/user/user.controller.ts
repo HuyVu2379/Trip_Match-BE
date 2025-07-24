@@ -3,7 +3,7 @@ import { FileInterceptor } from '@nestjs/platform-express';
 import { UserService } from './user.service';
 import { CreateUserDto } from './dtos/create-user.dto';
 import { ApiResponse, ResponseUtil, FileValidationPipe } from 'src/common';
-import { JwtAuthGuard } from '../auth';
+import { JwtAuthGuard } from 'src/common/guards/jwt-auth.guard';
 import { UserInterest } from 'src/interfaces/user.interface';
 import { UpdateUserDto } from './dtos/updateInfor-user.dto';
 

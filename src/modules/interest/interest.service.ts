@@ -11,23 +11,24 @@ export class InterestService {
         private interestModel: Model<InterestsDocument>
     ) { }
 
-    async createInterest(interestData: CreateInterestDto): Promise<ResponseUtil> {
+    async createInterest(interestData: CreateInterestDto) {
         const createdInterest = await this.interestModel.create(interestData);
         if (!createdInterest) {
-            return ResponseUtil.error('Failed to create interest', 500);
+            throw new Error('Failed to create interest');
         }
-        return ResponseUtil.success(createdInterest);
+        return createdInterest;
     }
 
-    async bulkCreateInterest(interestsData: CreateInterestDto[]): Promise<ResponseUtil> {
+    async bulkCreateInterest(interestsData: CreateInterestDto[]) {
         const createdInterests = await this.interestModel.insertMany(interestsData);
         if (!createdInterests) {
-            return ResponseUtil.error('Failed to create interests', 500);
+            throw new Error('Failed to create interests');
         }
-        return ResponseUtil.success(createdInterests);
+        return createdInterests;
     }
-    async getAllInterests(limit: number): Promise<ResponseUtil> {
+
+    async getAllInterests(limit: number) {
         const interests = await this.interestModel.find().limit(limit).lean();
-        return ResponseUtil.success(interests, 'Get all interests successfully', HttpStatus.OK);
+        return interests;
     }
 }

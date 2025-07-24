@@ -6,16 +6,16 @@ import { ItineraryDays, ItineraryDaysDocument } from 'src/schemas/ItineraryDay';
 import * as fs from 'fs';
 import { ItineraryDayDto } from './dtos/create-itinerary-dto';
 import { Activities, ActivitiesDocument } from 'src/schemas/Activity';
-import { ItinerariesDocument } from 'src/schemas/Itinerary';
+import { Itineraries, ItinerariesDocument } from 'src/schemas/Itinerary';
 @Injectable()
 export class ItineraryDayService {
     private readonly logger = new Logger(ItineraryDayService.name);
     constructor(@InjectModel(ItineraryDays.name) private itineraryDayModel: Model<ItineraryDaysDocument>,
-        private readonly activityModel: Model<ActivitiesDocument>,
-        @InjectModel('Itineraries') private readonly itineraryModel: Model<ItinerariesDocument>  // Assuming 'Itineraries' is the name of the Itinerary schema
+        @InjectModel(Activities.name) private readonly activityModel: Model<ActivitiesDocument>,
+        @InjectModel(Itineraries.name) private readonly itineraryModel: Model<ItinerariesDocument>
     ) { }
 
-    async importJsonItineraries(filePath: string): Promise<ResponseUtil> {
+    async importJsonItineraries(filePath: string) {
         try {
             if (!fs.existsSync(filePath)) {
                 throw new Error(`File không tồn tại: ${filePath}`);
@@ -57,24 +57,24 @@ export class ItineraryDayService {
 
                 this.logger.log(`Import thành công: ${itinerary.name}`);
             }
-            return ResponseUtil.success(importResults, "Import itinerary từ file Json thành công !", HttpStatus.OK);
+            return importResults;
         } catch (error) {
             this.logger.error(`Lỗi khi import itineraries từ file JSON: ${error.message}`);
             throw new Error("Lỗi khi import itinerary");
         }
     }
-    async getItineraryDayByItineraryID(itineraryId: string): Promise<ResponseUtil> {
+    async getItineraryDayByItineraryID(itineraryId: string) {
         try {
             const itineraryDays = await this.itineraryDayModel.find({
                 itineraryId: itineraryId
             }).exec();
-            return ResponseUtil.success(itineraryDays, `Lấy danh sách các ngày trong lịch trình ${itineraryId} thành công !`)
+            return itineraryDays;
         } catch (error) {
             this.logger.error(`Lỗi khi lấy itinerary day theo itinerary ID: ${error.message}`);
             throw new Error("Lỗi khi lấy itinerary day");
         }
     }
-    async createItineraryDay(itineraryId: string, ItineraryDay: ItineraryDayDto, activities: string[]): Promise<ResponseUtil> {
+    async createItineraryDay(itineraryId: string, ItineraryDay: ItineraryDayDto, activities: string[]) {
         try {
             const activitiesArr = await Promise.all(activities.map(activityID => this.activityModel.find({
                 id: activityID
@@ -85,13 +85,13 @@ export class ItineraryDayService {
                 itineraryId: itineraryId
             });
             const savedItineraryDay = await newItineraryDay.save();
-            return ResponseUtil.success(savedItineraryDay, "Tạo mới itinerary day thành công !", HttpStatus.CREATED);
+            return savedItineraryDay;
         } catch (error) {
             this.logger.error(`Lỗi khi tạo mới itinerary day: ${error.message}`);
             throw new Error("Lỗi khi tạo mới itinerary day");
         }
     }
-    async getItineraryRelatedDestination(destinationId: string): Promise<ResponseUtil> {
+    async getItineraryRelatedDestination(destinationId: string) {
         try {
             const itineraryDays = await this.itineraryDayModel.find({
                 "activities.destinationId": destinationId
@@ -101,7 +101,7 @@ export class ItineraryDayService {
             const itineraries = await this.itineraryModel.find({
                 id: { $in: uniqueItineraryIds }
             }).exec();
-            return ResponseUtil.success(itineraries, `Lấy các lịch trình liên quan đến địa điểm ${destinationId} thành công !`);
+            return itineraries;
         } catch (error) {
             this.logger.error(`Lỗi khi lấy các lịch trình liên quan đến địa điểm: ${error.message}`);
             throw new Error("Lỗi khi lấy lịch trình liên quan đến địa điểm");

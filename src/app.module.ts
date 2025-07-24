@@ -16,6 +16,7 @@ import { CorsMiddleware } from './common/middleware/cors.middleware';
 import { DestinationModule } from './modules/destination/destination.module';
 import { ItineraryModule } from './modules/itinerary/itinerary.module';
 import { ItineraryDayModule } from './modules/itinerary-day/itinerary-day.module';
+import { ReviewModule } from './modules/review/review.module';
 @Module({
   imports: [
     UserModule,
@@ -35,7 +36,8 @@ import { ItineraryDayModule } from './modules/itinerary-day/itinerary-day.module
     CloudinaryModule,
     DestinationModule,
     ItineraryModule,
-    ItineraryDayModule
+    ItineraryDayModule,
+    ReviewModule
   ],
   controllers: [AppController],
   providers: [

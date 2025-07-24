@@ -1,12 +1,18 @@
-import { Body, Controller, Get, Param, Post, Query } from '@nestjs/common';
+import { Body, Controller, Get, Param, Post, Query, UseGuards } from '@nestjs/common';
+import { Roles } from 'src/common/decorators/roles.decorator';
+import { RolesGuard } from 'src/common/guards/roles.guard';
 import { ActivityService } from './activity.service';
 import { ResponseUtil } from 'src/common';
 import { ImportActivityDto } from './dtos/import-activity-dto';
+import { JwtAuthGuard } from 'src/common/guards/jwt-auth.guard';
 @Controller('activities')
 export class ActivityController {
   constructor(private readonly activityService: ActivityService) { }
 
   @Post("import")
+  @UseGuards(RolesGuard)
+  @UseGuards(JwtAuthGuard)
+  @Roles('admin')
   async importFromJSON(@Body() importDto: ImportActivityDto): Promise<ResponseUtil> {
     const filePath = importDto.filePath;
     return this.activityService.importActivitiesFromJSON(filePath);

@@ -15,7 +15,7 @@ export class Reviews {
     targetId: UUID;
     @Prop({ required: true })
     rating: ReviewRating;
-    @Prop({ required: true, minlength: 10, maxlength: 1000 })
+    @Prop({ required: true, minlength: 1, maxlength: 1000 })
     content: string;
     @Prop({ type: [String], default: null })
     photos: string[] | null;

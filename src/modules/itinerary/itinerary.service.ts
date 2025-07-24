@@ -14,11 +14,10 @@ export class ItineraryService {
     private readonly logger = new Logger(ItineraryService.name);
     constructor(
         @InjectModel(Itineraries.name) private itineraryModel: Model<ItinerariesDocument>,
-        @InjectModel(Activities.name) private activityModel: Model<ActivitiesDocument>,
         private activityService: ActivityService,
     ) { }
 
-    async importJsonItineraries(filePath: string): Promise<ResponseUtil> {
+    async importJsonItineraries(filePath: string) {
         try {
             if (!fs.existsSync(filePath)) {
                 throw new Error(`File không tồn tại: ${filePath}`);
@@ -60,7 +59,7 @@ export class ItineraryService {
 
                 this.logger.log(` Import thành công: ${itinerary.name}`);
             }
-            return ResponseUtil.success(importResults, "Import itinerary từ file Json thành công !", HttpStatus.OK);
+            return importResults;
         } catch (error) {
             this.logger.error(`Lỗi khi import itineraries từ file JSON: ${error.message}`);
             throw new Error("Lỗi khi import itinerary");
@@ -85,7 +84,7 @@ export class ItineraryService {
         return totalScore;
     }
 
-    async generateItineraryAI(data: createItineraryWithRequirement): Promise<ResponseUtil> {
+    async generateItineraryAI(data: createItineraryWithRequirement) {
         try {
             const { numberOfDays, interestIds, cost, } = data;
             const sessionBudget = (cost / numberOfDays) / 3;
