@@ -5,7 +5,7 @@ import { ItineraryStatus, MatchedScore, GeneratedBy } from 'src/enums/itinerary.
 export type ItinerariesDocument = HydratedDocument<Itineraries>;
 @Schema({ timestamps: true })
 export class Itineraries {
-    @Prop({ required: true })
+    @Prop({})
     id: UUID;
     @Prop({ required: true })
     userId: UUID;

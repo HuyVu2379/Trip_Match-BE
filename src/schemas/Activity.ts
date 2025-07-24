@@ -2,6 +2,7 @@ import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { UUID } from 'crypto';
 import { HydratedDocument } from 'mongoose';
 import { RecommendedTime, TypeActivity, TypeUserCost } from 'src/enums/activity.enum';
+import { RelevanceLevel } from 'src/enums/destination.enum';
 import { ActivityCost } from 'src/interfaces/activity.interface';
 export type ActivitiesDocument = HydratedDocument<Activities>;
 @Schema({ timestamps: true })
@@ -33,6 +34,20 @@ export class Activities {
     recommendedTime: RecommendedTime;
     @Prop({ type: [String], enum: TypeActivity, default: [] })
     tags: TypeActivity[];
+    @Prop({ type: [String], default: [] })
+    @Prop({
+        type: [{
+            interestId: { type: String, required: true },
+            relevance: { type: Number, enum: RelevanceLevel, required: true }
+        }],
+        default: []
+    })
+    suitableInterests: [
+        {
+            interestId: UUID;
+            relevance: RelevanceLevel; // 1–5s
+        }
+    ];
     createdAt: Date;
     updatedAt: Date;
 }

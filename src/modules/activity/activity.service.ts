@@ -4,11 +4,14 @@ import { Model } from 'mongoose';
 import * as fs from 'fs';
 import { Activities, ActivitiesDocument } from 'src/schemas/Activity';
 import { ResponseUtil } from 'src/common';
-import { TypeActivity } from 'src/enums/activity.enum';
+import { RecommendedTime, TypeActivity } from 'src/enums/activity.enum';
+import { Destinations, DestinationsDocument } from 'src/schemas/Destination';
+import { createItineraryWithRequirement } from '../itinerary/dtos/create-itinerary-dto';
 @Injectable()
 export class ActivityService {
     private readonly logger = new Logger(ActivityService.name);
-    constructor(@InjectModel(Activities.name) private activityModel: Model<ActivitiesDocument>) { }
+    constructor(@InjectModel(Activities.name) private activityModel: Model<ActivitiesDocument>,
+        @InjectModel(Destinations.name) private destinationModel: Model<DestinationsDocument>) { }
 
     async importActivitiesFromJSON(filePath: string): Promise<ResponseUtil> {
         try {
@@ -108,6 +111,39 @@ export class ActivityService {
         } catch (error) {
             this.logger.error('Lỗi khi lấy activities nổi bật theo trang:', error.message);
             throw new Error(`Lỗi lấy activities nổi bật: ${error.message}`);
+        }
+    }
+    async getActivitiesRelatedRequest(data: createItineraryWithRequirement) {
+        try {
+            const { destinationName, startDay, numberOfDays, cost, numberPeople, interestIds } = data;
+            if (!destinationName || !startDay || !numberOfDays || !cost || !numberPeople) {
+                throw new Error("Thiếu thông tin cần thiết để tìm kiếm activities");
+            }
+            // Tìm kiếm tỉnh thành theo tên
+            const destination = await this.destinationModel.findOne({ name: destinationName });
+
+            if (!destination) {
+                throw new Error("Không tìm thấy destination phù hợp với tên đã nhập");
+            }
+            else {
+                this.logger.log(`Tìm thấy destination: ${destination.name}`);
+                let suitableActivities = await this.activityModel.find({
+                    destinationId: destination.id,
+                    suitableInterests: {
+                        $elemMatch: {
+                            interestId: { $in: interestIds },
+                            relevance: { $gte: 3 }
+                        }
+                    }
+                }).sort({ "suitableInterests.relevance": -1 }).exec();
+                if (suitableActivities.length > 0) {
+                    return suitableActivities;
+                }
+                return [];
+            }
+        } catch (error) {
+            this.logger.error(`Lỗi khi lấy activities: ${error.message}`);
+            throw new Error("Lỗi khi lấy activities");
         }
     }
 }   

@@ -14,6 +14,8 @@ import { CloudinaryModule } from './modules/cloudinary/cloudinary.module';
 import { CorsConfigService } from './common/services/cors-config.service';
 import { CorsMiddleware } from './common/middleware/cors.middleware';
 import { DestinationModule } from './modules/destination/destination.module';
+import { ItineraryModule } from './modules/itinerary/itinerary.module';
+import { ItineraryDayModule } from './modules/itinerary-day/itinerary-day.module';
 @Module({
   imports: [
     UserModule,
@@ -31,7 +33,9 @@ import { DestinationModule } from './modules/destination/destination.module';
     InterestModule,
     ExamplesModule,
     CloudinaryModule,
-    DestinationModule
+    DestinationModule,
+    ItineraryModule,
+    ItineraryDayModule
   ],
   controllers: [AppController],
   providers: [

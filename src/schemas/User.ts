@@ -8,28 +8,20 @@ import { UserInterest } from 'src/interfaces/user.interface';
 export class Users {
     @Prop({ required: true, default: () => randomUUID() })
     id: UUID;
-
     @Prop({ required: true, unique: true })
     email: string;
-
     @Prop({ required: true })
     password: string;
-
     @Prop({ required: true })
     fullName: string;
-
     @Prop({ default: null })
     dob: Date;
-
     @Prop({ enum: Gender, default: Gender.OTHER })
     gender: Gender;
-
     @Prop({ default: null })
     avatarUrl: string;
-
     @Prop({ default: null })
     phone: string;
-
     @Prop({ required: true, enum: Role, default: Role.USER })
     role: Role;
     @Prop({
@@ -42,9 +34,7 @@ export class Users {
             preferenceLevel: {
                 type: Number,
                 required: true,
-                enum: [1, 2, 3, 4, 5], // Use numeric values only
-                min: 1,
-                max: 5
+                enum: PreferenceLevel
             },
             addedAt: {
                 type: Date,
